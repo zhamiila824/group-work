@@ -238,6 +238,47 @@ $(document).ready(function() {
 	//
 	// });
 
+	$(".portfolio_galery .left").click(function() {
+		$(".portfolio_galery .slider.owl-carousel").trigger('prev.owl.carousel');
+	});
+
+	$(".portfolio_galery .right").click(function() {
+		$(".portfolio_galery .slider.owl-carousel").trigger('next.owl.carousel');
+	});
+
+	$(".portfolio_galery .slider.owl-carousel").owlCarousel({
+	    items: 1,
+	    loop: false,
+	    autoplay: false,
+	    mouseDrag: false,
+	    nav: false,
+	    navText: false,
+	    dots: true,
+	    autoWidth: true,
+	    stageClass: 'owl-stage owl-stage-imbblock',
+	    responsive : {
+	    768 : {
+	        items: 1,
+	        dots: false,
+	        stageClass: 'owl-stage owl-stage-mobile',
+	        margin: 50,
+
+	    },
+	        1200: {
+	        items: 3,
+	        dots: false,
+	        stageClass: 'owl-stage owl-stage-mobile',
+	        margin: 60,
+	    },
+	        1500: {
+	        items: 4,
+	        dots: false,
+	        stageClass: 'owl-stage owl-stage-mobile',
+	        margin: 60,
+	    }
+	    }
+	});
+
 
 
 });
