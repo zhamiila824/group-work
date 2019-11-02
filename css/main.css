@@ -5851,7 +5851,7 @@
     right: 0;
  }
 
- .portfolio_galery .left::before, 
+ .portfolio_galery .left::before,
  .portfolio_galery .right::before {
     display: block;
     width: 48px;
@@ -7117,3 +7117,13 @@
      margin: 0 15px
    }
  }
+
+@media only screen and (max-width: 414px) {
+    .news_container {
+        padding: 0px;
+    }
+    .main_news a.btn {
+        display: none;
+    }
+}
+
