@@ -7408,9 +7408,23 @@ footer .form_section {
     -ms-flex-align: start;
     align-items: flex-start
   }
+  .news_container {
+      padding: 0px;
+  }
+  .main_news a.btn {
+      display: none;
+   }
+
 }
 @media only screen and (max-width:390px) {
   footer .contacts_section .social .youtube {
     margin: 0 15px
   }
 }
+
+
+
+
+
+
+
