@@ -38,6 +38,17 @@ $(document).ready(function() {
 				$('.portfolio_container .item').show();
 			}
   });
+  $(window).resize(function(){
+
+
+  	if($(window).width() < 1004){
+  		$('.filter_container div').find('input:checked').each(function () {
+  		    $('.portfolio_container .item.').show();
+  		})
+  	}
+
+  });
+
 
 
 
