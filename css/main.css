@@ -6574,6 +6574,7 @@ footer .form_section {
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 45px;
+    padding-top: 10px;
   }
   .portfolio_page .img_block {
     margin-right: 50px;
@@ -6695,15 +6696,16 @@ footer .form_section {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 40%;
+    width: 42%;
     padding-top: 10px;
+    padding-left: 12px;
   }
   .portfolio .portfolio_container .item .text_block h3 {
     margin-left: 50px;
     font-weight: 500;
     border-bottom: 2px solid red;
     line-height: 55px;
-    font-size: 42px;
+    font-size: 41px;
     width: auto;
     max-width: 540px;
     margin-bottom: 8px;
@@ -7159,8 +7161,11 @@ footer .form_section {
     padding-top: 55px
   }
   .portfolio_page .portfolio_page_section_one .info_block {
-    padding: 0 40px 0 10%;
+    padding: 30px 40px 0 10%;
   }
+  .portfolio_page h3 {
+    margin-bottom: 28px;
+ }
   .portfolio_page .icon {
     margin-bottom: 15px;
   }
