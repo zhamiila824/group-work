@@ -291,5 +291,47 @@ $(document).ready(function() {
 	});
 
 
+	$(".reviews .slider.owl-carousel").owlCarousel({
+		items: 1,
+		loop: false,
+		autoplay: false,
+		mouseDrag: false,
+		nav: false,
+		navText: false,
+		dots: true,
+		autoWidth: true,
+		// stageClass: 'owl-stage owl-stage-imbblock',
+		responsive : {
+			768 : {
+				items: 1,
+				dots: false,
+				// stageClass: 'owl-stage owl-stage-mobile',
+				margin: 60,
+
+			},
+			1200: {
+				items: 2,
+				dots: false,
+				// stageClass: 'owl-stage owl-stage-mobile',
+				margin: 65,
+			},
+			1500: {
+				items: 3,
+				dots: false,
+				// stageClass: 'owl-stage owl-stage-mobile',
+				margin: 68,
+			}
+		}
+	});
+
+	$(".reviews_container .left").click(function() {
+		$(".reviews_container .slider.owl-carousel").trigger('prev.owl.carousel');
+	});
+
+	$(".reviews_container .right").click(function() {
+		$(".reviews_container .slider.owl-carousel").trigger('next.owl.carousel');
+	});
+
+
 
 });
