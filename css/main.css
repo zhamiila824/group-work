@@ -7572,6 +7572,9 @@ footer .form_section {
   .reviews .title{
     margin-left: 40px;
   }
+  .awards .owl-carousel .owl-stage-outer{
+    overflow:hidden!important
+  }
   .awards .left, .awards .right, .reviews .left, .reviews .right{
     display: none;
   }
