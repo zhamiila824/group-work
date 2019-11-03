@@ -7569,6 +7569,9 @@ footer .form_section {
     display: inline-block;
     font-size: 28px
   }
+  .reviews .title{
+    margin-left: 40px;
+  }
   .awards .left, .awards .right, .reviews .left, .reviews .right{
     display: none;
   }
