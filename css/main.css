@@ -5937,7 +5937,7 @@ header {
 }
 .contact_page .left {
   margin-right: 60px;
-  margin-left: 34%;
+  margin-left: 30%;
   margin-top: 60px
 }
 .contact_page .left form {
@@ -6695,7 +6695,7 @@ footer .form_section {
     padding: 40px
   }
   .contact_page .left {
-    margin-left: 24%
+    margin-left: 20%
   }
   .portfolio {
     margin-bottom: 100px;
@@ -7626,6 +7626,13 @@ footer .form_section {
   }
   .reviews_text span:last-child{
     display: inline;
+  }
+  .contact_page .left .recaptcha, .contact_page .left .btn{
+    margin-top: 5px;
+  }
+  footer .contacts_section>a{
+    width: 100%;
+    text-align: center;
   }
 }
 @media only screen and (max-width:390px) {
