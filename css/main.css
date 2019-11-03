@@ -5333,7 +5333,8 @@ header {
   font-size: 16px;
   border: 2px solid #F26C4D;
   -webkit-transition: .2s all;
-  transition: .2s all
+  transition: .2s all;
+  display: none;
 }
 .main_portfolio a.btn:hover {
   background: 0 0;
@@ -5341,7 +5342,9 @@ header {
 }
 .main_news {
   padding: 0 50px;
-  margin-bottom: 150px
+  margin-bottom: 150px;
+  overflow: hidden;
+
 }
 .main_news .title {
   color: #121618;
@@ -6592,6 +6595,9 @@ footer .form_section {
   .reviews .left, .reviews .right{
     top: 85px;
   }
+  .main_news {
+    margin-bottom: 0;
+  }
 }
 @media only screen and (max-width:1366px) {
   header:after {
@@ -6654,7 +6660,14 @@ footer .form_section {
     width: 30%
   }
   .news_container .item {
-    max-width: 33%
+    max-width: 33%;
+    margin-bottom: 100px;
+  }
+  .main_portfolio .item {
+    margin-bottom: 50px;
+  }
+  .news_container .item {
+    margin-bottom: 33px;
   }
 }
 @media only screen and (max-width:1300px) {
@@ -6842,6 +6855,9 @@ footer .form_section {
   }
   .reviews{
     margin-bottom: 17px;
+  }
+  header {
+    margin-bottom: 100px;
   }
 }
 @media only screen and (max-width:992px) {
