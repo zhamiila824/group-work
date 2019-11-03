@@ -6251,8 +6251,11 @@ header {
 .reviews .left:hover::before, .awards .left:hover::before {
     opacity: .4
 }
-.reviews .right,.awards .right {
+.awards .right {
     right: 0
+}
+.reviews .right{
+  right: 50px;
 }
 .reviews .right::before, .awards .right::before {
     background: url(../img/arrows.png) -48px -90px no-repeat;
@@ -6277,11 +6280,11 @@ header {
   display: -webkit-box;
   display: -ms-flexbox
 }
-.reviews .left, .awards_info_section .item1 .left {
+.awards_info_section .item1 .left {
     margin-right: 60px;
     width: calc(62.5% - 50px)
 }
-.reviews .right, .awards_info_section .item1 .right {
+.awards_info_section .item1 .right {
     width: 40%;
     max-width: 480px
 }
@@ -6576,10 +6579,35 @@ footer .form_section {
   .portfolio_page ul {
     margin-bottom: 85px;
   }
+  .reviews_container {
+    padding-left: 115px;
+  }
+  .reviews_item{
+    width: 630px;
+    height: auto;
+  }
+  .reviews_content{
+    width: 385px;
+  }
+  .reviews .left, .reviews .right{
+    top: 85px;
+  }
 }
 @media only screen and (max-width:1366px) {
   header:after {
     left: 0
+  }
+  .reviews .title{
+    width: 62%;
+  }
+  .reviews_container{
+    padding-left: 105px;
+  }
+  .reviews_item{
+    width: 588px;
+  }
+  .reviews_content{
+    width: 353px;
   }
 }
 @media only screen and (max-width:1200px) {
@@ -6604,6 +6632,20 @@ footer .form_section {
   }
   .btn_menu_mobile {
     display: block
+  }
+  .reviews .left, .reviews .right{
+    top: 60px;
+  }
+  .reviews_container{
+    padding-left: 75px;
+  }
+  .reviews_item{
+    width: auto;
+  }
+  .reviews_content{
+    width: 527px;
+    margin-left: 31px;
+    margin-top: 12px;
   }
   footer .form_section {
     max-width: 280px
@@ -6792,6 +6834,15 @@ footer .form_section {
     -webkit-transition: auto;
     transition: auto
   }
+  .reviews .left, .reviews .right{
+    top: 62px;
+  }
+  .reviews_container{
+    padding-left: 75px;
+  }
+  .reviews{
+    margin-bottom: 17px;
+  }
 }
 @media only screen and (max-width:992px) {
   .contact_page, .portfolio .filter_container div, .portfolio_page .portfolio_page_section_one, .portfolio_page .portfolio_page_section_three {
@@ -6949,6 +7000,15 @@ footer .form_section {
   .news_container .item {
     max-width: 50%
   }
+  .reviews .title{
+    width: 64%;
+  }
+  .reviews_container{
+    padding: 0 75px;
+  }
+  .reviews_text{
+    line-height: 21px;
+  }
   .contact_page .left, .contact_page .right {
     padding-left: 40px;
     left: 0;
@@ -7098,48 +7158,26 @@ footer .form_section {
   .second_header_biography .left {
     height: 700px
   }
-  .awards .owl-dots {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
-  }
-  .awards .owl-dots .owl-dot {
-    width: 17px;
-    height: 17px;
-    border-radius: 50%;
-    background: #C5C5C5;
-    margin: 0 4px
-  }
-  .awards .owl-dots .owl-dot.active {
-    background: #F26C4D
-  }
-  .awards .title {
-    top: 100px;
-    text-align: left;
-    width: auto;
-    padding-right: 0;
-    left: 40px;
-    text-transform: uppercase;
-    display: inline-block;
-    font-size: 28px
-  }
-  .awards_info_section .item1 .left, .awards_info_section .item1 .right, .awards_info_section .item2 .left, .awards_info_section .item2 .right {
+  .awards_info_section .item1 .left, .awards_info_section .item2 .right {
     width: 100%;
     max-width: 100%
   }
-  .awards .left, .awards .right, .main_news .left, .main_news .right, .slider .owl-nav {
+  .main_news .left, .main_news .right{
     display: none
+  }
+  .awards .left, .awards .right{
+    display: block;
   }
   .awards_info_section {
     padding: 0
   }
   .awards_info_section .item1 .right, .awards_info_section .item2 .left {
-    padding: 0 40px
+    padding: 0 40px;
+    width: 70%;
+    margin-left: 30%;
   }
   .awards_info_section .item1 {
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-bottom: 20px
   }
@@ -7147,8 +7185,6 @@ footer .form_section {
     margin-bottom: 20px
   }
   .awards_info_section .item2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column
   }
@@ -7158,40 +7194,28 @@ footer .form_section {
     -ms-flex-order: -1;
     order: -1
   }
-  .news_container .item .item_inner {
-    max-width: 100%;
-    padding: 10px 0 20px;
-    border: none!important
+  .awards_info_section .item2 .right img{
+    width: 100%;
   }
-  .news_container {
-    padding: 0 40px;
-    text-align: center;
-    margin-bottom: 50px
+  .awards .owl-dots {
+    display: none;
   }
-  .news_container .item {
-    max-width: 100%
+  .reviews_text{
+    width: 300px;
+    font-size: 16px;
   }
-  .news_container .item .content, .news_container .item .date {
-    text-align: left
+  .reviews .reviews_text span:last-child{
+    display: none;
+  }
+  .reviews .img_block img{
+    width: 200px;
+    height: auto;
   }
   .main_news .owl-carousel {
     padding: 0
   }
-  .slider .owl-stage-mobile {
-    width: 100%!important
-  }
-  .slider .owl-stage-mobile>.owl-item {
-    float: none;
-    width: 100%!important
-  }
-  .slider .owl-stage-mobile>.owl-item .owl-stage-imbblock .owl-item {
-    float: left
-  }
   .main_news .owl-carousel .owl-stage-outer .owl-item {
     opacity: 1
-  }
-  .awards .owl-carousel .owl-stage-outer {
-    overflow: hidden!important
   }
   .second_header {
     margin-bottom: 95px;
@@ -7333,9 +7357,6 @@ footer .form_section {
   }
   .portfolio .portfolio_container {
     padding: 65px 0 23px 0;
-  }
-  .news_container .img_block .owl-carousel .owl-item {
-    max-width: 100%
   }
   .animated {
     -webkit-transition-property: none!important;
@@ -7499,7 +7520,97 @@ footer .form_section {
   .main_news a.btn {
       display: none;
    }
-
+  .awards .owl-dots, .reviews .owl-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+  .awards .owl-dots .owl-dot, .reviews .owl-dots .owl-dot {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #C5C5C5;
+    margin: 0 4px
+  }
+  .awards .owl-dots .owl-dot.active, .reviews .owl-dots .owl-dot.active {
+    background: #F26C4D
+  }
+  .awards .title, .reviews .title {
+    top: 100px;
+    text-align: left;
+    width: auto;
+    padding-right: 0;
+    left: 40px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 28px
+  }
+  .awards .left, .awards .right, .reviews .left, .reviews .right{
+    display: none;
+  }
+  .awards_info_section .item1 .right, .awards_info_section .item2 .left, .awards_info_section .item2 .right{
+    width: 100%;
+    padding: 0 40px;
+    margin-left: 0
+  }
+  .awards_info_section .item1 .left {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .awards_info_section .item2 {
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+  .slider .owl-stage-mobile {
+    width: 100%!important
+  }
+  .slider .owl-stage-mobile>.owl-item {
+    float: none;
+    width: 100%!important
+  }
+  .slider .owl-stage-mobile>.owl-item .owl-stage-imbblock .owl-item {
+    float: left
+  }
+  .slider .owl-stage-outer>.owl-stage-mobile, .slider .owl-stage-outer>.owl-stage-mobile .owl-item {
+    width: 100%!important
+  }
+  .reviews{
+    background: #121618;
+    padding: 0 0 48px 0;
+  }
+  .reviews .title{
+    color: #FFFFFF;
+  }
+  .reviews_container{
+    padding: 0;
+    overflow: hidden;
+  }
+  .reviews_item_inner{
+    flex-direction: column;
+    color: #FFFFFF;
+  }
+  .reviews_content{
+    width: 100%;
+    margin: 10px 0 17px 0;
+  }
+  .reviews_item_inner .img_block{
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .reviews_item_inner h4{
+    color: #FFFFFF;
+  }
+  .reviews_item_inner{
+    width: 100vw;
+    padding: 0 16%;
+  }
+  .reviews_text span:last-child{
+    display: inline;
+  }
 }
 @media only screen and (max-width:390px) {
   footer .contacts_section .social .youtube {

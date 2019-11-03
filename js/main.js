@@ -292,7 +292,7 @@ $(document).ready(function() {
 
 
 	$(".reviews .slider.owl-carousel").owlCarousel({
-		items: 1,
+		items: 2,
 		loop: false,
 		autoplay: false,
 		mouseDrag: false,
@@ -300,25 +300,21 @@ $(document).ready(function() {
 		navText: false,
 		dots: true,
 		autoWidth: true,
-		// stageClass: 'owl-stage owl-stage-imbblock',
 		responsive : {
 			768 : {
 				items: 1,
 				dots: false,
-				// stageClass: 'owl-stage owl-stage-mobile',
 				margin: 60,
 
 			},
 			1200: {
-				items: 2,
+				items: 1,
 				dots: false,
-				// stageClass: 'owl-stage owl-stage-mobile',
 				margin: 65,
 			},
 			1500: {
-				items: 3,
+				items: 2,
 				dots: false,
-				// stageClass: 'owl-stage owl-stage-mobile',
 				margin: 68,
 			}
 		}
