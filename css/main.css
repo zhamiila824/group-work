@@ -7343,7 +7343,7 @@ footer .form_section {
   }
   .awards_info_section {
     padding: 0;
-    margin-bottom: 117px;
+    margin-bottom: 57px;
   }
   .awards_info_section .item1 .right, .awards_info_section .item2 .left {
     width: 65%;
@@ -7368,6 +7368,9 @@ footer .form_section {
     -ms-flex-order: -1;
     order: -1
   }
+  .awards{
+    margin-bottom: 53px;
+  }
   .awards_info_section .item2 .right img{
     width: 100%;
   }
@@ -7375,11 +7378,12 @@ footer .form_section {
     display: none;
   }
   .awards_container .owl-item{
-    max-width: 354px;
+    max-width: 384px;
   }
   .awards_container .item{
     width: 100%;
     padding-left: 50px;
+    margin-bottom: 0;
   }
   .reviews_content{
     margin: 17px 35px;
