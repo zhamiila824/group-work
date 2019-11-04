@@ -6768,6 +6768,9 @@ footer .form_section {
   .portfolio_galery .title {
     width: 65.5%;
   }
+  .second_header-portfolio {
+    margin-bottom: 70px;
+  }
   .second_header .second_header_title {
     width: 57.8%;
   }
@@ -6955,8 +6958,14 @@ footer .form_section {
   .second_header-portfolio .second_header_title .breadcrumbs {
     display: none;
   }
+  .header_portfolio .second_header_title .breadcrumbs {
+  	display: block;
+  }
   .second_header{
     padding-bottom:60px
+  }
+  .header_portfolio {
+  	margin-bottom: 70px;
   }
   .second_header .logo{
     left:40px;
@@ -6972,11 +6981,29 @@ footer .form_section {
     left:40px;
     margin: 0;
   }
+
+  .header_portfolio .second_header_title{
+    width: 57.5%;
+    top: 85px;
+  }
   .second_header .second_header_title h3{
     text-transform:uppercase;
     display:inline-block;
     font-size:42px;
     width: 100%
+  }
+  .second_header-portfolio .second_header_title{
+    top:100px;
+    text-align:right;
+    display:block;
+    width:70%;
+
+  }
+  .second_header-portfolio .second_header_title h3 {
+      text-transform: uppercase;
+      display: inline-block;
+      font-size: 28px;
+      width: 100%;
   }
   .portfolio_page .video_section {
     padding: 0;
@@ -7438,6 +7465,16 @@ footer .form_section {
   }
   .second_header .second_header_title {
     width: 57%;
+  }
+  .header_portfolio .second_header_title {
+      width: 36%;
+      top: 155px;
+  }
+  .header_portfolio {
+    margin-bottom: 133px;
+  }
+  .header_portfolio .second_header_title .breadcrumbs{
+      display: none;
   }
   .second_header-portfolio .second_header_title {
     width: 61%;
