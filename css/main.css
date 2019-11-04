@@ -7832,6 +7832,7 @@ footer .form_section {
     width: 100%!important
   }
   .reviews{
+    margin:0;
     background: #121618;
     padding: 0 0 48px 0;
   }
