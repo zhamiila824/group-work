@@ -62,7 +62,7 @@ $(document).ready(function() {
 
 
 	$('.img-link').magnificPopup({
-		type  : 'image'
+		type  : 'image',
 	});
 
 

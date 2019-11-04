@@ -5851,6 +5851,7 @@ header {
   padding: 0 50px;
   margin-bottom: 150px;
   overflow: hidden;
+  position: relative;
 }
 .portfolio_galery .title {
   font-size: 24px;
@@ -5886,13 +5887,13 @@ header {
   position: absolute;
   z-index: 99;
   cursor: pointer;
-  top: 135px;
+  top: 220px;
 }
 .portfolio_galery .left {
-  left: 0;
+  left: 40px;
 }
 .portfolio_galery .right {
-  right: 0;
+  right: 40px;
 }
 .portfolio_galery .left::before, .portfolio_galery .right::before {
   display: block;
@@ -6161,6 +6162,12 @@ header {
   color: #fff;
   line-height: 32px;
   padding: 14px 30px
+}
+ .portfolio_black .mfp-title {
+   display: none;
+ }
+.portfolio_galery .title {
+  display: block;
 }
 .reviews .title, .awards .title, .awards_info_section .item2 .left .text_block {
     text-align: right
@@ -6764,6 +6771,9 @@ footer .form_section {
   .second_header .second_header_title {
     width: 57.8%;
   }
+  .portfolio_galery .left, .portfolio_galery .right {
+      top: 206px;
+  }
   .portfolio {
     margin-top: -20px;
   }
@@ -7013,7 +7023,7 @@ footer .form_section {
     height: 240px;
   }
   .portfolio_galery .left, .portfolio_galery .right {
-    top: 92px;
+    top: 170px;
   }
   .second_header_biography {
     display: block;
