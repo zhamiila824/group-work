@@ -7190,7 +7190,15 @@ footer .form_section {
   footer {
     padding-top: 50px;
     padding-bottom: 46px;
+    padding: 56px 40px 46px;
     position: relative
+
+  }
+  footer .contacts_section .email, footer .contacts_section .phone {
+    align-self: end;
+  }
+  footer .contacts_section .social {
+   align-self: flex-end;
   }
   footer .menu_section {
     position: absolute;
