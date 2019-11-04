@@ -6992,11 +6992,14 @@ footer .form_section {
     font-size:42px;
     width: 100%
   }
+  .second_header-portfolio {
+  	margin-bottom: 85px;
+  }
   .second_header-portfolio .second_header_title{
-    top:100px;
-    text-align:right;
-    display:block;
-    width:70%;
+    top: 100px;
+    text-align: right;
+    display: block;
+    width: 58%;
 
   }
   .second_header-portfolio .second_header_title h3 {
@@ -7004,6 +7007,10 @@ footer .form_section {
       display: inline-block;
       font-size: 28px;
       width: 100%;
+      line-height: 40px;
+  }
+  .second_header-portfolio .second_header_title .breadcrumbs {
+    display: block;
   }
   .portfolio_page .video_section {
     padding: 0;
@@ -7465,6 +7472,9 @@ footer .form_section {
   }
   .second_header .second_header_title {
     width: 57%;
+  }
+  .second_header-portfolio .second_header_title .breadcrumbs {
+    display: none;
   }
   .header_portfolio .second_header_title {
       width: 36%;
