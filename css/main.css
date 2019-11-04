@@ -6586,6 +6586,7 @@ footer .form_section {
   }
   .portfolio_page .portfolio_page_section_one {
     padding: 0px 50px 0;
+    margin-bottom: 115px;
   }
   .portfolio_page ul {
     margin-bottom: 85px;
@@ -6605,6 +6606,9 @@ footer .form_section {
   }
   .main_news {
     margin-bottom: 150px;
+  }
+  .second_header-portfolio {
+  	margin-bottom: 70px;
   }
 }
 @media only screen and (max-width:1366px) {
@@ -6740,7 +6744,7 @@ footer .form_section {
     display: none;
   }
   .map {
-    height: 555px;
+    height: 707px;
   }
 }
 @media only screen and (max-width:1400px) {
@@ -6752,6 +6756,9 @@ footer .form_section {
   .contact_page .left {
     margin-left: 14%
   }
+  .portfolio_page .portfolio_page_section_one {
+      margin-bottom: 145px;
+  }
 }
 @media only screen and (max-width:1024px) {
   .main_header_name {
@@ -6760,6 +6767,23 @@ footer .form_section {
   .main_header_info .autor_title, .main_header_info .first_content {
     display: none
   }
+  .map {
+      height: 555px;
+  }
+  .header_portfolio {
+  	margin-bottom: 50px;
+  }
+  footer {
+      padding: 120px 12% 50px;
+  }
+  footer .menu_section {
+      width: 24%;
+  }
+  footer .language {
+      margin-top: 45px;
+  }
+
+
 }
 @media only screen and (max-width:1004px) {
   .portfolio_galery {
@@ -6806,6 +6830,7 @@ footer .form_section {
   .portfolio .portfolio_container a {
     order: -1;
   }
+
   .portfolio .portfolio_container .item .text_block .data {
     margin-bottom: 40px;
   }
@@ -6867,6 +6892,9 @@ footer .form_section {
     margin-bottom: 8px;
     -webkit-transition: auto;
     transition: auto
+  }
+  .header_portfolio {
+      margin-bottom: 80px;
   }
   .reviews .left, .reviews .right{
     top: 62px;
