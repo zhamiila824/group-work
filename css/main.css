@@ -6943,6 +6943,9 @@ footer .form_section {
     width: 100%;
     text-align: right;
   }
+  .second_header-portfolio .second_header_title .breadcrumbs {
+    display: none;
+  }
   .second_header{
     padding-bottom:60px
   }
@@ -7415,14 +7418,21 @@ footer .form_section {
   .main_news .owl-carousel .owl-stage-outer .owl-item {
     opacity: 1
   }
-  .second_header {
+  .second_header-portfolio {
     margin-bottom: 95px;
+  }
+  .second_header-portfolio {
+    margin-bottom: 135px;
   }
   .second_header .second_header_title h3 {
     font-size: 28px;
   }
   .second_header .second_header_title {
     width: 57%;
+  }
+  .second_header-portfolio .second_header_title {
+    width: 61%;
+    top: 156px;
   }
   .second_header_biography{
     background-position: left bottom;
