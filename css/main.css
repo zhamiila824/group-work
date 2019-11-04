@@ -6877,6 +6877,15 @@ footer .form_section {
   header {
     margin-bottom: 100px;
   }
+  footer {
+    padding: 120px 12% 50px;
+  }
+  footer .menu_section {
+   width: 23%;
+  }
+  footer .language {
+      margin-top: 43px;
+  }
 }
 @media only screen and (max-width:992px) {
   .contact_page, .portfolio .filter_container div, .portfolio_page .portfolio_page_section_one, .portfolio_page .portfolio_page_section_three {
