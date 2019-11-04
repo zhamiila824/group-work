@@ -7796,20 +7796,35 @@ footer .form_section {
     margin-bottom: 0
   }
   .second_header .logo {
-    top: 40px
+      top: 40px;
+      width:56px;
+      height:70px;
+      display:block
   }
   .btn_menu_mobile {
     top: 40px;
     right: 40px
   }
-  .second_header {
-    margin-bottom: 95px
+  .second_header_title{
+      width: 61%;
   }
-  .second_header .second_header_title {
-    top: 87px
+  .second_header .second_header_title h3{
+      margin-top: 50px;
+      text-align: left;
   }
-  .second_header .second_header_title h3 {
-    line-height: 40px
+  .second_header .second_header_title .breadcrumbs{
+      display: none;
+  }
+  .second_header_biography{
+      background-position: left 120px;
+      background-size: auto 500px;
+      width: 100%;
+      height: 1089px;
+      display: block
+  }
+  .second_header_biography .right .biography_info{
+      width: 100%;
+      margin-top: 160px;
   }
   .contact_page .right a {
     margin-bottom: 10px
@@ -7845,6 +7860,10 @@ footer .form_section {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+      width: 100%;
+  }
+  .awards_container .item{
+      padding-left: 0;
   }
   .awards .owl-dots .owl-dot, .reviews .owl-dots .owl-dot {
     width: 17px;
@@ -7924,20 +7943,22 @@ footer .form_section {
     width: 100%;
     margin: 10px 0 17px 0;
   }
-  .reviews_item_inner .img_block{
-    width: 150px;
-    height: auto;
-    margin-bottom: 15px;
-  }
+    .rewievs_inner .img_block {
+        height: 150px;
+        width: 150px;
+    }
   .reviews_item_inner h4{
     color: #FFFFFF;
   }
   .reviews_item_inner{
     width: 100vw;
-    padding: 0 16%;
+    padding: 0 40px;
   }
-  .reviews_text span:last-child{
-    display: inline;
+  .rewievs .rewievs_item .img_block {
+      margin-bottom: 15px;
+  }
+  .reviews_content .reviews_text span:last-child{
+      display: inline;
   }
   .contact_page .left .recaptcha, .contact_page .left .btn{
     margin-top: 5px;
