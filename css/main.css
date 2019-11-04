@@ -7710,7 +7710,7 @@ footer .form_section {
   }
   .news_container .item .item_inner {
     padding: 0;
-    border: none
+    border: none;
   }
   .news_container .item .item_inner.active {
     border: none
@@ -7774,7 +7774,7 @@ footer .form_section {
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center
+    justify-content: center;
   }
   .awards .owl-dots .owl-dot, .reviews .owl-dots .owl-dot {
     width: 17px;
@@ -7798,6 +7798,9 @@ footer .form_section {
   }
   .reviews .title{
     margin-left: 40px;
+  }
+  .awards .owl-carousel{
+      padding: 0;
   }
   .awards .owl-carousel .owl-stage-outer{
     overflow:hidden!important
