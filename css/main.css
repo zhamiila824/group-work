@@ -6928,28 +6928,33 @@ footer .form_section {
     padding-bottom: 30px;
     margin-bottom: 0;
   }
-  .second_header .logo {
-    left: 40px
-  }
-  .second_header .second_header_title {
-    top: -15px;
-    text-align: left;
-    display: block;
-    width: calc(100% - 80px);
-    padding-left: 0;
-    padding-right: 0;
-    left: 40px
-  }
-  .second_header .second_header_title h3 {
-    text-transform: uppercase;
-    display: inline-block;
-    font-size: 28px;
-    width: 65%;
-  }
   .second_header .second_header_title .breadcrumbs {
     display: block;
-    width: 65%;
+    width: 100%;
     text-align: right;
+  }
+  .second_header{
+    padding-bottom:60px
+  }
+  .second_header .logo{
+    left:40px;
+    position: absolute;
+  }
+  .second_header .second_header_title{
+    top:100px;
+    text-align:right;
+    display:block;
+    width:100%;
+    padding-left:0;
+    padding-right:0;
+    left:40px;
+    margin: 0;
+  }
+  .second_header .second_header_title h3{
+    text-transform:uppercase;
+    display:inline-block;
+    font-size:42px;
+    width: 100%
   }
   .portfolio_page .video_section {
     padding: 0;
@@ -7015,18 +7020,12 @@ footer .form_section {
   .portfolio_galery .left, .portfolio_galery .right {
     top: 92px;
   }
-  .second_header_biography {
-    display: block;
-    height: auto;
-    background-position: left 154px
+  .second_header_biography .right{
+    float: right;
   }
-  .second_header_biography .left {
-    width: 100%;
-    height: 100vh
-  }
-  .second_header_biography .right {
-    width: 100%;
-    height: auto
+  .second_header_biography .biography_info{
+    max-width:100%;
+    padding:0 40px
   }
   .news_container .item {
     width: 49%;
@@ -7034,6 +7033,13 @@ footer .form_section {
   }
   .news_container .item:nth-child(2n) {
     display: none;
+  }
+  .awards_container .item{
+    width: 100%;
+    padding-left: 60px;
+  }
+  .awards{
+    margin-bottom: 90px;
   }
   .reviews .title{
     width: 64%;
@@ -7353,6 +7359,13 @@ footer .form_section {
   .awards .owl-dots {
     display: none;
   }
+  .awards_container .owl-item{
+    max-width: 354px;
+  }
+  .awards_container .item{
+    width: 100%;
+    padding-left: 50px;
+  }
   .reviews_text{
     width: 300px;
     font-size: 16px;
@@ -7374,13 +7387,28 @@ footer .form_section {
     margin-bottom: 95px;
   }
   .second_header .second_header_title h3 {
-    width: auto;
-  }
-  .second_header .second_header_title .breadcrumbs {
-    display: none;
+    font-size: 28px;
   }
   .second_header .second_header_title {
-    top: 87px;
+    width: 57%;
+  }
+  .second_header_biography{
+    background-position: left bottom;
+    background-size: cover;
+    width: 100%;
+    height: 1024px;
+    display: block
+  }
+  .second_header_biography .second_header_title{
+    width: 99%;
+  }
+  .second_header_biography .right{
+    width: 100%;
+  }
+  .second_header_biography .right .biography_info{
+    width: 70%;
+    margin-top: -50px;
+    float: right
   }
   .portfolio_page .portfolio_page_section_three .img_block, .portfolio_page .video_section, .portfolio_page .portfolio_page_section_one .img_block {
     display: inline;
