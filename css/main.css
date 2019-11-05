@@ -7033,7 +7033,6 @@ footer .form_section {
     text-transform:uppercase;
     display:inline-block;
     font-size:42px;
-    width: 100%
   }
   .second_header-portfolio {
   	margin-bottom: 85px;
@@ -7043,7 +7042,6 @@ footer .form_section {
     text-align: right;
     display: block;
     width: 58%;
-
   }
   .second_header-portfolio .second_header_title h3 {
       text-transform: uppercase;
@@ -7140,7 +7138,7 @@ footer .form_section {
   .awards{
     margin-bottom: 90px;
   }
-  .reviews .title{
+  .reviews .title, .main_news .title{
     width: 64%;
   }
   .reviews_container{
@@ -7178,92 +7176,9 @@ footer .form_section {
   footer .menu_section {
     width: 20%
   }
-
-  header {
-      margin-bottom: 0;
-      padding-bottom: 170px;
-  }
-
-  .main_header_info {
-      width: 59%;
-      right: 4%;
-      bottom: 100px;
-
-  }
-  .main_header_name {
-      left: auto;
-      right: 4%;
-      bottom: 505px;
-      width: 60%;
-  }
-
-  .main_header_info .second_content p {
-    margin-bottom: 12px;
-  }
-
-  .main_portfolio {
-    padding: 0;
-    margin-bottom: 110px;
-    overflow: hidden;
-  }
-
-  .main_portfolio .item {
-    flex-direction: column;
-    margin-bottom: 105px;
-
-  }
-  .main_portfolio .item-last {
-    flex-direction: column;
-    margin-bottom: 55px;
-  }
-
-  .main_portfolio .img_block {
-      width: 100%;
-      height: 510px;
-      order: -1;
-  }
-  .main_portfolio .img_block img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  .main_portfolio .info_block {
-    width: fit-content;
-    margin-left: 37%;
-    padding-top: 20px;
-  }
-  .main_portfolio .tags {
-      margin-left: 0;
-      margin-bottom: 25px;
-  }
-  .main_portfolio .title {
-    padding-left: 0;
-    line-height: 32px;
-  }
-  .main_portfolio .icon {
-    margin-left: 0;
-    margin-bottom: 20px;
-  }
-  .main_portfolio .data {
-    margin-left: 0;
-  }
-  .main_portfolio a.btn {
-    display: block;
-    margin-left: 37%;
-  }
   .main_news {
     padding: 0 40px;
     margin-bottom: 0;
-  }
-  .main_news .title {
-    width: fit-content;
-    line-height: 44px;
-    text-align: left;
-    margin-bottom: 20px;
-  }
-  .main_news .left, .main_news .right {
-  	display: none;
   }
   .news_container {
     padding: 0px 30px;
@@ -7287,7 +7202,9 @@ footer .form_section {
   .news_container .item .content {
     line-height: 24px;
 }
-
+  .main_news .left, .main_news .right {
+    display: none;
+  }
 
 
 }
@@ -7384,6 +7301,57 @@ footer .form_section {
     width: 56px;
     height: 70px;
     display: block
+  }
+  .main_portfolio {
+    padding: 0;
+    margin-bottom: 110px;
+    overflow: hidden;
+  }
+
+  .main_portfolio .item {
+    flex-direction: column;
+    margin-bottom: 105px;
+
+  }
+  .main_portfolio .item-last {
+    flex-direction: column;
+    margin-bottom: 55px;
+  }
+
+  .main_portfolio .img_block {
+    width: 100%;
+    height: 510px;
+    order: -1;
+  }
+  .main_portfolio .img_block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .main_portfolio .info_block {
+    width: fit-content;
+    margin-left: 37%;
+    padding-top: 20px;
+  }
+  .main_portfolio .tags {
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+  .main_portfolio .title {
+    padding-left: 0;
+    line-height: 32px;
+  }
+  .main_portfolio .icon {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .main_portfolio .data {
+    margin-left: 0;
+  }
+  .main_portfolio a.btn {
+    display: block;
+    margin-left: 37%;
   }
   .main_portfolio .item {
     flex-direction: column
@@ -8070,10 +8038,32 @@ footer .form_section {
     margin: 0 15px
   }
 }
+.news_header {
+    margin-bottom: 80px;
+}
+.news_blocks {
+    margin-bottom: 150px;
+}
 
-
-
-
-
-
+@media only screen and (max-width: 992px) {
+    .news_header .news_title {
+        top: 100px;
+        text-align: left;
+        display: block;
+        width: calc(100% - 80px);
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 100px;
+        left: 40px;
+    }
+    .news_header .news_title .breadcrumbs {
+        display: none;
+    }
+    .news_header .news_title h3{
+        font-size: 28px;
+    }
+    .news_blocks {
+        padding: 0 30px;
+    }
+}
 
