@@ -7018,7 +7018,6 @@ footer .form_section {
     text-transform:uppercase;
     display:inline-block;
     font-size:42px;
-    width: 100%
   }
   .second_header-portfolio {
   	margin-bottom: 85px;
@@ -7028,7 +7027,6 @@ footer .form_section {
     text-align: right;
     display: block;
     width: 58%;
-
   }
   .second_header-portfolio .second_header_title h3 {
       text-transform: uppercase;
@@ -7112,7 +7110,7 @@ footer .form_section {
     padding:0 40px
   }
   .news_container .item {
-    width: 49%;
+    max-width: 50%;
     margin-bottom: 41px;
   }
   .news_container .item:nth-child(2n) {
@@ -8056,5 +8054,33 @@ footer .form_section {
   footer .contacts_section .social .youtube {
     margin: 0 15px
   }
+}
+.news_header {
+    margin-bottom: 80px;
+}
+.news_blocks {
+    margin-bottom: 150px;
+}
+
+@media only screen and (max-width: 992px) {
+    .news_header .news_title {
+        top: 100px;
+        text-align: left;
+        display: block;
+        width: calc(100% - 80px);
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 100px;
+        left: 40px;
+    }
+    .news_header .news_title .breadcrumbs {
+        display: none;
+    }
+    .news_header .news_title h3{
+        font-size: 28px;
+    }
+    .news_blocks {
+        padding: 0 30px;
+    }
 }
 
