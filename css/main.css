@@ -7187,7 +7187,9 @@ footer .form_section {
   .news_container .item .content {
     line-height: 24px;
 }
-
+  .main_news .left, .main_news .right {
+    display: none;
+  }
 
 
 }
@@ -7284,6 +7286,57 @@ footer .form_section {
     width: 56px;
     height: 70px;
     display: block
+  }
+  .main_portfolio {
+    padding: 0;
+    margin-bottom: 110px;
+    overflow: hidden;
+  }
+
+  .main_portfolio .item {
+    flex-direction: column;
+    margin-bottom: 105px;
+
+  }
+  .main_portfolio .item-last {
+    flex-direction: column;
+    margin-bottom: 55px;
+  }
+
+  .main_portfolio .img_block {
+    width: 100%;
+    height: 510px;
+    order: -1;
+  }
+  .main_portfolio .img_block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .main_portfolio .info_block {
+    width: fit-content;
+    margin-left: 37%;
+    padding-top: 20px;
+  }
+  .main_portfolio .tags {
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+  .main_portfolio .title {
+    padding-left: 0;
+    line-height: 32px;
+  }
+  .main_portfolio .icon {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .main_portfolio .data {
+    margin-left: 0;
+  }
+  .main_portfolio a.btn {
+    display: block;
+    margin-left: 37%;
   }
   .main_portfolio .item {
     flex-direction: column
