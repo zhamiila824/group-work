@@ -6671,11 +6671,21 @@ footer .form_section {
     margin-left: 31px;
     margin-top: 12px;
   }
+  footer {
+    padding: 115px 12% 85px;
+
+  }
   footer .form_section {
     max-width: 280px
   }
   footer .menu_section {
-    width: 30%
+    width: 24%;
+  }
+  footer .language {
+    margin-top: 45px;
+  }
+  .news_container {
+      padding: 0px 40px;
   }
   .news_container .item {
     max-width: 33%;
@@ -6684,8 +6694,9 @@ footer .form_section {
   .main_portfolio .item {
     margin-bottom: 50px;
   }
+
   .news_container .item {
-    margin-bottom: 33px;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width:1300px) {
@@ -6772,6 +6783,10 @@ footer .form_section {
   }
   .header_portfolio {
   	margin-bottom: 50px;
+  }
+  .news_container .item {
+    max-width: 33%;
+    margin-bottom: 100px;
   }
   footer {
       padding: 120px 12% 50px;
@@ -7113,9 +7128,9 @@ footer .form_section {
     max-width: 50%;
     margin-bottom: 41px;
   }
-  .news_container .item:nth-child(2n) {
+/*  .news_container .item:nth-child(2n) {
     display: none;
-  }
+  }*/
   .awards_container .item{
     width: 100%;
     padding-left: 60px;
@@ -7166,11 +7181,11 @@ footer .form_section {
     margin-bottom: 0;
   }
   .news_container {
-    padding: 0px 0px;
+    padding: 0px 30px;
     margin-bottom: 60px;
   }
   .news_container .item .item_inner {
-    padding: 0;
+    padding: 10px 10px 20px;
   }
   .news_container .slider {
     justify-content: space-between;
@@ -7723,16 +7738,17 @@ footer .form_section {
     display: inline-block;
   }
   .news_container {
-    padding: 0px;
+    padding: 0px 40px;
     margin-bottom: 30px;
   }
   .news_container .item {
-      width: 100%;
+      max-width: 100%;
       margin-bottom: 46px;
   }
   .news_container .item .item_inner {
       padding: 0;
       border: none;
+      max-width: 100%;
   }
   .second_header .second_header_title h3 {
       line-height: 40px;
