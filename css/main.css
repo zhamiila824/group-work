@@ -6920,6 +6920,11 @@ footer .form_section {
   .reviews{
     margin-bottom: 17px;
   }
+  .main_news_container .item {
+    margin-bottom: 30px;
+  }
+
+
   header {
     margin-bottom: 100px;
   }
@@ -7154,9 +7159,6 @@ footer .form_section {
 
 
 
-
-
-
 /*  .news_container .item:nth-child(2n) {
     display: none;
   }*/
@@ -7167,7 +7169,7 @@ footer .form_section {
   .awards{
     margin-bottom: 90px;
   }
-  .reviews .title, .main_news .title{
+  .reviews .title {
     width: 64%;
   }
   .reviews_container{
@@ -7205,10 +7207,6 @@ footer .form_section {
   footer .menu_section {
     width: 20%
   }
-  .main_news {
-    padding: 0 40px;
-    margin-bottom: 0;
-  }
   .news_container {
     padding: 0px 30px;
     margin-bottom: 60px;
@@ -7234,6 +7232,42 @@ footer .form_section {
   .main_news .left, .main_news .right {
     display: none;
   }
+  .main_news {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .main_news .title {
+      width: fit-content;
+      line-height: 42px;
+      margin-bottom: 10px;
+      margin-left: 40px;
+  }
+
+  .main_news .news_container {
+      padding: 0 30px;
+  }
+  .main_news_container .slider {
+  	width: 100%;
+  }
+  .main_news .news_container .item {
+  	width: 50%;
+  	max-width: 50%!important;
+  	margin-bottom: 20px;
+  }
+  .main_news .news_container .item:nth-child(2n) {
+    display: none;
+  }
+  .main_news .news_container .item .item_inner {
+      max-width: 100%;
+ }
+ .main_news .news_container .img_block {
+     margin-bottom: 60px;
+ }
+ .main_news_container .img_block a img {
+   width: 100%;
+ }
+
 
 
 }
@@ -7567,11 +7601,18 @@ footer .form_section {
       border: none;
       max-width: 100%;
   }
+  .main_news .title {
+      margin-bottom: 40px;
+
+  }
   .news_blocks {
       padding: 0 40px;
   }
   .news_container .img_block {
       margin-bottom: 45px;
+  }
+  .main_news .news_container .item .item_inner {
+  	padding: 0 10px 20px;
   }
   .portfolio_page .portfolio_page_section_three .img_block, .portfolio_page .video_section, .portfolio_page .portfolio_page_section_one .img_block {
     display: inline;
@@ -7794,6 +7835,20 @@ footer .form_section {
   .second_header .second_header_title h3 {
       line-height: 40px;
   }
+  .main_news .main_news_container {
+  	padding: 0;
+  }
+  .main_news .news_container .item {
+    width: 100%;
+    max-width: 100%!important;
+  }
+  .main_news .title {
+  	margin-left: 0;
+  }
+  .main_news .news_container .item .item_inner {
+    padding: 0 0 20px;
+  }
+
 }
 @media only screen and (max-width:500px) {
   footer .contacts_section .social {
