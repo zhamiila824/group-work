@@ -8051,3 +8051,26 @@ footer .form_section {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .news_blocks {
+        padding: 0 40px;
+    }
+    .news_blocks .item {
+        max-width: 100%;
+    }
+    .news_blocks .item .item_inner {
+        max-width: 100%;
+        padding: 10px 0 20px;
+        border: none!important;
+    }
+    .news_header .news_title {
+        padding-top: 47px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .news_header .news_title {
+        padding-top: 0;
+    }
+}
+
