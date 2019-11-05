@@ -7029,7 +7029,15 @@ footer .form_section {
     left:40px;
     margin: 0;
   }
-
+  .second_header .second_header_title{
+    top:100px;
+    text-align:right;
+    display:block;
+    width:100%;
+    padding-left:0;
+    padding-right:0;
+    left:40px
+  }
   .header_portfolio .second_header_title{
     width: 57.5%;
     top: 85px;
@@ -7038,6 +7046,7 @@ footer .form_section {
     text-transform:uppercase;
     display:inline-block;
     font-size:42px;
+    width: 100%
   }
   .second_header-news {
     padding-bottom: 130px;
@@ -7970,11 +7979,11 @@ footer .form_section {
     right: 40px
   }
   .second_header_title{
-      width: 61%;
+    width: 61%;
   }
   .second_header .second_header_title h3{
-      margin-top: 50px;
-      text-align: left;
+    margin-top: 50px;
+    text-align: left;
   }
   .second_header .second_header_title .breadcrumbs{
       display: none;
@@ -8144,7 +8153,6 @@ footer .form_section {
     margin-bottom: 150px;
 }
 
-@media only screen and (max-width: 992px) {
 
 @media only screen and (max-width: 768px) {
     .news_blocks {
