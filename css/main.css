@@ -7914,7 +7914,8 @@ footer .form_section {
     margin-bottom: 10px
   }
   .contact_page .right {
-    margin-bottom: 5px
+    margin-bottom: 5px;
+    margin-top: 92px;
   }
   .recaptcha, input[type=text], input[type=tel] {
     margin-bottom: 10px
