@@ -8047,10 +8047,6 @@ footer .form_section {
   .contact_page .left .recaptcha, .contact_page .left .btn{
     margin-top: 5px;
   }
-  footer .contacts_section>a{
-    width: 100%;
-    text-align: center;
-  }
 }
 @media only screen and (max-width:390px) {
   footer .contacts_section .social .youtube {
