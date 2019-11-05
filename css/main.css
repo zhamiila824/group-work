@@ -6995,7 +6995,7 @@ footer .form_section {
    object-position: center
   }
   .second_header {
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     margin-bottom: 0;
   }
   .second_header .second_header_title .breadcrumbs {
@@ -7008,9 +7008,6 @@ footer .form_section {
   }
   .header_portfolio .second_header_title .breadcrumbs {
   	display: block;
-  }
-  .second_header{
-    padding-bottom:60px
   }
   .header_portfolio {
   	margin-bottom: 70px;
@@ -7027,26 +7024,28 @@ footer .form_section {
     padding-left:0;
     padding-right:0;
     left:40px;
-    margin: 0;
   }
   .second_header .second_header_title{
     top:100px;
     text-align:right;
     display:block;
-    width:100%;
+    width:60%;
     padding-left:0;
     padding-right:0;
     left:40px
-  }
-  .header_portfolio .second_header_title{
-    width: 57.5%;
-    top: 85px;
   }
   .second_header .second_header_title h3{
     text-transform:uppercase;
     display:inline-block;
     font-size:42px;
     width: 100%
+  }
+  .header_portfolio .second_header_title{
+    width: 57.5%;
+    top: 85px;
+  }
+  .second_header_biography .second_header_title{
+    width: 100%;
   }
   .second_header-news {
     padding-bottom: 130px;
@@ -7208,6 +7207,7 @@ footer .form_section {
   .contact_page .right {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
+    margin-top: 40px;
     order: -1
   }
   footer .form_section {
@@ -7538,11 +7538,17 @@ footer .form_section {
     width: 200px;
     height: 200px;
   }
+  .contact_page .right{
+    margin-top: 0;
+  }
   .main_news .owl-carousel {
     padding: 0
   }
   .main_news .owl-carousel .owl-stage-outer .owl-item {
     opacity: 1
+  }
+  .second_header {
+    margin-bottom: 95px;
   }
   .second_header-portfolio {
     margin-bottom: 95px;
@@ -8120,10 +8126,10 @@ footer .form_section {
     width: 100%;
     margin: 10px 0 17px 0;
   }
-    .rewievs_inner .img_block {
-        height: 150px;
-        width: 150px;
-    }
+  .rewievs_inner .img_block {
+    height: 150px;
+    width: 150px;
+  }
   .reviews_item_inner h4{
     color: #FFFFFF;
   }
