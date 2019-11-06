@@ -7512,6 +7512,9 @@ footer .form_section {
   .awards_info_section .item2 .right img{
     width: 100%;
   }
+  .awards .left, .awards .right{
+    top: 90px;
+  }
   .awards .owl-dots {
     display: none;
   }
@@ -8194,9 +8197,6 @@ footer .form_section {
     }
     .awards {
         padding: 0 50px;
-    }
-    .awards .owl-carousel .owl-stage-outer {
-        overflow: hidden!important;
     }
 }
 
