@@ -7220,6 +7220,9 @@ footer .form_section {
   footer .menu_section {
     width: 20%
   }
+  .copyright {
+    height: 69px;
+  }
   .news_container {
     padding: 0px 30px;
     margin-bottom: 60px;
@@ -7288,7 +7291,7 @@ footer .form_section {
   footer {
     padding-top: 50px;
     padding-bottom: 46px;
-    padding: 56px 40px 46px;
+    padding: 56px 40px 40px;
     position: relative
 
   }
@@ -7555,10 +7558,7 @@ footer .form_section {
     margin-bottom: 95px;
   }
   .second_header-portfolio {
-    margin-bottom: 95px;
-  }
-  .second_header-portfolio {
-    margin-bottom: 135px;
+    margin-bottom: 85px;
   }
   .second_header .second_header_title h3 {
     font-size: 28px;
@@ -7581,7 +7581,7 @@ footer .form_section {
   }
   .second_header-portfolio .second_header_title {
     width: fit-content;
-    top: 156px;
+    top: 105px;
   }
   .second_header_biography{
     background-position: left bottom;
