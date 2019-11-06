@@ -7182,6 +7182,9 @@ footer .form_section {
   .reviews_text{
     line-height: 21px;
   }
+    .reviews .owl-carousel .owl-stage-outer{
+        overflow:hidden
+    }
   .contact_page .left, .contact_page .right {
     padding-left: 40px;
     left: 0;
@@ -7327,7 +7330,9 @@ footer .form_section {
     margin-bottom: 0;
     padding-bottom: 0;
   }
-
+    .reviews .owl-carousel .owl-stage-outer{
+        overflow: visible;
+    }
   .header_video_bg {
     height: 562px;
     width: 100%;
