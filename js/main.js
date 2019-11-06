@@ -70,7 +70,7 @@ $(document).ready(function() {
 	$('.gallerylink').magnificPopup({
 		type  : 'image',
 		gallery : {
-			enabled: true
+			enabled: true,
 		}
 	});
 
