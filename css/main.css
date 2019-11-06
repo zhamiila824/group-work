@@ -7160,14 +7160,6 @@ footer .form_section {
   .news_blocks {
       padding: 0 30px;
   }
-
-
-
-
-
-
-
-
 /*  .news_container .item:nth-child(2n) {
     display: none;
   }*/
@@ -7988,10 +7980,12 @@ footer .form_section {
     top: 40px;
     right: 40px
   }
-  .second_header_title{
+  .second_header .second_header_title{
     width: 61%;
+      text-align: left;
   }
   .second_header .second_header_title h3{
+      width: auto;
     margin-top: 50px;
     text-align: left;
   }
@@ -8149,6 +8143,9 @@ footer .form_section {
   }
   .contact_page .left .recaptcha, .contact_page .left .btn{
     margin-top: 5px;
+  }
+  .copyright{
+    height: 70px;
   }
 }
 @media only screen and (max-width:390px) {
