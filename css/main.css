@@ -8046,6 +8046,12 @@ footer .form_section {
   .awards_container .item{
       padding-left: 0;
   }
+  .news_container{
+    padding: 0;
+  }
+  .awards_container .slider{
+    margin-left: 0;
+  }
   .awards .owl-dots .owl-dot, .reviews .owl-dots .owl-dot {
     width: 17px;
     height: 17px;
