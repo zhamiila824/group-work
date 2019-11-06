@@ -7237,6 +7237,9 @@ footer .form_section {
   .reviews_text{
     line-height: 21px;
   }
+    .reviews .owl-carousel .owl-stage-outer{
+        overflow:hidden
+    }
   .contact_page .left, .contact_page .right {
     padding-left: 40px;
     left: 0;
@@ -7390,7 +7393,9 @@ footer .form_section {
     margin-bottom: 0;
     padding-bottom: 0;
   }
-
+    .reviews .owl-carousel .owl-stage-outer{
+        overflow: visible;
+    }
   .header_video_bg {
     height: 562px;
     width: 100%;
@@ -7574,6 +7579,9 @@ footer .form_section {
   }
   .awards_info_section .item2 .right img{
     width: 100%;
+  }
+  .awards .left, .awards .right{
+    top: 90px;
   }
   .awards .owl-dots {
     display: none;
@@ -8217,6 +8225,9 @@ footer .form_section {
   .reviews_content .reviews_text span:last-child{
       display: inline;
   }
+  .contact_page .right{
+    margin-top: 0;
+  }
   .contact_page .left .recaptcha, .contact_page .left .btn{
     margin-top: 5px;
   }
@@ -8254,9 +8265,6 @@ footer .form_section {
     }
     .awards {
         padding: 0 50px;
-    }
-    .awards .owl-carousel .owl-stage-outer {
-        overflow: hidden!important;
     }
 }
 
