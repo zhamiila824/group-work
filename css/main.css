@@ -7171,8 +7171,11 @@ footer .form_section {
     display: none;
   }*/
   .awards_container .item{
-    width: 100%;
+    width: 500px;
     padding-left: 60px;
+  }
+  .awards_container .slider{
+    margin-left: -30px;
   }
   .awards{
     margin-bottom: 90px;

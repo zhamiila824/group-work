@@ -170,7 +170,7 @@ $(document).ready(function() {
 					mouseDrag: true
 	    },
 			768 : {
-	        items: 2,
+	        items: 1.6,
 					dots: false
 	    },
 			1200: {
