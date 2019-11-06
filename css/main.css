@@ -6899,7 +6899,7 @@ footer .form_section {
   .portfolio .portfolio_container .item .text_block h3 {
     margin-left: 50px;
     font-weight: 500;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #F26C4D;
     line-height: 55px;
     font-size: 41px;
     width: auto;
@@ -7566,7 +7566,7 @@ footer .form_section {
     display: none;
   }
   .header_portfolio .second_header_title {
-      width: 36%;
+      width: fit-content;
       top: 155px;
   }
   .header_portfolio {
@@ -7576,7 +7576,7 @@ footer .form_section {
       display: none;
   }
   .second_header-portfolio .second_header_title {
-    width: 61%;
+    width: fit-content;
     top: 156px;
   }
   .second_header_biography{
