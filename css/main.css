@@ -8147,6 +8147,9 @@ footer .form_section {
   .reviews_content .reviews_text span:last-child{
       display: inline;
   }
+  .contact_page .right{
+    margin-top: 0;
+  }
   .contact_page .left .recaptcha, .contact_page .left .btn{
     margin-top: 5px;
   }
