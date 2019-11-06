@@ -5862,6 +5862,7 @@ header {
   text-align: right;
   margin-bottom: 50px;
   border-bottom: 2px solid #F26C4D;
+  font-weight: 500;
 }
 .portfolio_galery .owl-carousel {
   padding: 0 20px;
@@ -6899,7 +6900,7 @@ footer .form_section {
   .portfolio .portfolio_container .item .text_block h3 {
     margin-left: 50px;
     font-weight: 500;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #F26C4D;
     line-height: 55px;
     font-size: 41px;
     width: auto;
@@ -7159,20 +7160,15 @@ footer .form_section {
   .news_blocks {
       padding: 0 30px;
   }
-
-
-
-
-
-
-
-
 /*  .news_container .item:nth-child(2n) {
     display: none;
   }*/
   .awards_container .item{
-    width: 100%;
+    width: 500px;
     padding-left: 60px;
+  }
+  .awards_container .slider{
+    margin-left: -30px;
   }
   .awards{
     margin-bottom: 90px;
@@ -7215,6 +7211,9 @@ footer .form_section {
   }
   footer .menu_section {
     width: 20%
+  }
+  .copyright {
+    height: 69px;
   }
   .news_container {
     padding: 0px 30px;
@@ -7284,7 +7283,7 @@ footer .form_section {
   footer {
     padding-top: 50px;
     padding-bottom: 46px;
-    padding: 56px 40px 46px;
+    padding: 56px 40px 40px;
     position: relative
 
   }
@@ -7551,10 +7550,7 @@ footer .form_section {
     margin-bottom: 95px;
   }
   .second_header-portfolio {
-    margin-bottom: 95px;
-  }
-  .second_header-portfolio {
-    margin-bottom: 135px;
+    margin-bottom: 85px;
   }
   .second_header .second_header_title h3 {
     font-size: 28px;
@@ -7566,7 +7562,7 @@ footer .form_section {
     display: none;
   }
   .header_portfolio .second_header_title {
-      width: 36%;
+      width: fit-content;
       top: 155px;
   }
   .header_portfolio {
@@ -7576,8 +7572,8 @@ footer .form_section {
       display: none;
   }
   .second_header-portfolio .second_header_title {
-    width: 61%;
-    top: 156px;
+    width: fit-content;
+    top: 105px;
   }
   .second_header_biography{
     background-position: left bottom;
@@ -7731,7 +7727,7 @@ footer .form_section {
     margin-bottom: 0;
   }
   .portfolio_galery .title {
-    font-size: 30px;
+    font-size: 28px;
     width: fit-content;
     margin-bottom: 30px;
     margin-left: 40px;
@@ -7984,10 +7980,12 @@ footer .form_section {
     top: 40px;
     right: 40px
   }
-  .second_header_title{
+  .second_header .second_header_title{
     width: 61%;
+      text-align: left;
   }
   .second_header .second_header_title h3{
+      width: auto;
     margin-top: 50px;
     text-align: left;
   }
@@ -8145,6 +8143,9 @@ footer .form_section {
   }
   .contact_page .left .recaptcha, .contact_page .left .btn{
     margin-top: 5px;
+  }
+  .copyright{
+    height: 70px;
   }
 }
 @media only screen and (max-width:390px) {

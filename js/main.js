@@ -170,9 +170,8 @@ $(document).ready(function() {
 					mouseDrag: true
 	    },
 			768 : {
-	        items: 2,
-					dots: true,
-				maxWidth: 542
+	        items: 1.6,
+					dots: false
 	    },
 			1200: {
 	        items: 3
