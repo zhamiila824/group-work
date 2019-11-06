@@ -171,7 +171,8 @@ $(document).ready(function() {
 	    },
 			768 : {
 	        items: 2,
-					dots: false
+					dots: true,
+				maxWidth: 542
 	    },
 			1200: {
 	        items: 3
@@ -181,6 +182,7 @@ $(document).ready(function() {
 	    }
 		}
 	});
+
 
 	$(".awards_container .left").click(function() {
 		$(".awards_container .slider.owl-carousel").trigger('prev.owl.carousel');
@@ -338,7 +340,5 @@ $(document).ready(function() {
 	$(".reviews_container .right").click(function() {
 		$(".reviews_container .slider.owl-carousel").trigger('next.owl.carousel');
 	});
-
-
 
 });

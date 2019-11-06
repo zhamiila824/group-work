@@ -8175,6 +8175,12 @@ footer .form_section {
     .news_header .news_title {
         padding-top: 47px;
     }
+    .awards {
+        padding: 0 50px;
+    }
+    .awards .owl-carousel .owl-stage-outer {
+        overflow: hidden!important;
+    }
 }
 
 @media only screen and (max-width: 414px) {
@@ -8185,4 +8191,3 @@ footer .form_section {
       margin:0;
     }
 }
-
