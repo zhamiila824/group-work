@@ -5862,6 +5862,7 @@ header {
   text-align: right;
   margin-bottom: 50px;
   border-bottom: 2px solid #F26C4D;
+  font-weight: 500;
 }
 .portfolio_galery .owl-carousel {
   padding: 0 20px;
@@ -7726,7 +7727,7 @@ footer .form_section {
     margin-bottom: 0;
   }
   .portfolio_galery .title {
-    font-size: 30px;
+    font-size: 28px;
     width: fit-content;
     margin-bottom: 30px;
     margin-left: 40px;
