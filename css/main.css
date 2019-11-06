@@ -7996,6 +7996,9 @@ footer .form_section {
   .second_header .second_header_title .breadcrumbs{
       display: none;
   }
+  .header_portfolio {
+      margin-bottom: 85px;
+  }
   .second_header_biography{
       background-position: left 120px;
       background-size: auto 500px;
