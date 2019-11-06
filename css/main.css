@@ -7550,7 +7550,7 @@ footer .form_section {
     margin-bottom: 95px;
   }
   .second_header-portfolio {
-    margin-bottom: 85px;
+    margin-bottom: 135px;
   }
   .second_header .second_header_title h3 {
     font-size: 28px;
@@ -7573,7 +7573,7 @@ footer .form_section {
   }
   .second_header-portfolio .second_header_title {
     width: fit-content;
-    top: 105px;
+    top: 155px;
   }
   .second_header_biography{
     background-position: left bottom;
@@ -7976,13 +7976,17 @@ footer .form_section {
       height:70px;
       display:block
   }
+  .second_header-portfolio {
+    margin-bottom: 85px;
+  }
   .btn_menu_mobile {
     top: 40px;
     right: 40px
   }
   .second_header .second_header_title{
-    width: 61%;
-      text-align: left;
+    width: fit-content;
+    text-align: left;
+    top: 105px;
   }
   .second_header .second_header_title h3{
       width: auto;
@@ -7991,6 +7995,9 @@ footer .form_section {
   }
   .second_header .second_header_title .breadcrumbs{
       display: none;
+  }
+  .header_portfolio {
+      margin-bottom: 85px;
   }
   .second_header_biography{
       background-position: left 120px;
