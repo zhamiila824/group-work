@@ -8144,6 +8144,9 @@ footer .form_section {
   .contact_page .left .recaptcha, .contact_page .left .btn{
     margin-top: 5px;
   }
+  .copyright{
+    height: 70px;
+  }
 }
 @media only screen and (max-width:390px) {
   footer .contacts_section .social .youtube {
