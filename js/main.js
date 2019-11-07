@@ -65,14 +65,19 @@ $(document).ready(function() {
 		type  : 'image',
 	});
 
-
-
 	$('.gallerylink').magnificPopup({
 		type  : 'image',
 		gallery : {
 			enabled: true,
 		}
 	});
+	$('.popup-youtube').magnificPopup({
+		type  : 'iframe',
+		
+	});
+
+
+
 
 	if($(window).width() < 992) {
 	    $(".main_news_container .slider.owl-carousel").removeClass('owl-carousel').trigger('destroy.owl.carousel');
