@@ -7223,7 +7223,7 @@ footer .form_section {
   .news_blocks {
       padding: 0 30px;
   }
-/*  .news_container .item:nth-child(2n) {
+  .news_container .item:nth-child(2n) {
     display: none;
   }
   .awards_container .item{
@@ -7244,9 +7244,10 @@ footer .form_section {
   }
   .reviews_text{
     line-height: 21px;
+    width: 504px;
   }
     .reviews .owl-carousel .owl-stage-outer{
-        overflow:hidden
+        overflow:hidden;
     }
   .contact_page .left, .contact_page .right {
     padding-left: 40px;
