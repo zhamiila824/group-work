@@ -4801,13 +4801,13 @@ input, textarea {
 a, button {
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
-  color: #11265f
+  color: #121618
 }
 a:hover, button:hover {
   text-decoration: none;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
-  color: #e20c0c
+  color: #F26C4D
 }
 input {
   -webkit-box-shadow: none;
