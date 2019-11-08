@@ -6708,6 +6708,10 @@ footer .form_section {
   header:after {
     left: 0
   }
+    .awards_info_section .item2 .left .text_block{
+        width: 85.1%;
+        margin-left: 14.9%;
+    }
   .reviews_container{
     padding-left: 105px;
   }
@@ -6721,6 +6725,16 @@ footer .form_section {
     padding: 0 0 150px 50px;
 
   }
+}
+@media only screen and(max-width: 1280px){
+
+    .awards_info_section .item1 .right .text_block{
+        max-width: 75.2%;
+    }
+    .awards_info_section .item2 .left .text_block{
+        width: 85%;
+        margin-left: 15%;
+    }
 }
 @media only screen and (max-width:1200px) {
   header {
@@ -7035,6 +7049,12 @@ footer .form_section {
     }
     .reviews .owl-carousel .owl-stage-outer{
         overflow:hidden;
+    }
+    .awards_info_section{
+        margin-bottom: 95px;
+    }
+    .awards_info_section .item1 {
+        margin-bottom: 40px
     }
 
 
