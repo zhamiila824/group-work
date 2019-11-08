@@ -159,7 +159,9 @@ $(document).ready(function() {
 		$(".header_slider .owl-carousel").trigger('next.owl.carousel');
 	});
 
-
+	$(".main_portfolio .btn").click(function () {
+		$(".main_portfolio .item-last").toggle();
+	})
 
 
 	$(".awards_container .slider.owl-carousel").owlCarousel({
