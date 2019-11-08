@@ -7301,10 +7301,8 @@ footer .form_section {
     margin-left: -30px;
   }
   .awards{
+      margin-top: 50px;
     margin-bottom: 90px;
-  }
-  .reviews .title {
-    width: 64%;
   }
   .reviews_container{
     padding: 0 75px;
@@ -7678,15 +7676,18 @@ footer .form_section {
   .second_header_biography .left {
     height: 700px
   }
+  .awards, .reviews{
+      padding: 0 40px;
+  }
+  .awards .title, .reviews .title{
+      width: 64.2%;
+  }
   .awards_info_section .item1 .left, .awards_info_section .item2 .right {
     width: 100%;
     max-width: 100%
   }
   .main_news .left, .main_news .right{
     display: none
-  }
-  .awards, .reviews{
-    padding: 0 40px;
   }
   .reviews .right{
     right: 0;
@@ -7698,10 +7699,14 @@ footer .form_section {
     padding: 0;
     margin-bottom: 57px;
   }
-  .awards_info_section .item1 .right, .awards_info_section .item2 .left {
+    .awards_info_section .item1 .right, .awards_info_section .item2 .left{
+        width: 100%;
+        max-width: 100%;
+        padding: 0 40px;
+    }
+    .awards_info_section .item1 .right .text_block, .awards_info_section .item2 .left .text_block {
     width: 65%;
     margin-left: 35%;
-    padding: 0 40px;
   }
   .awards_info_section .item1 {
     -ms-flex-direction: column;
@@ -7737,9 +7742,12 @@ footer .form_section {
     max-width: 384px;
   }
   .awards_container .item{
-    width: 100%;
+    width: 384px;
     padding-left: 50px;
     margin-bottom: 0;
+  }
+  .awards_container .slider{
+      margin-left: -55px;
   }
   .reviews_content{
     margin: 17px 35px;
@@ -8432,9 +8440,6 @@ footer .form_section {
     }
     .news_header .news_title {
         padding-top: 47px;
-    }
-    .awards {
-        padding: 0 50px;
     }
 }
 

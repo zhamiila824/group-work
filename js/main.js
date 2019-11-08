@@ -176,11 +176,12 @@ $(document).ready(function() {
 					mouseDrag: true
 	    },
 			768 : {
-	        items: 1.6,
+	        items: 1.47,
 					dots: false
 	    },
 			1004:{
 	    	items: 1.5,
+				margin:25,
 	    	},
 			1280: {
 	        items: 2,
