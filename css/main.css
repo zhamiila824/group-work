@@ -6382,7 +6382,7 @@ header {
     max-width: 662px
 }
 .awards_info_section .item1 .right .text_block{
-  max-width: 72.5%;
+  width: 72.5%;
 }
 .awards_info_section .item2 .left .text_block{
   width: 83.4%;
@@ -8344,6 +8344,10 @@ footer .form_section {
     width: 100%;
     padding: 0 40px;
     margin-left: 0
+  }
+  .awards_info_section .item1 .right .text_block, .awards_info_section .item2 .left .text_block{
+    width: 100%;
+    margin: 0;
   }
   .awards_info_section .item1 .left {
     margin-bottom: 15px;
