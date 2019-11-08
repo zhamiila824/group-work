@@ -179,6 +179,9 @@ $(document).ready(function() {
 	        items: 1.6,
 					dots: false
 	    },
+			1004:{
+	    	items: 1.5,
+	    	},
 			1280: {
 	        items: 2,
 				margin: 30,
