@@ -5124,9 +5124,13 @@ header {
   display: block;
   margin-top: 40px
 }
-.main_news .title, .main_portfolio .title, .second_header .second_header_title h3 {
+.main_news .title, 
+.main_portfolio .title, .second_header .second_header_title h3 {
   border-bottom: 2px solid #F26C4D;
   font-weight: 500
+}
+.main_portfolio .title:hover {
+  color: #F26C4D;
 }
 .fullvideo:hover {
   background: #F26C4D;
