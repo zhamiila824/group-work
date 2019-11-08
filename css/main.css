@@ -6347,11 +6347,8 @@ header {
 .reviews .left:hover::before, .awards .left:hover::before {
     opacity: .4
 }
-.awards .right {
+.awards .right, .reviews .right {
     right: 0
-}
-.reviews .right{
-  right: 50px;
 }
 .reviews .right::before, .awards .right::before {
     background: url(../img/arrows.png) -48px -90px no-repeat;
@@ -6376,13 +6373,20 @@ header {
   display: -webkit-box;
   display: -ms-flexbox
 }
-.awards_info_section .item1 .left {
+.awards_info_section .item1 .left, .awards_info_section .item2 .left {
     margin-right: 60px;
-    width: calc(62.5% - 50px)
+    width: 63.6%;
 }
-.awards_info_section .item1 .right {
+.awards_info_section .item1 .right, .awards_info_section .item2 .right {
     width: 40%;
-    max-width: 480px
+    max-width: 662px
+}
+.awards_info_section .item1 .right .text_block{
+  max-width: 72.5%;
+}
+.awards_info_section .item2 .left .text_block{
+  width: 83.4%;
+  margin-left: 16.6%;
 }
 .awards_info_section .item1 .text_block h3 {
   font-size: 24px;
@@ -6397,19 +6401,15 @@ header {
 .awards_info_section .item2 {
   display: flex
 }
-.awards_info_section .item2 .left {
-  width: calc(62.5% - 50px);
-  margin-right: 60px
-}
-.awards_info_section .item2 .left p {
+.awards_info_section .item2 .left .text_block p {
   margin-bottom: 50px;
   max-width: 916px;
   display: inline-block;
   text-align: left;
-  line-height: 21px
+  line-height: 19px
 }
 .reviews {
-    padding: 0 0 0 50px;
+    padding: 0 50px;
     margin-bottom: 90px;
     overflow: hidden;
 }
@@ -6659,6 +6659,11 @@ footer .form_section {
   line-height: 21px;
   height: 90px
 }
+@media only screen and(max-width: 1600px){
+  .awards_info_section .item1 .text_block p {
+    line-height: 19px
+  }
+}
 @media only screen and (max-width:1500px) {
   .portfolio_page .portfolio_page_section_three {
     margin-bottom: 105px;
@@ -6703,17 +6708,14 @@ footer .form_section {
   header:after {
     left: 0
   }
-  .reviews .title{
-    width: 62%;
-  }
   .reviews_container{
     padding-left: 105px;
   }
   .reviews_item{
-    width: 588px;
+    width: 625px;
   }
   .reviews_content{
-    width: 353px;
+    width: 390px;
   }
   .main_news {
     padding: 0 0 150px 50px;

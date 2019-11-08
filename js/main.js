@@ -182,6 +182,9 @@ $(document).ready(function() {
 			1200: {
 	        items: 3
 	    },
+			1366:{
+	    	items: 2.1,
+	    	},
 			1500: {
 	        items: 3
 	    }
