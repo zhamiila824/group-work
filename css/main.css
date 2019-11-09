@@ -7194,6 +7194,9 @@ footer .form_section {
   }
 }
 @media only screen and (max-width:992px) {
+	.btn_menu, .btn_menu_mobile {
+	    top: 40px;
+	}
 
 	.modal-galery button.mfp-arrow-right {
 	  left: calc(100vw - 70px);
@@ -7277,6 +7280,7 @@ footer .form_section {
   .second_header .logo{
     left:40px;
     position: absolute;
+    top: 40px;
   }
   .second_header .second_header_title{
     top:100px;
@@ -7322,7 +7326,7 @@ footer .form_section {
     top: 100px;
     text-align: right;
     display: block;
-    width: 58%;
+    width: 57.5%;
   }
   .second_header-portfolio .second_header_title h3 {
       text-transform: uppercase;
@@ -7341,7 +7345,7 @@ footer .form_section {
   }
   .portfolio_page .img_block {
     max-width: 100%;
-    height: 510px;
+    /*height: 510px;*/
   }
   .portfolio_page .img_block img {
     width: 100%;
@@ -7366,7 +7370,8 @@ footer .form_section {
     margin-bottom: 24px;
   }
   .portfolio_page .portfolio_page_section_one .info_block {
-    padding: 0 40px 0 37%;
+    padding: 0 40px 0 38%;
+    width: 100%;
   }
   .portfolio_page .portfolio_page_section_one ul {
     margin-bottom: 30px
@@ -7378,18 +7383,21 @@ footer .form_section {
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 0;
-    margin-bottom: 30px
+    margin-bottom: 3px
   }
-  .portfolio_page .portfolio_page_section_three .info_block, .second_header_biography .biography_info {
+  .portfolio_page .portfolio_page_section_three .info_block, 
+  .second_header_biography .biography_info {
     max-width: 100%;
     padding: 0 40px 0 37%;
+    width: 100%;
   }
   .portfolio_page .portfolio_page_section_three .img_block {
-    margin-bottom: 60px;
-    margin-right: 0
+    margin-bottom: 65px;
+    margin-right: 0;
+    max-width: 100%;
   }
   .portfolio_page .portfolio_page_section_three .info_block p {
-    margin-bottom: 30px
+    margin-bottom: 49px
   }
   .portfolio_galery .porfolio_inner {
     width: 320px;
@@ -7613,10 +7621,13 @@ footer .form_section {
 
 }
 @media only screen and (max-width:850px) {
+  .btn_menu, .btn_menu_mobile {
+    right: 40px;
+  }
   footer {
     padding-top: 50px;
     padding-bottom: 46px;
-    padding: 56px 40px 40px;
+    padding: 56px 40px 43px;
     position: relative
 
   }
@@ -7909,7 +7920,7 @@ footer .form_section {
     opacity: 1
   }
   .second_header-portfolio {
-    margin-bottom: 135px;
+    margin-bottom: 140px;
   }
   .second_header .second_header_title h3 {
     font-size: 28px;
@@ -7935,7 +7946,7 @@ footer .form_section {
   }
   .second_header-portfolio .second_header_title {
     width: fit-content;
-    top: 155px;
+    top: 158px;
   }
   .second_header_biography{
     background-position: left bottom;
@@ -7987,12 +7998,12 @@ footer .form_section {
   }
   .portfolio_page .portfolio_page_section_three .img_block, .portfolio_page .video_section, .portfolio_page .portfolio_page_section_one .img_block {
     display: inline;
-    max-width: 550px;
+    /*max-width: 550px;*/
     margin: 0 auto;
   }
   .portfolio_page .img_block {
     max-width: 100%;
-    height: 230px;
+    /*height: 230px;*/
   }
   .portfolio .portfolio_container {
     padding-left: 0;
@@ -8022,13 +8033,14 @@ footer .form_section {
     padding-top: 55px
   }
   .portfolio_page .portfolio_page_section_one .info_block {
-    padding: 30px 40px 0 10%;
+    padding: 25px 40px 0 11.5%;
   }
   .portfolio_page h3 {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
+    width: 90%;
  }
   .portfolio_page .icon {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   .portfolio_page .portfolio_page_section_one ul {
     margin-bottom: 18px;
@@ -8045,7 +8057,7 @@ footer .form_section {
     object-fit: cover;
   }
   .portfolio_page .portfolio_page_section_three .img_block {
-    height: 285px;
+    /*height: 285px;*/
     margin-bottom: 20px;
   }
   .portfolio_page .portfolio_page_section_three .info_block, .second_header_biography .biography_info {
@@ -8074,7 +8086,7 @@ footer .form_section {
     top: 0
   }
   .portfolio_page .portfolio_page_section_three {
-    margin-bottom: 0;
+    margin-bottom: -5px;
   }
   .portfolio .btn {
     display: none;
