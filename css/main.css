@@ -6951,9 +6951,41 @@ footer .form_section {
   .portfolio_page .portfolio_page_section_one {
       margin-bottom: 145px;
   }
+  .second_header .second_header_title {
+      width: 58.1%;
+  }
+  .portfolio_page .img_block {
+      margin-right: 55px;
+  }
+  .portfolio_page h3 {
+      margin-bottom: 35px;
+  }
   .map {
       height: 560px;
   }
+  .portfolio_page ul {
+      margin-bottom: 40px;
+  }
+  .portfolio_page .portfolio_page_section_three .img_block {
+      margin-right: 60px;
+      max-width: 57.6%;
+  }
+  .portfolio_page .portfolio_page_section_three {
+      margin-bottom: 100px;
+  }
+  .portfolio_galery {
+    margin-bottom: 130px;
+  }
+  footer {
+    padding: 125px 12% 85px;
+  }
+  footer .form_section {
+    max-width: 260px;
+  }
+/*  .portfolio_page ul li {
+      padding-bottom: 10px;
+      line-height: 16px;
+  }*/
 }
 @media only screen and (max-width:1024px) {
   .owl-carousel .owl-stage {
@@ -6969,7 +7001,7 @@ footer .form_section {
     display: none
   }
   .map {
-      height: 555px;
+      height: 560px;
   }
   .header_portfolio {
   	margin-bottom: 50px;
@@ -6977,6 +7009,18 @@ footer .form_section {
   .news_container .item {
     max-width: 33%;
     margin-bottom: 100px;
+  }
+  .second_header .second_header_title {
+      width: 59.1%;
+  }
+  .portfolio_page h3 {
+      margin-bottom: 27px;
+  }
+  .portfolio_page .portfolio_page_section_three {
+      margin-bottom: 80px;
+  }
+  .portfolio_galery {
+      margin-bottom: 40px;
   }
 
   footer .menu_section {
@@ -6988,11 +7032,14 @@ footer .form_section {
 
 }
 @media only screen and (max-width:1004px) {
+  .portfolio_page .portfolio_page_section_one .info_block {
+      width: 36%;
+  }
   .portfolio_galery {
     margin-bottom: 100px;
   }
   .portfolio_galery .title {
-    width: 65.5%;
+    width: 65%;
   }
   .second_header-portfolio {
     margin-bottom: 70px;
@@ -7040,7 +7087,7 @@ footer .form_section {
     margin-bottom: 40px;
   }
   .portfolio_page .portfolio_page_section_three {
-    margin-bottom: 50px;
+    margin-bottom: 58px;
   }
   .portfolio .portfolio_container {
     display: flex;
@@ -7134,13 +7181,16 @@ footer .form_section {
     margin-bottom: 100px;
   }
   footer {
-    padding: 120px 12% 75px;
+    padding: 120px 12% 85px;
   }
   footer .menu_section {
-   width: 23%;
+   width: 23.5%;
   }
   footer .language {
       margin-top: 43px;
+  }
+  footer .form_section {
+      max-width: 250px;
   }
 }
 @media only screen and (max-width:992px) {
