@@ -7011,7 +7011,7 @@ footer .form_section {
     margin-bottom: 100px;
   }
   .second_header .second_header_title {
-      width: 59.1%;
+      width: 58%;
   }
   .portfolio_page h3 {
       margin-bottom: 27px;
@@ -7073,7 +7073,8 @@ footer .form_section {
     width: 57.5%;
   }
   .portfolio .portfolio_container .item .text_block .icon {
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 12px;
   }
   .portfolio .portfolio_container .item .text_block .tags {
     order: -2;
@@ -7085,6 +7086,7 @@ footer .form_section {
 
   .portfolio .portfolio_container .item .text_block .data {
     margin-bottom: 40px;
+    line-height: 27px;
   }
   .portfolio_page .portfolio_page_section_three {
     margin-bottom: 58px;
@@ -7104,7 +7106,7 @@ footer .form_section {
     display: flex;
     color: #fff;
     overflow: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 101px;
   }
   .portfolio .portfolio_container .item img {
     -webkit-transition: none;
@@ -7139,11 +7141,12 @@ footer .form_section {
     border-bottom: 2px solid #F26C4D;
     line-height: 55px;
     font-size: 41px;
-    width: auto;
+    width: fit-content;
     max-width: 540px;
     margin-bottom: 8px;
     -webkit-transition: auto;
-    transition: auto
+    transition: auto;
+    margin-top: 2px;
   }
   .header_portfolio {
       margin-bottom: 80px;
@@ -7246,7 +7249,7 @@ footer .form_section {
   }
   .portfolio .portfolio_container .item .text_block {
     width: 50%;
-    margin-left: 30%;
+    margin-left: 29%;
     padding-top: 30px;
   }
   .portfolio .portfolio_container .item .img_block {
