@@ -5185,7 +5185,7 @@ header {
 }
 .second_header_biography {
   position: relative;
-  height: calc(100vh + 100px);
+  height: 100vh;
   background: url(../img/autor_main_bg.png) center bottom no-repeat #121618;
   background-size: contain;
   color: #fff;
@@ -5210,7 +5210,7 @@ header {
   height: 100%
 }
 .second_header_biography .biography_info {
-  width: 100%;
+  width: 72.5%;
   max-width: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6348,7 +6348,7 @@ header {
     transition: .2s all
 }
 .reviews .left:hover::before, .awards .left:hover::before {
-    opacity: .4
+    opacity: 1
 }
 .awards .right, .reviews .right {
     right: 0
@@ -6359,8 +6359,8 @@ header {
     -webkit-transition: .2s all;
     transition: .2s all
 }
-.reviews .right:hover::after, .awards .right:hover::after {
-    opacity: .4
+.reviews .right:hover::before, .awards .right:hover::before {
+    opacity: 1
 }
 .awards_info_section {
   padding: 0 50px;
