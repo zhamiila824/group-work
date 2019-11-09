@@ -7929,9 +7929,6 @@ footer .form_section {
     width: 200px;
     height: 200px;
   }
-  .contact_page .right{
-    margin-top: 0;
-  }
   .main_news .owl-carousel {
     padding: 0
   }
@@ -8589,7 +8586,7 @@ footer .form_section {
     margin-bottom: 0;
   }
   .contact_page .right{
-    margin-top: 0;
+    margin-top: 80px;
   }
   .contact_page .left .recaptcha, .contact_page .left .btn{
     margin-top: 5px;
