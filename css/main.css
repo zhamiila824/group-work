@@ -7024,6 +7024,13 @@ footer .form_section {
   }
   .contact_page .left {
     margin-left: calc(59.1% - 480px);
+    margin-top: 0;
+  }
+  .contact_page{
+    margin-bottom: 100px;
+  }
+  .contact_page .right{
+    margin-top: 0;
   }
   .portfolio_page h3 {
       margin-bottom: 27px;
