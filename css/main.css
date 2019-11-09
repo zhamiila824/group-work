@@ -5801,7 +5801,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 150px
+  margin-bottom: 140px
 }
 .portfolio_page .img_block {
   margin-right: 95px;
@@ -5817,7 +5817,10 @@ header {
 .portfolio_page h3 {
   font-size: 24px;
   line-height: 32px;
-  margin-bottom: 34px
+  margin-bottom: 40px
+}
+.portfolio_page .portfolio_page_section_one .info_block h3 span {
+  display: block;
 }
 .portfolio_page ul {
   margin-bottom: 140px
@@ -6676,10 +6679,9 @@ footer .form_section {
       padding-bottom: 10px;
   }
   .portfolio_page .portfolio_page_section_three {
-    margin-bottom: 113px;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start
+    margin-bottom: 115px;
+    align-items: end;
+
   }
   .portfolio_galery {
     margin-bottom: 150px;
@@ -6693,6 +6695,12 @@ footer .form_section {
   }
   .portfolio_page h3 {
     margin-bottom: 36px;
+  }
+  .portfolio_page .portfolio_page_section_one .info_block {
+  	width: 30%;
+  }
+  .portfolio_page .portfolio_page_section_one .info_block h3 span {
+    display: inline;
   }
   .portfolio_page ul {
     margin-bottom: 95px;
@@ -6755,6 +6763,33 @@ footer .form_section {
   .main_news {
     padding: 0 0 150px 50px;
 
+  }
+  .second_header .second_header_title {
+    width: 59.1%;
+  }
+  .portfolio_page .portfolio_page_section_one .info_block {
+    width: 27%;
+  }
+  .portfolio_page .portfolio_page_section_one {
+    margin-bottom: 112px;
+  }
+  .portfolio_page .portfolio_page_section_three .info_block {
+    width: 31%;
+  }
+  .portfolio_page .portfolio_page_section_three {
+     margin-bottom: 102px;
+  }
+  .portfolio_galery .title {
+      line-height: 40px;
+  }
+  footer {
+    padding: 170px 12% 50px;
+  }
+  footer .menu_section {
+   width: 19.7%;
+  }
+  footer .form_section {
+   max-width: 322px;
   }
 }
 @media only screen and(max-width: 1280px){
@@ -6879,7 +6914,7 @@ footer .form_section {
     padding-top: 10px;
   }
   .portfolio_page .img_block {
-    margin-right: 50px;
+    margin-right: 70px;
   }
   .portfolio .portfolio_container .item {
     width: 50%;
@@ -6891,9 +6926,15 @@ footer .form_section {
   .portfolio .portfolio_container .item:nth-child(5) {
     display: none;
   }
-  .map {
-    height: 675px;
+  .portfolio_page .portfolio_page_section_one .info_block span {
+  	display: inline;
   }
+/*  .portfolio_page .portfolio_page_section_one .info_block {
+  	width: 30%;
+  }*/
+/*  .map {
+    height: 675px;
+  }*/
   .main_news .title {
       width: 61%;
   }
