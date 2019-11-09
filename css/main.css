@@ -5150,7 +5150,7 @@ header {
 }
 .second_header .second_header_title {
   text-align: right;
-  width: 59.8%;
+  width: 60.3%;
   left: 50px;
   position: relative;
   top: -5px
@@ -5805,7 +5805,11 @@ header {
 }
 .portfolio_page .img_block {
   margin-right: 95px;
-  max-width: 59.8%
+  max-width: 59.2%
+}
+.portfolio_page .portfolio_page_section_three .img_block {
+  margin-right: 60px;
+  max-width: 60.3%
 }
 .portfolio_page .icon {
   margin-bottom: 60px
@@ -5816,7 +5820,7 @@ header {
   margin-bottom: 34px
 }
 .portfolio_page ul {
-  margin-bottom: 130px
+  margin-bottom: 140px
 }
 .portfolio_page ul li {
   border-bottom: 1px solid #303030;
@@ -5863,10 +5867,10 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 150px
+  margin-bottom: 155px
 }
 .map {
-  height: 665px;
+  height: 710px;
   width: 100%;
 }
 .portfolio_container {
@@ -5876,7 +5880,7 @@ header {
 .portfolio_galery {
   padding-bottom: 140px;
   padding: 0 50px;
-  margin-bottom: 150px;
+  margin-bottom: 145px;
   overflow: hidden;
   position: relative;
 }
@@ -5884,12 +5888,13 @@ header {
   font-size: 24px;
   text-transform: uppercase;
   color: #FFFF;
-  line-height: 36px;
-  width: 63.5%;
+  line-height: 32px;
+  width: 63.9%;
   text-align: right;
   margin-bottom: 50px;
   border-bottom: 2px solid #F26C4D;
   font-weight: 500;
+  display: block;
 }
 .portfolio_galery .owl-carousel {
   padding: 0 20px;
@@ -5940,6 +5945,7 @@ header {
   opacity: .7;
   transition: .2s all;
 }
+
 .btn_menu, .btn_menu_mobile {
   padding-top: 21px;
   padding-left: 13px;
@@ -5955,7 +5961,7 @@ header {
 }
 .portfolio_page .portfolio_page_section_three p {
   line-height: 21px;
-  margin-bottom: 60px
+  margin-bottom: 50px
 }
 .contact_page {
   display: flex;
@@ -6250,9 +6256,6 @@ header {
  .modal-galery .mfp-title {
    display: none;
  }
-.portfolio_galery .title {
-  display: block;
-}
 .reviews .title, .awards .title, .awards_info_section .item2 .left .text_block {
     text-align: right
 }
@@ -6665,21 +6668,42 @@ footer .form_section {
   }
 }
 @media only screen and (max-width:1500px) {
+
+  .second_header .second_header_title {
+      width: 59.2%;
+  }
+  .portfolio_page ul li {
+      padding-bottom: 10px;
+  }
   .portfolio_page .portfolio_page_section_three {
-    margin-bottom: 105px;
+    margin-bottom: 113px;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start
   }
+  .portfolio_galery {
+    margin-bottom: 150px;
+  }
   .portfolio_page .img_block {
-    margin-right: 65px;
+    margin-right: 75px;
   }
   .portfolio_page .portfolio_page_section_one {
     padding: 0px 50px 0;
-    margin-bottom: 115px;
+    margin-bottom: 145px;
+  }
+  .portfolio_page h3 {
+    margin-bottom: 36px;
   }
   .portfolio_page ul {
-    margin-bottom: 85px;
+    margin-bottom: 95px;
+  }
+  .portfolio_page .portfolio_page_section_three .img_block {
+    margin-right: 57px;
+    max-width: 59.3%;
+  }
+  .portfolio_page .portfolio_page_section_three .info_block {
+    width: 30%;
+    max-width: 480px;
   }
   .reviews_container {
     padding-left: 115px;
@@ -6702,6 +6726,13 @@ footer .form_section {
   }
   .second_header-portfolio {
   	margin-bottom: 70px;
+  }
+  footer .menu_section {
+     width: 18%;
+
+  }
+  footer .form_section {
+     max-width: 345px;
   }
 }
 @media only screen and (max-width:1366px) {
