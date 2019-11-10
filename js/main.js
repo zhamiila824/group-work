@@ -243,7 +243,7 @@ $(document).ready(function() {
 		}
 		console.log(newsText.length);
 	}
-	if($(window).width() > 414){
+	if(!$(".news_container").hasClass("awards_container")){
 		$(".news_container .item .content").each(function(i) {
 			newsShortText(this);
 		});

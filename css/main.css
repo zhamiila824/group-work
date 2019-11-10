@@ -8668,6 +8668,12 @@ footer .form_section {
   .second_header .second_header_title {
     left: 25px;
   }
+  .second_header .second_header_title_contacts{
+    left: 40px;
+  }
+  .second_header_biography .second_header_title{
+    left: 0;
+  }
     .second_header_biography{
         height: 1130px;
     }
