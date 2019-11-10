@@ -6675,6 +6675,9 @@ footer .form_section {
   .second_header .second_header_title {
       width: 59.2%;
   }
+  .second_header_biography .second_header_title{
+    width: 100%;
+  }
   .contact_page .left {
     margin-left: calc(59.2% - 480px);
   }
@@ -6769,6 +6772,9 @@ footer .form_section {
   }
   .second_header .second_header_title {
     width: 59.1%;
+  }
+  .second_header_biography .second_header_title{
+    width: 100%;
   }
   .contact_page .left {
     margin-left: calc(59.1% - 480px);
@@ -6960,6 +6966,9 @@ footer .form_section {
   .second_header .second_header_title {
       width: 58.1%;
   }
+  .second_header_biography .second_header_title{
+    width: 100%;
+  }
   .contact_page .left {
     margin-left: calc(58.1% - 480px);
   }
@@ -7021,6 +7030,26 @@ footer .form_section {
   }
   .second_header .second_header_title {
       width: 58%;
+  }
+  .second_header_biography .second_header_title{
+    width: 100%;
+  }
+  .second_header_biography{
+    height: 768px;
+    margin-bottom: 50px;
+  }
+  .awards{
+    margin-bottom: 0;
+  }
+  .awards_info_section .item1{
+    margin-bottom: 0;
+  }
+  .awards_info_section{
+    margin-bottom: 50px;
+  }
+  .reviews .owl-carousel .owl-stage-outer{
+    overflow: hidden;
+    width: 800px;
   }
   .contact_page .left {
     margin-left: calc(59.1% - 480px);
@@ -7187,9 +7216,6 @@ footer .form_section {
     }
     .awards .item .item_inner {
         max-width: 444px
-    }
-    .reviews .owl-carousel .owl-stage-outer{
-        overflow:hidden;
     }
     .awards_info_section{
         margin-bottom: 95px;
