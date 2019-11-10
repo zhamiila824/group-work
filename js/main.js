@@ -243,38 +243,42 @@ $(document).ready(function() {
 		}
 		console.log(newsText.length);
 	}
+	if($(window).width() > 414){
+		$(".news_container .item .content").each(function(i) {
+			newsShortText(this);
+		});
+		$(".news_container .item .more_btn").click(function(){
+			if( $(this).hasClass('close') ) {
+				$(this).parent().parent().find('.content').hide();
+				$(this).parent().parent().find('.shortText').show();
+				$(this).parent().parent().removeClass('active');
+				console.log('true');
+			} else {
+				$(this).parent().parent().find('.content').show();
+				$(this).parent().parent().find('.shortText').hide();
+				$(this).parent().parent().addClass('active');
+				console.log('false');
+			}
+		});
 
-	$(".news_container .item .content").each(function(i) {
-		newsShortText(this);
-	});
+		$(".news_container .item .content_wrap .more_btn").click(function(){
+			if( $(this).hasClass('close') ) {
+				$(this).parent().parent().find('.content').hide();
+				$(this).parent().parent().find('.shortText').show();
+				$(this).parent().parent().parent().removeClass('active');
+				console.log('true');
+			} else {
+				$(this).parent().parent().find('.content').show();
+				$(this).parent().parent().find('.shortText').hide();
+				$(this).parent().parent().parent().addClass('active');
+				console.log('false');
+			}
+		});
+	}
 
-	$(".news_container .item .more_btn").click(function(){
-		if( $(this).hasClass('close') ) {
-			$(this).parent().parent().find('.content').hide();
-			$(this).parent().parent().find('.shortText').show();
-			$(this).parent().parent().removeClass('active');
-			console.log('true');
-		} else {
-			$(this).parent().parent().find('.content').show();
-			$(this).parent().parent().find('.shortText').hide();
-			$(this).parent().parent().addClass('active');
-			console.log('false');
-		}
-	});
 
-	$(".news_container .item .content_wrap .more_btn").click(function(){
-		if( $(this).hasClass('close') ) {
-			$(this).parent().parent().find('.content').hide();
-			$(this).parent().parent().find('.shortText').show();
-			$(this).parent().parent().parent().removeClass('active');
-			console.log('true');
-		} else {
-			$(this).parent().parent().find('.content').show();
-			$(this).parent().parent().find('.shortText').hide();
-			$(this).parent().parent().parent().addClass('active');
-			console.log('false');
-		}
-	});
+
+
 
 
 
