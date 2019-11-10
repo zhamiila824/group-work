@@ -1,6 +1,4 @@
 $(document).ready(function() {
-
-
     $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
         type: 'iframe',
         mainClass: 'mfp-fade',
@@ -49,17 +47,11 @@ $(document).ready(function() {
 
   });
 
-
-
-
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
-
-
 	$('.open-popup-link').magnificPopup({
 		type:'inline',
 		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 	});
-
 
 	$('.img-link').magnificPopup({
 		type  : 'image',
@@ -75,8 +67,6 @@ $(document).ready(function() {
 		type  : 'iframe',
 
 	});
-
-
 
 	if($(window).width() < 768) {
 	    $(".main_news_container .slider.owl-carousel").removeClass('owl-carousel').trigger('destroy.owl.carousel');

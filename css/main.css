@@ -8718,3 +8718,22 @@ footer .form_section {
     width: 63%;
   }
 }
+.video_icon{
+  font-size: 30px;
+  top: -50px;
+  color: #F26C4D;
+}
+
+.item_news{
+  position: relative;
+}
+.video_modal {
+  position: absolute;
+  color: #F26C4D;
+  font-size: 15px;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  right: 32px;
+  top: 22px;
+}
