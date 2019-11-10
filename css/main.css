@@ -5340,7 +5340,6 @@ header {
   border: 2px solid #F26C4D;
   -webkit-transition: .2s all;
   transition: .2s all;
-  display: none;
   color:white;
 }
 .main_portfolio a.btn:hover {
@@ -7427,7 +7426,7 @@ footer .form_section {
     padding: 0;
     margin-bottom: 3px
   }
-  .portfolio_page .portfolio_page_section_three .info_block, 
+  .portfolio_page .portfolio_page_section_three .info_block,
   .second_header_biography .biography_info {
     max-width: 100%;
     padding: 0 40px 0 37%;
