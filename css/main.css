@@ -8047,7 +8047,7 @@ footer .form_section {
     margin-bottom: 7px;
   }
   .portfolio_page .portfolio_page_section_one .info_block {
-    padding: 25px 40px 0 11.5%;
+    padding: 25px 40px;
   }
   .portfolio_page h3 {
     margin-bottom: 26px;
@@ -8075,6 +8075,10 @@ footer .form_section {
     margin-bottom: 20px;
   }
   .portfolio_page .portfolio_page_section_three .info_block, .second_header_biography .biography_info {
+    padding: 0 40px;
+    letter-spacing: -0.2px;
+  }  
+ .second_header_biography .biography_info {
     padding: 0 40px 0 10%;
     letter-spacing: -0.2px;
   }
@@ -8424,7 +8428,6 @@ footer .form_section {
     right: 40px
   }
   .second_header .second_header_title{
-    width: fit-content;
     text-align: left;
     top: 105px;
   }
@@ -8620,6 +8623,10 @@ footer .form_section {
   .portfolio .portfolio_container .item .text_block {
     margin-bottom: 13px;
   }
+/*  .portfolio_page .portfolio_page_section_one .info_block {
+    padding: 25px 25px;
+  }*/
+
   .copyright{
     height: 70px;
   }
@@ -8628,12 +8635,21 @@ footer .form_section {
   footer .contacts_section .social .youtube {
     margin: 0 15px
   }
-}
+  .portfolio_page .portfolio_page_section_three .info_block {
+      padding: 0 25px;
+  }
+  .portfolio_galery .title {
+    margin-left: 25px;
+  }
+  .second_header .second_header_title {
+    left: 25px;
+  }
 .news_header {
     margin-bottom: 80px;
 }
 .news_blocks {
     margin-bottom: 150px;
+}
 }
 
 
