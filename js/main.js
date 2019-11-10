@@ -78,19 +78,19 @@ $(document).ready(function() {
 
 
 
-	if($(window).width() < 992) {
+	if($(window).width() < 768) {
 	    $(".main_news_container .slider.owl-carousel").removeClass('owl-carousel').trigger('destroy.owl.carousel');
 	} else {
 	    $(".main_news_container .slider").addClass('owl-carousel');
 	};
 	$(window).resize(function(){
-	    if($(window).width() < 992){
+	    if($(window).width() < 768){
 	        $(".main_news_container .slider.owl-carousel").removeClass('owl-carousel').trigger('destroy.owl.carousel');
 	    } else {
 	        $(".main_news_container .slider").addClass('owl-carousel');
 	    }
 	});
-	
+
 
 	$(".main_news_container .slider.owl-carousel").owlCarousel({
 	    loop: false,
