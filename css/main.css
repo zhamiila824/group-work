@@ -7217,13 +7217,6 @@ footer .form_section {
     .awards .item .item_inner {
         max-width: 444px
     }
-    .awards_info_section{
-        margin-bottom: 95px;
-    }
-    .awards_info_section .item1 {
-        margin-bottom: 40px
-    }
-
 
   header {
     margin-bottom: 100px;
@@ -7480,7 +7473,7 @@ footer .form_section {
   }
   .awards{
       margin-top: 50px;
-    margin-bottom: 90px;
+    margin-bottom: 0;
   }
   .reviews_container{
     padding: 0 75px;
@@ -7933,17 +7926,6 @@ footer .form_section {
   .awards .owl-dots {
     display: none;
   }
-  .awards_container .owl-item{
-    max-width: 384px;
-  }
-  .awards_container .item{
-    width: 384px;
-    padding-left: 50px;
-    margin-bottom: 0;
-  }
-  .awards_container .slider{
-      margin-left: -55px;
-  }
   .reviews_content{
     margin: 17px 35px;
   }
@@ -8041,6 +8023,17 @@ footer .form_section {
   .main_news .news_container .item .item_inner {
   	padding: 0 10px 20px;
   }
+    .awards_container .owl-item{
+        max-width: 384px;
+    }
+    .awards_container .item{
+        width: 384px;
+        padding-left: 50px;
+        margin-bottom: 0;
+    }
+    .awards_container .slider{
+        margin-left: -55px;
+    }
   .portfolio_page .portfolio_page_section_three .img_block, .portfolio_page .video_section, .portfolio_page .portfolio_page_section_one .img_block {
     display: inline;
     /*max-width: 550px;*/
