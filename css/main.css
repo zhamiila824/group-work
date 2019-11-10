@@ -7098,6 +7098,9 @@ footer .form_section {
   .second_header_biography .second_header_title{
       width: 100%;
   }
+  .second_header_biography .biography_info{
+    padding-right: 0;
+  }
   .portfolio_galery .left, .portfolio_galery .right {
       top: 206px;
   }
@@ -7211,13 +7214,9 @@ footer .form_section {
   .main_news_container .item {
     margin-bottom: 30px;
   }
-    .awards .title, .reviews .title{
-        width: 65.7%;
-    }
     .awards .item .item_inner {
         max-width: 444px
     }
-
   header {
     margin-bottom: 100px;
   }
@@ -7344,6 +7343,9 @@ footer .form_section {
   }
   .second_header_biography .second_header_title{
     width: 100%;
+    left: 0;
+    padding-left: 50px;
+    top: 95px;
   }
   .second_header-news {
     padding-bottom: 130px;
@@ -7426,8 +7428,7 @@ footer .form_section {
     padding: 0;
     margin-bottom: 3px
   }
-  .portfolio_page .portfolio_page_section_three .info_block,
-  .second_header_biography .biography_info {
+  .portfolio_page .portfolio_page_section_three .info_block {
     max-width: 100%;
     padding: 0 40px 0 37%;
     width: 100%;
@@ -7447,12 +7448,29 @@ footer .form_section {
   .portfolio_galery .left, .portfolio_galery .right {
     top: 170px;
   }
+  .second_header_biography{
+    padding-bottom: 30px;
+  }
+  .second_header_biography .logo {
+    top: 50px;
+    left: 50px;
+  }
+  .second_header_biography .left{
+    width: 62.8%;
+  }
   .second_header_biography .right{
-    float: right;
+    width: 37.2%;
   }
   .second_header_biography .biography_info{
     max-width:100%;
-    padding:0 40px
+    padding: 0;
+    width: 67.4%;
+  }
+  .awards .title, .reviews .title{
+    width: 64.2%;
+  }
+  .awards .owl-item{
+    max-width: 500px;
   }
   .news_container .item {
     max-width: 50%;
@@ -7463,13 +7481,6 @@ footer .form_section {
   }
   .news_container .item:nth-child(2n) {
     display: none;
-  }
-  .awards_container .item{
-    width: 500px;
-    padding-left: 60px;
-  }
-  .awards_container .slider{
-    margin-left: -30px;
   }
   .awards{
       margin-top: 50px;
@@ -8656,6 +8667,12 @@ footer .form_section {
   }
   .second_header .second_header_title {
     left: 25px;
+  }
+  .second_header .second_header_title_contacts{
+    left: 40px;
+  }
+  .second_header_biography .second_header_title{
+    left: 0;
   }
     .second_header_biography{
         height: 1130px;
