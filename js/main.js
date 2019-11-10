@@ -182,8 +182,8 @@ $(document).ready(function() {
 					dots: false
 	    },
 			1004:{
-	    	items: 1.5,
-				margin:25,
+	    	items: 1.55,
+				margin:0,
 	    	},
 			1280: {
 	        items: 2,
