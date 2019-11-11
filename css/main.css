@@ -8886,10 +8886,6 @@ footer .form_section {
 }
 
 @media only screen and (max-width:1024px) {
-    .main_header_name {
-        left: 8.9%
-    }
-
     .main_header_info .autor_title,
     .main_header_info .first_content {
         display: none
@@ -16532,7 +16528,7 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 11.2%;
+    margin-left: 11.1%;
 }
 
 .main_portfolio .item:nth-child(2n) .info_block .data,
@@ -16548,11 +16544,11 @@ header {
 }
 
 .main_portfolio .img_block {
-    width: 65%
+    width: 59.5%
 }
 
 .main_portfolio .info_block {
-    width: 45%
+    width: 29.4%;
 }
 
 .main_portfolio .tags {
@@ -18417,6 +18413,12 @@ footer .form_section {
     .main_header_info .first_content {
         margin-bottom: 50px;
     }
+    .main_portfolio .info_block {
+        width: 32.3%;
+    }
+    .main_portfolio .item:nth-child(2n) .info_block {
+        margin-left: 8.2%;
+    }
     .awards_info_section .item2 .left .text_block {
         width: 85.1%;
         margin-left: 14.9%;
@@ -18610,7 +18612,7 @@ footer .form_section {
 @media only screen and (max-width:1300px) {
     header {
         height: auto;
-        margin-bottom: 100px;
+        margin-bottom: 110px;
     }
 
     .header_slider {
@@ -18760,10 +18762,18 @@ footer .form_section {
 @media only screen and (max-width:1024px) {
     header{
         height: 768px;
+        margin-bottom: 100px;
     }
 
     .header_video_bg{
         height: 768px;
+    }
+
+    .main_portfolio .info_block {
+        width: 40.5%;
+    }
+    .main_portfolio .item:nth-child(2n) .info_block {
+        margin-left: 0;
     }
 
     .owl-carousel .owl-stage {
@@ -18772,10 +18782,6 @@ footer .form_section {
 
     .main_news {
         padding: 0 0 150px 40px;
-    }
-
-    .main_header_name {
-        left: 8.9%
     }
 
     .main_header_info .autor_title,
@@ -19053,6 +19059,19 @@ footer .form_section {
 }
 
 @media only screen and (max-width:992px) {
+    header{
+        height: 100vh;
+    }
+    .main_portfolio .title{
+        padding-left: 50px;
+    }
+
+    .main_portfolio .data,
+    .main_portfolio .icon,
+    .main_portfolio .tags{
+        margin-left: 50px;
+    }
+
 
     .btn_menu,
     .btn_menu_mobile {
@@ -19507,7 +19526,7 @@ footer .form_section {
     /*height: 1124px;*/
     /*}*/
     .header_video_bg {
-        height: 562px;
+        height: 100vh;
         width: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -20921,12 +20940,6 @@ footer .form_section {
 /*border:1px solid red*/
 /*}*/
 /*}*/
-
-@media only screen and (max-width:1024px) {
-    .main_portfolio .img_block {
-        width: 59%;
-    }
-}
 
 @media only screen and (max-width: 992px) {
     .main_portfolio .img_block {
