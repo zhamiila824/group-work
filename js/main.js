@@ -86,7 +86,7 @@ $(document).ready(function() {
 	    loop: false,
 	    autoplay: false,
 	    mouseDrag: false,
-	    nav: false,
+	    nav: true,
 	    navText: false,
 	    dots: false,
 	    margin: 60,
@@ -109,6 +109,7 @@ $(document).ready(function() {
 	});
 
 
+<<<<<<< HEAD
 	$(".main_news_container .left").click(function() {
 		$(".main_news_container .slider.owl-carousel").trigger('prev.owl.carousel');
 		$(this).css({'opacity': 1});
@@ -121,6 +122,8 @@ $(document).ready(function() {
 		$(".main_news_container .left").css({'opacity': 0.7});
 	});
 
+=======
+>>>>>>> 7c77b89bd1d6db68f6e6385b0036b2f305bd73c0
 	$(".news_container .img_block .owl-carousel").owlCarousel({
 		// autoWidth: true,
 		items: 1,
@@ -157,6 +160,7 @@ $(document).ready(function() {
 		$(".header_slider .left").css({'opacity': 0.7});
 	});
 
+
 	$(".main_portfolio .btn").click(function () {
 		$(".main_portfolio .item-last").toggle();
 	})
@@ -166,7 +170,7 @@ $(document).ready(function() {
 		loop: false,
 		autoplay: false,
 		mouseDrag: false,
-		nav: false,
+		nav: true,
 		navText: false,
 		dots: true,
 		items: 1,
@@ -176,11 +180,11 @@ $(document).ready(function() {
 					mouseDrag: true
 	    },
 			768 : {
-	        items: 1.47,
+	        items: 2,
 					dots: false
 	    },
 			1004:{
-	    	items: 1.55,
+	    	items: 2,
 				margin:0,
 	    	},
 			1280: {
@@ -188,13 +192,14 @@ $(document).ready(function() {
 				margin: 30,
 	    },
 			1366:{
-	    	items: 2.1,
+	    	items: 2,
 	    	},
 			1500: {
 	        items: 3
 	    }
 		}
 	});
+
 
 	$(".awards .item .img_block").on('mousemove', function (event) {
 		$(this).find("img").css({"filter" : "brightness(0.4)"});
@@ -306,6 +311,7 @@ $(document).ready(function() {
 	//
 	// });
 
+<<<<<<< HEAD
 
 
     $(".portfolio_galery .portfolio_item").on('mousemove', function (event) {
@@ -332,6 +338,8 @@ $(document).ready(function() {
 		$(this).css({'opacity': 1});
 		$(".portfolio_galery .left").css({'opacity': 0.7});
 	});
+=======
+>>>>>>> 7c77b89bd1d6db68f6e6385b0036b2f305bd73c0
 
 
 	$(".portfolio_galery .slider.owl-carousel").owlCarousel({
@@ -339,7 +347,7 @@ $(document).ready(function() {
 	    loop: false,
 	    autoplay: false,
 	    mouseDrag: false,
-	    nav: false,
+	    nav: true,
 	    navText: false,
 	    dots: true,
 	    autoWidth: true,
@@ -373,7 +381,7 @@ $(document).ready(function() {
 		loop: false,
 		autoplay: false,
 		mouseDrag: false,
-		nav: false,
+		nav: true,
 		navText: false,
 		dots: true,
 		autoWidth: true,
@@ -397,6 +405,7 @@ $(document).ready(function() {
 		}
 	});
 
+<<<<<<< HEAD
 	$(".reviews_container .left").click(function() {
 		$(".reviews_container .slider.owl-carousel").trigger('prev.owl.carousel');
 		$(this).css({'opacity': 1});
@@ -409,4 +418,6 @@ $(document).ready(function() {
 		$(".reviews_container .left").css({'opacity': 0.7});
 	});
 
+=======
+>>>>>>> 7c77b89bd1d6db68f6e6385b0036b2f305bd73c0
 });
