@@ -5408,26 +5408,30 @@ header {
     color: #F26C4D
 }
 .main_news .left {
-    left: 0
+    left: 0;
+    opacity: 0.7;
+
 }
 .main_news .left::before{
     background: url(../img/arrows.png) 0 -90px no-repeat;
-    opacity: .7;
+    opacity: 1;
     transition: .2s all
 }
 .main_news .left:hover::before {
-    opacity: .4
+    opacity: 1
 }
 .main_news .right{
     right: 50px;
+    opacity: 0.7;
+
 }
 .main_news .right::before{
     background: url(../img/arrows.png) -48px -90px no-repeat;
-    opacity: .7;
+    opacity: 1;
     transition: .2s all
 }
 .main_news .right:hover::after{
-    opacity: .4
+    opacity: 1
 }
 .news_container {
   position: relative;
@@ -5913,12 +5917,36 @@ header {
 .portfolio_galery .porfolio_inner {
   width: 480px;
   height: 360px;
+  position: relative;
 }
 .portfolio_galery .porfolio_inner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+.galery_hover:hover {
+  /*transition: 0.3s;*/
+  /*filter: opacity(0.5);*/
+  position: relative;
+}
+ 
+
+
+.loup {
+	width: 100%;
+	height: 100%;
+/*	top: 50%;
+	left: 50%;
+	transform: translate(-50%);*/
+	position: absolute;
+	background:  url(../img/loup.png) no-repeat;
+	background-size: 50px 50px;
+	background-position: center;
+	z-index: 999;
+	cursor: pointer;
+	display: none;
+}
+
 .portfolio_galery .left, .portfolio_galery .right {
   position: absolute;
   z-index: 99;
@@ -6234,7 +6262,8 @@ header {
     position: absolute;
     top: 146px;
     z-index: 99;
-    cursor: pointer
+    cursor: pointer;
+    opacity: 0.7
 }
 .reviews .left, .reviews .right{
     top: 55px;
@@ -6310,6 +6339,9 @@ header {
 .reviews .item .img_block, .reviews .item h4, .awards .item .img_block, .awards .item h4 {
     margin-bottom: 30px
 }
+.awards .item .img_block{
+	position: relative;
+}
 .reviews .item .item_inner, .awards .item .item_inner {
     max-width: 500px
 }
@@ -6347,7 +6379,8 @@ header {
     color: #F26C4D
 }
 .reviews .left, .awards .left {
-    left: 0
+    left: 0;
+    opacity: .7;
 }
 .reviews .left::before, .awards .left::before {
     background: url(../img/arrows.png) 0 -90px no-repeat;
@@ -6356,19 +6389,19 @@ header {
     transition: .2s all
 }
 .reviews .left:hover::before, .awards .left:hover::before {
-    opacity: 0.4
+    opacity: 0.4;
+    opacity: .7;
 }
 .awards .right, .reviews .right {
     right: 0
 }
 .reviews .right::before, .awards .right::before {
     background: url(../img/arrows.png) -48px -90px no-repeat;
-    opacity: .7;
     -webkit-transition: .2s all;
     transition: .2s all
 }
 .reviews .right:hover::after, .awards .right:hover::after {
-    opacity: 0.4
+    opacity: 1
 }
 .awards_info_section {
   padding: 0 50px;
