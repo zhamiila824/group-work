@@ -6356,7 +6356,7 @@ header {
     transition: .2s all
 }
 .reviews .left:hover::before, .awards .left:hover::before {
-    opacity: 1
+    opacity: 0.4
 }
 .awards .right, .reviews .right {
     right: 0
@@ -6367,8 +6367,8 @@ header {
     -webkit-transition: .2s all;
     transition: .2s all
 }
-.reviews .right:hover::before, .awards .right:hover::before {
-    opacity: 1
+.reviews .right:hover::after, .awards .right:hover::after {
+    opacity: 0.4
 }
 .awards_info_section {
   padding: 0 50px;
@@ -8529,9 +8529,6 @@ footer .form_section {
       top: 110px;
   }
 
-  .main_news a.btn {
-      display: none;
-   }
   .awards .owl-dots, .reviews .owl-dots {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8744,6 +8741,9 @@ footer .form_section {
     .news_blocks {
       margin:0;
     }
+    .news_blocks a.btn{
+      display: none;
+    }
 }
 
 
@@ -8775,11 +8775,19 @@ footer .form_section {
 }
 .video_modal {
   position: absolute;
-  color: #F26C4D;
-  font-size: 15px;
-  padding: 0;
-  text-align: right;
-  margin: 0;
-  right: 32px;
-  top: 22px;
+  right: 130px;
+  top: 138px;
+}
+
+a.video_play {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background: transparent  url("../fonts/icomoon/media-play (1).png") no-repeat;
+  opacity: 0.8;
+}
+
+.owl-carousel .owl-item .video_block {
+  display: block;
+  height: 360px;
 }
