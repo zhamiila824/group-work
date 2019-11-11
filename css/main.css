@@ -8729,6 +8729,9 @@ footer .form_section {
     .news_blocks {
       margin:0;
     }
+    .news_blocks a.btn{
+      display: none;
+    }
 }
 
 
