@@ -5025,7 +5025,7 @@ header {
 .header_slider .slider_info_block, .main_header_info {
   color: #fff;
   position: absolute;
-  right: 12%;
+  left: 62.1%;
   max-width: 480px;
   bottom: 50px
 }
@@ -5076,10 +5076,10 @@ header {
   position: absolute;
   bottom: 50px;
   left: 11.9%;
-  width: 48%
+  width: 47%
 }
 .main_header_info {
-  width: 26%;
+  width: 24.7%;
   z-index: 10
 }
 .main_header_info .autor_title {
@@ -5251,7 +5251,8 @@ header {
   align-items: flex-end;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex
+  display: flex;
+  margin-left: 11.2%;
 }
 .main_portfolio .item:nth-child(2n) .info_block .data, .main_portfolio .item:nth-child(2n) .info_block .icon, .main_portfolio .item:nth-child(2n) .info_block .tags {
   margin-left: 0;
@@ -5262,7 +5263,7 @@ header {
   padding-left: 0
 }
 .main_portfolio .img_block {
-  width: 55%
+  width: 65%
 }
 .main_portfolio .info_block {
   width: 45%
@@ -5355,7 +5356,7 @@ header {
 
 .main_news .title {
   color: #121618;
-  width: 61.8%;
+  width: 61.1%;
   font-size: 42px;
   line-height: 55px;
   text-transform: uppercase;
