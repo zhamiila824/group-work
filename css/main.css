@@ -6665,6 +6665,20 @@ footer .form_section {
   line-height: 21px;
   height: 90px
 }
+.news_blocks{
+  margin-bottom: 50px;
+}
+.news_blocks a.btn{
+  width: 100px;
+  height: 35px;
+  margin: 0 auto;
+  line-height: 30px;
+  font-size: 16px;
+  border: 2px solid #F26C4D;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  color: white;
+}
 @media only screen and(max-width: 1600px){
   .awards_info_section .item1 .text_block p {
     line-height: 19px
