@@ -16322,11 +16322,11 @@ header {
     position: absolute;
     bottom: 50px;
     left: 11.9%;
-    width: 48%
+    width: 47%
 }
 
 .main_header_info {
-    width: 26%;
+    width: 24.7%;
     z-index: 10
 }
 
@@ -16531,7 +16531,8 @@ header {
     align-items: flex-end;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    margin-left: 11.2%;
 }
 
 .main_portfolio .item:nth-child(2n) .info_block .data,
@@ -16547,7 +16548,7 @@ header {
 }
 
 .main_portfolio .img_block {
-    width: 55%
+    width: 65%
 }
 
 .main_portfolio .info_block {
@@ -18757,6 +18758,14 @@ footer .form_section {
 }
 
 @media only screen and (max-width:1024px) {
+    header{
+        height: 768px;
+    }
+
+    .header_video_bg{
+        height: 768px;
+    }
+
     .owl-carousel .owl-stage {
         width: max-content;
     }
@@ -18849,7 +18858,6 @@ footer .form_section {
     footer .language {
         margin-top: 45px;
     }
-
 }
 
 @media only screen and (max-width:1004px) {
