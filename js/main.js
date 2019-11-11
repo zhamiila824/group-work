@@ -291,10 +291,14 @@ $(document).ready(function() {
 
 	$(".portfolio_galery .left").click(function() {
 		$(".portfolio_galery .slider.owl-carousel").trigger('prev.owl.carousel');
+		$(this).css({'opacity': 1});
+		$(".portfolio_galery .right").css({'opacity': 0.7});
 	});
 
 	$(".portfolio_galery .right").click(function() {
 		$(".portfolio_galery .slider.owl-carousel").trigger('next.owl.carousel');
+		$(this).css({'opacity': 1});
+		$(".portfolio_galery .left").css({'opacity': 0.7});
 	});
 
 	$(".portfolio_galery .slider.owl-carousel").owlCarousel({

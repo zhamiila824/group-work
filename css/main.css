@@ -5927,9 +5927,15 @@ header {
 }
 .portfolio_galery .left {
   left: 40px;
+  opacity: .7;
 }
 .portfolio_galery .right {
   right: 40px;
+  opacity: .7;
+}
+.portfolio_galery .btnOpacity
+.portfolio_galery .right.btnOpacity {
+  opacity: 1;
 }
 .portfolio_galery .left::before, .portfolio_galery .right::before {
   display: block;
@@ -5940,14 +5946,13 @@ header {
 }
 .portfolio_galery .left::before {
   background: url(../img/arrows.png) 0 -90px no-repeat;
-  opacity: .7;
   transition: .2s all;
 }
 .portfolio_galery .right::before {
   background: url(../img/arrows.png) -48px -90px no-repeat;
-  opacity: .7;
   transition: .2s all;
 }
+
 
 .btn_menu, .btn_menu_mobile {
   padding-top: 21px;
