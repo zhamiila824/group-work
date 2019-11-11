@@ -6351,7 +6351,7 @@ header {
     transition: .2s all
 }
 .reviews .left:hover::before, .awards .left:hover::before {
-    opacity: 1
+    opacity: 0.4
 }
 .awards .right, .reviews .right {
     right: 0
@@ -6362,8 +6362,8 @@ header {
     -webkit-transition: .2s all;
     transition: .2s all
 }
-.reviews .right:hover::before, .awards .right:hover::before {
-    opacity: 1
+.reviews .right:hover::after, .awards .right:hover::after {
+    opacity: 0.4
 }
 .awards_info_section {
   padding: 0 50px;
