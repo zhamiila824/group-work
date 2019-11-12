@@ -8415,6 +8415,9 @@ footer .form_section {
   }
 }
 @media only screen and (max-width:414px) {
+  header{
+    height: 895px;
+  }
   .main_header_name {
     position: relative;
     top: 0;
@@ -8424,6 +8427,9 @@ footer .form_section {
     padding: 0 40px;
     width: 100%;
     margin-top: 57px
+  }
+  .main_portfolio .item:nth-child(2n) .info_block{
+    padding: 0 40px;
   }
   .fullscreen-bg__video, .header_video_bg {
     height: 303px
@@ -8767,6 +8773,9 @@ footer .form_section {
     .second_header_biography{
         height: 1210px;
     }
+  header{
+    height: 950px;
+  }
 }
 
 
