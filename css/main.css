@@ -6883,6 +6883,9 @@ footer .form_section {
   }*/
 }
 @media only screen and (max-width:1400px) {
+    .reviews .owl-prev {
+        left: -117px;
+    }
   .portfolio .portfolio_container .item .text_block .data {
     margin-bottom: 50px
   }
