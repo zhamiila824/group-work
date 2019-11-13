@@ -4983,6 +4983,7 @@ header {
 .owl-prev.disabled,
 .owl-next.disabled{
     opacity: 0.1;
+    cursor: default !important;
 }
 .owl-prev,
 .owl-next {
@@ -5024,14 +5025,7 @@ header {
   .reviews .owl-next {
     right: -30px;
   }
-  @media only screen and (max-width:768px){
-    .reviews .owl-prev{
-      left: -100px;
-    }
-    .reviews .owl-next {
-      right: -100px;
-    } 
-  }
+
 .header_slider .slider_info_block, .main_header_info {
   color: #fff;
   position: absolute;
@@ -7621,6 +7615,12 @@ footer .form_section {
   }
 }
 @media only screen and (max-width:768px) {
+    .reviews .owl-prev{
+        left: -100px;
+      }
+      .reviews .owl-next {
+        right: -100px;
+      } 
 	.modal-galery button.mfp-arrow-left, .modal-galery button.mfp-arrow-right {
 		display: none;
 	}

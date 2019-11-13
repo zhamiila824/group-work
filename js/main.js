@@ -83,6 +83,7 @@ $(document).ready(function() {
 
 
 	$(".main_news_container .slider.owl-carousel").owlCarousel({
+        items: 1,
 	    loop: false,
 	    autoplay: false,
 	    mouseDrag: false,
@@ -106,19 +107,6 @@ $(document).ready(function() {
             margin: 36,
 	    }
 	    }
-	});
-
-
-	$(".main_news_container .left").click(function() {
-		$(".main_news_container .slider.owl-carousel").trigger('prev.owl.carousel');
-		$(this).css({'opacity': 1});
-		$(".main_news_container .right").css({'opacity': 0.7});
-	});
-
-	$(".main_news_container .right").click(function() {
-		$(".main_news_container .slider.owl-carousel").trigger('next.owl.carousel');
-		$(this).css({'opacity': 1});
-		$(".main_news_container .left").css({'opacity': 0.7});
 	});
 
 	$(".news_container .img_block .owl-carousel").owlCarousel({
