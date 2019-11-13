@@ -5008,10 +5008,10 @@ header {
     right: 0;
   }
   .awards .owl-prev{
-    left: -30px;
+    left: -50px;
   }
   .awards .owl-next {
-    right: -30px;
+    right: -50px;
   }
   .portfolio_galery .owl-prev{
     left: -30px;
@@ -5020,10 +5020,10 @@ header {
     right: -30px;
   }
   .reviews .owl-prev{
-    left: -30px;
+    left: -182px;
   }
   .reviews .owl-next {
-    right: -30px;
+    right: 0;
   }
 
 .header_slider .slider_info_block, .main_header_info {
@@ -6678,6 +6678,9 @@ footer .form_section {
   }
 }
 @media only screen and (max-width:1366px) {
+    .reviews .owl-prev {
+        left: -107px;
+    }
   header:after {
     left: 0
   }
@@ -6934,6 +6937,9 @@ footer .form_section {
   }*/
 }
 @media only screen and (max-width:1024px) {
+    .reviews .owl-prev {
+        left: -75px;
+    }
   header{
     height: 768px;
     margin-bottom: 100px;
@@ -7166,6 +7172,15 @@ footer .form_section {
   }
 }
 @media only screen and (max-width:992px) {
+    .awards .owl-prev {
+        left: -30px;
+    }
+    .awards .owl-next {
+        right: -30px;
+    }
+    .reviews .owl-next {
+        right: -75px;
+    }
   header{
     height: 100vh;
   }
@@ -8626,6 +8641,20 @@ footer .form_section {
 
 
 @media only screen and (max-width: 768px) {
+    .awards .owl-prev {
+        left: 14px;
+        top: 14%;
+    }
+    .awards .owl-next {
+        right: -96px;
+        top: 14%;
+    }
+    .reviews .owl-next {
+        right: -75px;
+    }
+    .reviews .owl-prev {
+        left: -75px;
+    }
     .news_blocks {
         padding: 0 40px;
     }

@@ -163,8 +163,9 @@ $(document).ready(function() {
                 nav: false,
                 dots: true,
             },
-			768 : {
-	        items: 2,
+			568 : {
+            items: 1,
+            nav: true,
 	    },
 			1004:{
 	    	items: 2,
