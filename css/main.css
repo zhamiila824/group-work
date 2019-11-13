@@ -4979,6 +4979,59 @@ header {
 .header_slider .item .img_block {
   display: none
 }
+/*Carousel arrows*/
+.owl-prev.disabled,
+.owl-next.disabled{
+    opacity: 0.1;
+}
+.owl-prev,
+.owl-next {
+    position: absolute;
+    opacity: 0.7;
+    z-index: 99;
+    top: 20%;
+}
+.portfolio_galery .owl-prev,
+.portfolio_galery .owl-next{
+    top: 45%;
+}
+  .owl-prev:not(.disabled):hover,
+  .owl-next:not(.disabled):hover {
+    opacity: 1
+  }
+
+  .main_news .owl-prev{
+    left: -48px;
+  }
+  .main_news .owl-next {
+    right: 0;
+  }
+  .awards .owl-prev{
+    left: -30px;
+  }
+  .awards .owl-next {
+    right: -30px;
+  }
+  .portfolio_galery .owl-prev{
+    left: -30px;
+  }
+  .portfolio_galery .owl-next {
+    right: -30px;
+  }
+  .reviews .owl-prev{
+    left: -30px;
+  }
+  .reviews .owl-next {
+    right: -30px;
+  }
+  @media only screen and (max-width:768px){
+    .reviews .owl-prev{
+      left: -100px;
+    }
+    .reviews .owl-next {
+      right: -100px;
+    } 
+  }
 .header_slider .left {
   position: absolute;
   top: 50%;
@@ -5320,7 +5373,7 @@ header {
   top: 146px;
   z-index: 99;
   cursor: pointer
-}51
+}
 .main_portfolio .icon {
   margin-left: 60px;
   margin-bottom: 15px

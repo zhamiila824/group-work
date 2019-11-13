@@ -86,8 +86,8 @@ $(document).ready(function() {
 	    loop: false,
 	    autoplay: false,
 	    mouseDrag: false,
-	    nav: false,
-	    navText: false,
+	    nav: true,
+	    navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
 	    dots: false,
 	    margin: 60,
 	    autoWidth: true,
@@ -95,15 +95,15 @@ $(document).ready(function() {
 	    responsive : {
 	    768 : {
 	        items: 2,
-	        margin: 30,
+            margin: 30,
 	    },
 	        1200: {
 	        items: 2,
-	        margin: 36,
+            margin: 36,
 	    },
 	        1500: {
 	        items: 4,
-	        margin: 36,
+            margin: 36,
 	    }
 	    }
 	});
@@ -166,32 +166,31 @@ $(document).ready(function() {
 		loop: false,
 		autoplay: false,
 		mouseDrag: false,
-		nav: false,
-		navText: false,
-		dots: true,
+		nav: true,
+		navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
+		dots: false,
 		items: 1,
 		responsive : {
-	    576 : {
-	        items: 1,
-					mouseDrag: true
-	    },
+            0:{
+                nav: false,
+                dots: true,
+            },
 			768 : {
-	        items: 1.47,
-					dots: false
+	        items: 2,
 	    },
 			1004:{
-	    	items: 1.55,
-				margin:0,
-	    	},
+	    	items: 2,
+            margin:0,
+	    },
 			1280: {
 	        items: 2,
-				margin: 30,
+            margin: 30,
 	    },
 			1366:{
-	    	items: 2.1,
-	    	},
+            items: 2,
+	    },
 			1500: {
-	        items: 3
+            items: 3,
 	    }
 		}
 	});
@@ -339,59 +338,69 @@ $(document).ready(function() {
 	    loop: false,
 	    autoplay: false,
 	    mouseDrag: false,
-	    nav: false,
-	    navText: false,
-	    dots: true,
+	    nav: true,
+	    navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
+	    dots: false,
 	    autoWidth: true,
 	    stageClass: 'owl-stage owl-stage-imbblock',
 	    responsive : {
-	    768 : {
-	        items: 1,
-	        dots: false,
-	        stageClass: 'owl-stage owl-stage-mobile',
+            0:{
+                nav: false,
+                dots: true,
+            },
+	        768 : {
+            items: 1,
+            stageClass: 'owl-stage owl-stage-mobile',
+            nav: true,
 	        margin: 50,
 
 	    },
-	        1200: {
-	        items: 3,
-	        dots: false,
-	        stageClass: 'owl-stage owl-stage-mobile',
+	        1200 : {
+            items: 3,
+            stageClass: 'owl-stage owl-stage-mobile',
 	        margin: 60,
 	    },
-	        1500: {
-	        items: 4,
-	        dots: false,
-	        stageClass: 'owl-stage owl-stage-mobile',
+	        1500 : {
+            items: 3,
+            stageClass: 'owl-stage owl-stage-mobile',
 	        margin: 60,
-	    }
+        },
+        1900:{
+            items: 4,
+            margin: 0,
+        },
 	    }
 	});
 
 
-	$(".reviews .slider.owl-carousel").owlCarousel({
+	$(".reviews_container .slider.owl-carousel").owlCarousel({
 		items: 2,
 		loop: false,
 		autoplay: false,
 		mouseDrag: false,
-		nav: false,
-		navText: false,
-		dots: true,
+		nav: true,
+		navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
+		dots: false,
 		autoWidth: true,
 		responsive : {
+            0:{
+                nav: false,
+                dots: true,
+            },
+            414:{
+                dots: false,
+            },
 			768 : {
 				items: 1,
-				dots: false,
 				margin: 60,
 
 			},
 			1200: {
 				items: 1,
-				dots: false,
-				margin: 65,
+                margin: 65,
 			},
 			1500: {
 				items: 2,
-				dots: false,
 				margin: 68,
 			}
 		}
