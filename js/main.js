@@ -308,20 +308,6 @@ $(document).ready(function() {
     })
 
 
-
-	$(".portfolio_galery .left").click(function() {
-		$(".portfolio_galery .slider.owl-carousel").trigger('prev.owl.carousel');
-		$(this).css({'opacity': 1});
-		$(".portfolio_galery .right").css({'opacity': 0.7});
-	});
-
-	$(".portfolio_galery .right").click(function() {
-		$(".portfolio_galery .slider.owl-carousel").trigger('next.owl.carousel');
-		$(this).css({'opacity': 1});
-		$(".portfolio_galery .left").css({'opacity': 0.7});
-	});
-
-
 	$(".portfolio_galery .slider.owl-carousel").owlCarousel({
 	    items: 1,
 	    loop: false,
@@ -340,7 +326,7 @@ $(document).ready(function() {
 	        768 : {
             items: 1,
             stageClass: 'owl-stage owl-stage-mobile',
-            nav: true,
+            dots: true,
 	        margin: 50,
 
 	    },
@@ -355,8 +341,8 @@ $(document).ready(function() {
 	        margin: 60,
         },
         1900:{
-            items: 4,
-            margin: 0,
+            items: 3,
+            margin: 60,
         },
 	    }
 	});

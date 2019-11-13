@@ -4994,7 +4994,7 @@ header {
 }
 .portfolio_galery .owl-prev,
 .portfolio_galery .owl-next{
-    top: 45%;
+    top: 38%;
 }
   .owl-prev:not(.disabled):hover,
   .owl-next:not(.disabled):hover {
@@ -5014,10 +5014,10 @@ header {
     right: -50px;
   }
   .portfolio_galery .owl-prev{
-    left: -30px;
+    left: -50px;
   }
   .portfolio_galery .owl-next {
-    right: -30px;
+    right: -50px;
   }
   .reviews .owl-prev{
     left: -182px;
@@ -7172,6 +7172,10 @@ footer .form_section {
   }
 }
 @media only screen and (max-width:992px) {
+    .portfolio_galery .owl-prev,
+    .portfolio_galery .owl-next {
+        top: 33%;
+    }
     .awards .owl-prev {
         left: -30px;
     }
