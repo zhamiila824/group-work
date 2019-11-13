@@ -6602,7 +6602,9 @@ footer .form_section {
   }
 }
 @media only screen and (max-width:1500px) {
-
+    .reviews .owl-prev {
+        left: -117px;
+    }
   .second_header .second_header_title {
       width: 59.2%;
   }
@@ -6883,9 +6885,6 @@ footer .form_section {
   }*/
 }
 @media only screen and (max-width:1400px) {
-    .reviews .owl-prev {
-        left: -117px;
-    }
   .portfolio .portfolio_container .item .text_block .data {
     margin-bottom: 50px
   }
