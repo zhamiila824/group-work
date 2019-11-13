@@ -7680,44 +7680,7 @@ footer .form_section {
   .news_container .item .content {
     line-height: 24px;
 }
-  .main_news .left, .main_news .right {
-    display: none;
-  }
-  .main_news {
-    padding: 0;
-    margin-bottom: 0;
-  }
 
-  .main_news .title {
-      width: fit-content;
-      line-height: 37px;
-      margin-bottom: 10px;
-      margin-left: 40px;
-  }
-
-  .main_news .news_container {
-      padding: 0 30px;
-  }
-  .main_news_container .slider {
-  	width: 100%;
-  }
-  .main_news .news_container .item {
-  	width: 50%;
-  	max-width: 50%!important;
-  	margin-bottom: 20px;
-  }
-  .main_news .news_container .item:nth-child(2n) {
-    display: none;
-  }
-  .main_news .news_container .item .item_inner {
-      max-width: 100%;
- }
- .main_news .news_container .img_block {
-     margin-bottom: 60px;
- }
- .main_news_container .img_block a img {
-   width: 100%;
- }
  /*.main_header_info {*/
    /*width: 58.5%;*/
    /*bottom: 100px;*/
@@ -7892,7 +7855,7 @@ footer .form_section {
     margin: 0 auto
   }
   .main_header_info {
-    width: 100%;
+    width: 62.9%;
     left: 37.1%;
     padding: 100px 30px 100px 0;
   }
@@ -8016,8 +7979,43 @@ footer .form_section {
     width: 100%;
     max-width: 100%
   }
-  .main_news .left, .main_news .right{
-    display: none
+  .main_news .left, .main_news .right {
+    display: none;
+  }
+  .main_news {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .main_news .title {
+    width: fit-content;
+    line-height: 37px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+  }
+
+  .main_news .news_container {
+    padding: 0 30px;
+  }
+  .main_news_container .slider {
+    width: 100%;
+  }
+  .main_news .news_container .item {
+    width: 50%;
+    max-width: 50%!important;
+    margin-bottom: 20px;
+  }
+  .main_news .news_container .item:nth-child(2n) {
+    display: none;
+  }
+  .main_news .news_container .item .item_inner {
+    max-width: 100%;
+  }
+  .main_news .news_container .img_block {
+    margin-bottom: 60px;
+  }
+  .main_news_container .img_block a img {
+    width: 100%;
   }
   .reviews .right{
     right: 0;
@@ -8888,3 +8886,6 @@ a.video_play {
   display: block;
   height: 360px;
 }
+/*
+
+ */
