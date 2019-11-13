@@ -6721,6 +6721,10 @@ footer .form_section {
   transition: .2s all;
   color: white;
 }
+.news_blocks a.btn:hover{
+  background: 0 0;
+  color: #F26C4D
+}
 @media only screen and(max-width: 1600px){
   .awards_info_section .item1 .text_block p {
     line-height: 19px
@@ -8802,9 +8806,6 @@ footer .form_section {
 @media only screen and (max-width: 414px) {
     .news_header .news_title {
         padding-top: 0;
-    }
-    .news_blocks {
-      margin:0;
     }
 }
 .video_icon{
