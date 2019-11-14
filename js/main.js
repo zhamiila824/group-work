@@ -409,4 +409,50 @@ $(document).ready(function() {
 		$(".reviews_container .left").css({'opacity': 0.7});
 	});
 
+
+
+
+
+	var dotsLength = $(".owl-dot")
+
+	$(window).resize(function(){
+	    if($(window).width() < 769){
+			if(dotsLength.length > 5 ) {
+				$(".owl-dots").css("display" , "none");
+				$(".dots_wrapper").css("display" , "block");
+			}
+	    }
+	});
+	if($(window).width() < 769 && dotsLength.length > 5) {
+		$(".owl-dots").css("display" , "none");
+		$(".dots_wrapper").css("display" , "block");
+	};
+
+
+	$(".dots_mobail .slider.owl-carousel").owlCarousel().on("dragged.owl.carousel", function (event) {
+		var carouselDir = event.relatedTarget['_drag']['direction'];
+		if( carouselDir == "left") {
+			$(".dots_wrapper").addClass("dots_left")
+			setTimeout(function(){ 
+			$(".dots_wrapper").removeClass("dots_left")
+			}, 200);;
+		} else {
+			console.log("false")
+			$(".dots_wrapper").addClass("dots_right")
+			setTimeout(function(){ 
+			$(".dots_wrapper").removeClass("dots_right")
+			}, 200);;
+		}
+	});
+
+
+
+
+
+
+
+
+
+
+
 });
