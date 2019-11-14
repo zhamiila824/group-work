@@ -165,6 +165,9 @@ function createInnerCarousel(){
 		navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
 		dots: true,
 	    autoWidth: true,
+	    stageClass: 'owl-stage owl-stage-imbblock owl-stage-mobile',
+	    margin: 50,
+
 		items: 1,
 		responsive : {
 			768 : {

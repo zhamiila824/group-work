@@ -8199,7 +8199,9 @@ footer .form_section {
   .awards .title, .reviews .title{
       width: fit-content;
       margin-left: 40px;
-  }
+      font-size: 28px;
+      line-height: 37px;
+  } 
   .awards_info_section .item1 .left, .awards_info_section .item2 .right {
     width: 100%;
     max-width: 100%
@@ -8272,12 +8274,33 @@ footer .form_section {
   }
   .awards{
     margin-bottom: 53px;
+    margin-top: 60px;
+  }
+  .awards .news_container {
+    padding-left: 0;
+    padding-bottom: 45px;
+  }
+  .awards .owl-carousel {
+      padding: 0;
   }
   .awards_info_section .item2 .right img{
     width: 100%;
   }
-  .awards .owl-dots {
+/*  .awards .owl-dots {
     display: none;
+  }*/
+  .reviews .item h4, .awards .item h4 {
+    width: 100%;
+      padding: 0 40px;
+      text-align: center;
+  }
+  .news_container .item .date {
+     width: 100%;
+     padding: 0 40px;
+  }
+  .news_container .item .content {
+     width: 100%;
+     padding: 0 40px;
   }
   .reviews_content{
     margin: 17px 35px;
@@ -8332,20 +8355,26 @@ footer .form_section {
     background: url(../images/portret_vertical@1x.png) center bottom no-repeat #121618;
     background-size: cover;
     width: 100%;
-    height: 1024px;
-    display: block
+    height: auto;
+    display: block;
+    padding-bottom: 30px;
   }
   .second_header_biography .second_header_title{
-    width: 99%;
+    width: fit-content;
+    top: 160px;
   }
   .second_header_biography .right{
     width: 100%;
+    margin-left: 0;
   }
   .second_header_biography .right .biography_info{
-    width: 68%;
-    margin-top: -50px;
-      margin-left: 32%;
-      padding: 0 40px;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0 40px;
+  }
+  .second_header_biography .second_header_title .breadcrumbs {
+  	display: none;
   }
   .second_header-news {
     padding-bottom: 110px;
@@ -8380,7 +8409,7 @@ footer .form_section {
         max-width: 384px;
     }
     .awards_container .item{
-        width: 100%;
+        width: 100vw;
         padding-left: 0;
         margin-bottom: 0;
     }
@@ -8571,7 +8600,7 @@ footer .form_section {
     margin-bottom: 10px
   }
   .second_header_biography .left {
-    height: 500px
+    height: 640px
   }
 /*  .main_portfolio .item {
       flex-direction: column;
