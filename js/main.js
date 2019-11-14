@@ -68,48 +68,52 @@ $(document).ready(function() {
 
 	});
 
-	if($(window).width() < 769) {
-	    $(".main_news_container .slider.owl-carousel").removeClass('owl-carousel').trigger('destroy.owl.carousel');
-	} else {
-	    $(".main_news_container .slider").addClass('owl-carousel');
-	};
+	if($(window).width() > 769) {
+        createOuterCarousel();
+        createInnerCarousel();
+	} 
 	$(window).resize(function(){
 	    if($(window).width() < 769){
-	        $(".main_news_container .slider.owl-carousel").removeClass('owl-carousel').trigger('destroy.owl.carousel');
+            $(".main_news_container .slider.owl-carousel").trigger('destroy.owl.carousel');
 	    } else {
-            $(".main_news_container .slider").addClass('owl-carousel');
+            $(".main_news_container .slider.owl-carousel").trigger('destroy.owl.carousel');
+            $(".news_container .img_block .owl-carousel").trigger('destroy.owl.carousel');
+            createOuterCarousel();
+            createInnerCarousel();
 	    }
     });
 
+    function createOuterCarousel() {
+		$(".main_news_container .slider.owl-carousel").owlCarousel({
+            items: 1,
+            loop: false,
+            autoplay: false,
+            mouseDrag: false,
+            nav: true,
+            navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
+            dots: false,
+            margin: 60,
+            autoWidth: true,
+            // stageClass: 'owl-stage owl-stage-mobile',
+            responsive : {
+            768 : {
+                items: 2,
+                margin: 30,
+            },
+                1200: {
+                items: 2,
+                margin: 36,
+            },
+                1500: {
+                items: 4,
+                margin: 36,
+            }
+            }
+        });
+	}
 
-
-	$(".main_news_container .slider.owl-carousel").owlCarousel({
-        items: 1,
-	    loop: false,
-	    autoplay: false,
-	    mouseDrag: false,
-	    nav: true,
-	    navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
-	    dots: false,
-        margin: 60,
-        autoWidth: true,
-	    // stageClass: 'owl-stage owl-stage-mobile',
-	    responsive : {
-	    768 : {
-	        items: 2,
-            margin: 30,
-	    },
-	        1200: {
-	        items: 2,
-            margin: 36,
-	    },
-	        1500: {
-	        items: 4,
-            margin: 36,
-	    }
-	    }
-	});
-
+	
+function createInnerCarousel(){
 	$(".news_container .img_block .owl-carousel").owlCarousel({
 		// autoWidth: true,
 		items: 1,
@@ -121,7 +125,7 @@ $(document).ready(function() {
 		dots: true,
 		stageClass: 'owl-stage owl-stage-imbblock',
 	});
-
+}
 
 
 	$(".header_slider .owl-carousel").owlCarousel({
