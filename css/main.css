@@ -8251,8 +8251,9 @@ footer .form_section {
         padding: 0 40px;
     }
     .awards_info_section .item1 .right .text_block, .awards_info_section .item2 .left .text_block {
-    width: 65%;
-    margin-left: 35%;
+    width: 100%;
+    margin-left: 0%;
+    padding: 0 40px;
   }
   .awards_info_section .item1 {
     -ms-flex-direction: column;
