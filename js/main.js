@@ -71,7 +71,9 @@ $(document).ready(function() {
 	if($(window).width() > 769) {
         createOuterCarousel();
         createInnerCarousel();
-	} 
+	} else {
+        createInnerCarousel();
+    }
 	$(window).resize(function(){
 	    if($(window).width() < 769){
             $(".main_news_container .slider.owl-carousel").trigger('destroy.owl.carousel');
