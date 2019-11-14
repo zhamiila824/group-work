@@ -161,32 +161,36 @@ function createInnerCarousel(){
 		loop: false,
 		autoplay: false,
 		mouseDrag: false,
-		nav: true,
+		nav: false,
 		navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
-		dots: false,
+		dots: true,
+	    autoWidth: true,
 		items: 1,
 		responsive : {
-            0:{
-                nav: false,
-                dots: true,
-            },
-			568 : {
+			768 : {
             items: 1,
             nav: true,
+	        autoWidth: false,
+
 	    },
 			1004:{
 	    	items: 2,
-            margin:0,
+            margin: 40,
+            nav: true,
 	    },
 			1280: {
 	        items: 2,
-            margin: 30,
+            margin: 50,
+            nav: true,
 	    },
 			1366:{
             items: 2,
+            margin: 40,
+            nav: true,
 	    },
 			1500: {
             items: 3,
+            nav: true,
 	    }
 		}
 	});
