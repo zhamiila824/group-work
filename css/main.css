@@ -6939,6 +6939,9 @@ footer .form_section {
   }*/
 }
 @media only screen and (max-width:1024px) {
+    .main_news .owl-next {
+        right: -10px;
+    }
     .reviews .owl-prev {
         left: -75px;
     }
@@ -7174,6 +7177,12 @@ footer .form_section {
   }
 }
 @media only screen and (max-width:992px) {
+    .main_news .owl-next {
+        right: 10px;
+    }
+    .main_news .owl-prev {
+        left: -29px;
+    }
     .portfolio_galery .owl-prev,
     .portfolio_galery .owl-next {
         top: 33%;
