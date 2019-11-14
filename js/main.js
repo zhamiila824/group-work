@@ -68,59 +68,54 @@ $(document).ready(function() {
 
 	});
 
-	if($(window).width() < 768) {
-	    $(".main_news_container .slider.owl-carousel").removeClass('owl-carousel').trigger('destroy.owl.carousel');
+	if($(window).width() > 769) {
+        createOuterCarousel();
+        createInnerCarousel();
 	} else {
-	    $(".main_news_container .slider").addClass('owl-carousel');
-	};
+        createInnerCarousel();
+    }
 	$(window).resize(function(){
-	    if($(window).width() < 768){
-	        $(".main_news_container .slider.owl-carousel").removeClass('owl-carousel').trigger('destroy.owl.carousel');
+	    if($(window).width() < 769){
+            $(".main_news_container .slider.owl-carousel").trigger('destroy.owl.carousel');
 	    } else {
-	        $(".main_news_container .slider").addClass('owl-carousel');
+            $(".main_news_container .slider.owl-carousel").trigger('destroy.owl.carousel');
+            $(".news_container .img_block .owl-carousel").trigger('destroy.owl.carousel');
+            createOuterCarousel();
+            createInnerCarousel();
 	    }
-	});
+    });
 
+    function createOuterCarousel() {
+		$(".main_news_container .slider.owl-carousel").owlCarousel({
+            items: 1,
+            loop: false,
+            autoplay: false,
+            mouseDrag: false,
+            nav: true,
+            navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
+            dots: false,
+            margin: 60,
+            autoWidth: true,
+            // stageClass: 'owl-stage owl-stage-mobile',
+            responsive : {
+            768 : {
+                items: 2,
+                margin: 30,
+            },
+                1200: {
+                items: 2,
+                margin: 36,
+            },
+                1500: {
+                items: 4,
+                margin: 36,
+            }
+            }
+        });
+	}
 
-	$(".main_news_container .slider.owl-carousel").owlCarousel({
-	    loop: false,
-	    autoplay: false,
-	    mouseDrag: false,
-	    nav: false,
-	    navText: false,
-	    dots: false,
-	    margin: 60,
-	    autoWidth: true,
-	    // stageClass: 'owl-stage owl-stage-mobile',
-	    responsive : {
-	    768 : {
-	        items: 2,
-	        margin: 30,
-	    },
-	        1200: {
-	        items: 2,
-	        margin: 36,
-	    },
-	        1500: {
-	        items: 4,
-	        margin: 36,
-	    }
-	    }
-	});
-
-
-	$(".main_news_container .left").click(function() {
-		$(".main_news_container .slider.owl-carousel").trigger('prev.owl.carousel');
-		$(this).css({'opacity': 1});
-		$(".main_news_container .right").css({'opacity': 0.7});
-	});
-
-	$(".main_news_container .right").click(function() {
-		$(".main_news_container .slider.owl-carousel").trigger('next.owl.carousel');
-		$(this).css({'opacity': 1});
-		$(".main_news_container .left").css({'opacity': 0.7});
-	});
-
+	
+function createInnerCarousel(){
 	$(".news_container .img_block .owl-carousel").owlCarousel({
 		// autoWidth: true,
 		items: 1,
@@ -132,7 +127,7 @@ $(document).ready(function() {
 		dots: true,
 		stageClass: 'owl-stage owl-stage-imbblock',
 	});
-
+}
 
 
 	$(".header_slider .owl-carousel").owlCarousel({
@@ -166,32 +161,32 @@ $(document).ready(function() {
 		loop: false,
 		autoplay: false,
 		mouseDrag: false,
-		nav: false,
-		navText: false,
-		dots: true,
+		nav: true,
+		navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
+		dots: false,
 		items: 1,
 		responsive : {
-	    576 : {
-	        items: 1,
-					mouseDrag: true
-	    },
-			768 : {
-	        items: 1.47,
-					dots: false
+            0:{
+                nav: false,
+                dots: true,
+            },
+			568 : {
+            items: 1,
+            nav: true,
 	    },
 			1004:{
-	    	items: 1.55,
-				margin:0,
-	    	},
+	    	items: 2,
+            margin:0,
+	    },
 			1280: {
 	        items: 2,
-				margin: 30,
+            margin: 30,
 	    },
 			1366:{
-	    	items: 2.1,
-	    	},
+            items: 2,
+	    },
 			1500: {
-	        items: 3
+            items: 3,
 	    }
 		}
 	});
@@ -320,78 +315,74 @@ $(document).ready(function() {
     })
 
 
-
-	$(".portfolio_galery .left").click(function() {
-		$(".portfolio_galery .slider.owl-carousel").trigger('prev.owl.carousel');
-		$(this).css({'opacity': 1});
-		$(".portfolio_galery .right").css({'opacity': 0.7});
-	});
-
-	$(".portfolio_galery .right").click(function() {
-		$(".portfolio_galery .slider.owl-carousel").trigger('next.owl.carousel');
-		$(this).css({'opacity': 1});
-		$(".portfolio_galery .left").css({'opacity': 0.7});
-	});
-
-
 	$(".portfolio_galery .slider.owl-carousel").owlCarousel({
 	    items: 1,
 	    loop: false,
 	    autoplay: false,
 	    mouseDrag: false,
-	    nav: false,
-	    navText: false,
-	    dots: true,
+	    nav: true,
+	    navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
+	    dots: false,
 	    autoWidth: true,
 	    stageClass: 'owl-stage owl-stage-imbblock',
 	    responsive : {
-	    768 : {
-	        items: 1,
-	        dots: false,
-	        stageClass: 'owl-stage owl-stage-mobile',
+            0:{
+                nav: false,
+                dots: true,
+            },
+	        768 : {
+            items: 1,
+            stageClass: 'owl-stage owl-stage-mobile',
+            dots: true,
 	        margin: 50,
 
 	    },
-	        1200: {
-	        items: 3,
-	        dots: false,
-	        stageClass: 'owl-stage owl-stage-mobile',
+	        1200 : {
+            items: 3,
+            stageClass: 'owl-stage owl-stage-mobile',
 	        margin: 60,
 	    },
-	        1500: {
-	        items: 4,
-	        dots: false,
-	        stageClass: 'owl-stage owl-stage-mobile',
+	        1500 : {
+            items: 3,
+            stageClass: 'owl-stage owl-stage-mobile',
 	        margin: 60,
-	    }
+        },
+        1900:{
+            items: 3,
+            margin: 60,
+        },
 	    }
 	});
 
 
-	$(".reviews .slider.owl-carousel").owlCarousel({
+	$(".reviews_container .slider.owl-carousel").owlCarousel({
 		items: 2,
 		loop: false,
 		autoplay: false,
 		mouseDrag: false,
-		nav: false,
-		navText: false,
-		dots: true,
+		nav: true,
+		navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
+		dots: false,
 		autoWidth: true,
 		responsive : {
+            0:{
+                nav: false,
+                dots: true,
+            },
+            414:{
+                dots: false,
+            },
 			768 : {
 				items: 1,
-				dots: false,
 				margin: 60,
 
 			},
 			1200: {
 				items: 1,
-				dots: false,
-				margin: 65,
+                margin: 65,
 			},
 			1500: {
 				items: 2,
-				dots: false,
 				margin: 68,
 			}
 		}
