@@ -7290,7 +7290,7 @@ footer .form_section {
     width: 100%;
   }
   .second_header_biography{
-    height: 768px;
+    /*height: 768px;*/
     margin-bottom: 50px;
   }
   .awards .title {
@@ -7474,11 +7474,26 @@ footer .form_section {
   .header_portfolio {
       margin-bottom: 80px;
   }
+  .awards .title {
+    width: 64.5%;
+  }
+  .awards {
+    margin-bottom: 0;
+  }
+  .news_container .item {
+    margin-bottom: 65px;
+  }
+  .awards_info_section {
+    margin-bottom: 60px;
+  }
+  .reviews .title {
+      width: 64.5%;
+  }
   .reviews_container{
     padding-left: 75px;
   }
   .reviews{
-    margin-bottom: 17px;
+    margin-bottom: 40px;
   }
   .main_news_container .item {
     margin-bottom: 30px;
@@ -7623,21 +7638,23 @@ footer .form_section {
     left:40px
   }
   .second_header .second_header_title h3{
-    text-transform:uppercase;
     display:inline-block;
-    font-size:42px;
+    font-size: 28px;
+    line-height: 37px;
     width: 100%
   }
   .header_portfolio .second_header_title{
     width: 57.5%;
     top: 85px;
   }
+
   .second_header_biography .second_header_title{
     width: 100%;
     left: 0;
-    padding-left: 50px;
-    top: 95px;
+    padding-left: 40px;
+    top: 105px;
   }
+
   .second_header-news {
     padding-bottom: 130px;
     margin-bottom: 110px;
@@ -7737,22 +7754,27 @@ footer .form_section {
     height: 240px;
   }
   .second_header_biography{
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+    flex-direction: column;
   }
   .second_header_biography .logo {
-    top: 50px;
-    left: 50px;
+    top: 40px;
+    left: 40px;
   }
   .second_header_biography .left{
     width: 62.8%;
   }
-  .second_header_biography .right{
-    width: 37.2%;
+  .second_header_biography .right {
+      width: 64%;
+      margin-left: 37%;
   }
+
+  
   .second_header_biography .biography_info{
     max-width:100%;
     padding: 0;
-    width: 67.4%;
+    width: 100%;
+    padding-right: 40px;
   }
   .awards .title, .reviews .title{
     width: 64.2%;
@@ -7760,9 +7782,12 @@ footer .form_section {
   .awards .owl-item{
     max-width: 500px;
   }
+  .awards {
+    padding: 0px 40px;
+  }
   .news_container .item {
     max-width: 50%;
-    margin-bottom: 41px;
+    margin-bottom: 8px;
   }
   .news_blocks {
       padding: 0 30px;
@@ -7774,12 +7799,49 @@ footer .form_section {
       margin-top: 50px;
     margin-bottom: 0;
   }
+  .awards .news_container {
+    padding-left: 28px;
+    margin-bottom: 0;
+  }
   .reviews_container{
     padding: 0 75px;
   }
   .reviews_text{
     line-height: 21px;
     width: 504px;
+  }
+  .awards_info_section {
+    padding: 0;
+    margin-bottom: 77px;
+  }
+  .awards_info_section .item1,
+  .awards_info_section .item2 {
+     flex-direction: column;
+  }
+  .awards_info_section .item1 .left, .awards_info_section .item2 .left {
+    margin-right: 0; 
+    width: 100%;
+  }
+  .awards_info_section .item1 .right, 
+  .awards_info_section .item2 .right {
+    width: 100%;
+  }
+  .awards_info_section .item2 .right {
+  	order: -1;
+  }
+
+  .awards_info_section .item1 .right .text_block {
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 37%;
+    padding-top: 40px;
+  }
+  .awards_info_section .item2 .left .text_block {
+  	width: 100%;
+  	padding-right: 40px;
+  	padding-left: 37%;
+  	padding-top: 40px;
+  	margin-left: 0;
   }
   .contact_page .left, .contact_page .right {
     padding-left: 40px;

@@ -168,10 +168,16 @@ function createInnerCarousel(){
 		items: 1,
 		responsive : {
 			768 : {
-            items: 1,
+            items: 2,
             nav: true,
-	        autoWidth: false,
+	        autoWidth: true,
+	        margin: 30,
 
+	    },
+	    	992:{
+	    	items: 2,
+	        margin: 40,
+	        nav: true,
 	    },
 			1004:{
 	    	items: 2,
