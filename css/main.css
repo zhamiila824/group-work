@@ -7220,6 +7220,10 @@ footer .form_section {
   }*/
 }
 @media only screen and (max-width:1024px) {
+    .awards .owl-prev,
+    .awards .owl-next{
+        top: 15%;
+    }
     .main_news .owl-next {
         right: -10px;
     }
@@ -8943,6 +8947,9 @@ footer .form_section {
 
 
 @media only screen and (max-width: 768px) {
+    .awards .dots_wrapper{
+        bottom: -38px;
+    }
     .awards .owl-prev {
         left: 14px;
         top: 14%;

@@ -107,7 +107,7 @@ $(document).ready(function() {
                 margin: 36,
             },
                 1500: {
-                items: 4,
+                items: 3,
                 margin: 36,
             }
             }
@@ -161,33 +161,34 @@ function createInnerCarousel(){
 		loop: false,
 		autoplay: false,
 		mouseDrag: false,
-		nav: false,
-		navText: false,
-		dots: true,
+		nav: true,
+		navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
+		dots: false,
 		items: 1,
 		responsive : {
-	    576 : {
-	        items: 1,
-			mouseDrag: true,
-			dots: true,
-	    },
+            0: {
+                nav: false,
+                loop: true,
+            },
 			768 : {
-	        items: 1.47,
-					dots: false
-	    },
-			1004:{
-	    	items: 1.55,
-				margin:0,
+                items: 1.47,
+                mouseDrag: true,
+                nav: false,
+                loop: true,
+        },
+			992:{
+	    	    items: 2,
+			    margin:0,
 	    	},
 			1280: {
-	        items: 2,
+	            items: 2,
 				margin: 30,
 	    },
 			1366:{
-	    	items: 2.1,
+	    	    items: 2,
 	    	},
 			1500: {
-	        items: 3
+	            items: 3
 	    }
 		}
 	});
@@ -204,18 +205,6 @@ function createInnerCarousel(){
 	})
 
 
-	$(".awards_container .left").click(function() {
-		$(".awards_container .slider.owl-carousel").trigger('prev.owl.carousel');
-		$(this).css({'opacity': 1});
-		$(".awards_container .right").css({'opacity': 0.6});
-	});
-
-	$(".awards_container .right").click(function() {
-		$(".awards_container .slider.owl-carousel").trigger('next.owl.carousel');
-		$(this).css({'opacity': 1});
-		$(".awards_container .left").css({'opacity': 0.6});
-
-	});
 
 	// $('select').styler();
 
@@ -330,6 +319,7 @@ function createInnerCarousel(){
             0:{
                 nav: false,
                 dots: true,
+                loop: true,
             },
 	        768 : {
             items: 1,
@@ -371,6 +361,7 @@ function createInnerCarousel(){
             0:{
                 nav: false,
                 dots: true,
+                loop: true,
             },
             414:{
                 dots: true,
@@ -391,17 +382,7 @@ function createInnerCarousel(){
 		}
 	});
 
-	$(".reviews_container .left").click(function() {
-		$(".reviews_container .slider.owl-carousel").trigger('prev.owl.carousel');
-		$(this).css({'opacity': 1});
-		$(".reviews_container .right").css({'opacity': 0.7});
-	});
 
-	$(".reviews_container .right").click(function() {
-		$(".reviews_container .slider.owl-carousel").trigger('next.owl.carousel');
-		$(this).css({'opacity': 1});
-		$(".reviews_container .left").css({'opacity': 0.7});
-	});
 
 
 
@@ -418,7 +399,10 @@ function createInnerCarousel(){
 				$(".dots_mobail .owl-dots").css("display" , "flex");
 				$(".dots_wrapper").css("display" , "none");
 			}
-	    }
+        } else{
+            $(".dots_wrapper").css("display" , "none");
+        }
+        
 	});
 	if($(window).width() < 769 && dotsLength.length > 5) {
 		$(".dots_mobail .owl-dots").css("display" , "none");
