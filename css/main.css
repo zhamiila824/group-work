@@ -8459,6 +8459,27 @@ footer .form_section {
 
 }
 @media only screen and (max-width:576px) {
+  header{
+    height: 895px;
+  }
+  .main_header_name {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 40px;
+    width: 100%;
+    margin-top: 57px
+  }
+  .fullscreen-bg__video, .header_video_bg {
+    height: 303px
+  }
+  .main_header_info {
+    width: 100%;
+    left: 0;
+    padding: 55px 40px 50px;
+  }
   .second_header_biography{
     background-position: left 120px;
     background-size: auto 500px;
@@ -8602,33 +8623,12 @@ footer .form_section {
   }
 }
 @media only screen and (max-width:414px) {
-  header{
-    height: 895px;
-  }
-  .main_header_name {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0 40px;
-    width: 100%;
-    margin-top: 57px
-  }
   .main_portfolio .item:nth-child(2n) .info_block{
     padding: 0 40px;
-  }
-  .fullscreen-bg__video, .header_video_bg {
-    height: 303px
   }
   .logo {
     top: 40px;
     left: 40px
-  }
-  .main_header_info {
-    width: 100%;
-    left: 0;
-    padding: 55px 40px 50px;
   }
   .main_news .title, .main_portfolio .item .title {
     font-size: 28px;
