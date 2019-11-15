@@ -373,7 +373,7 @@ function createInnerCarousel(){
                 dots: true,
             },
             414:{
-                dots: false,
+                dots: true,
             },
 			768 : {
 				items: 1,
@@ -430,9 +430,13 @@ function createInnerCarousel(){
 
 
 
+
+/////////////////////// reviews dots
+
+	var reviewsLength = $(".reviews .reviews_item")
 	$(window).resize(function(){
-	    if($(window).width() < 769){
-			if(dotsLength.length > 5 ) {
+	    if($(window).width() < 415){
+			if(reviewsLength.length > 5 ) {
 				$(".reviews .owl-dots").css("display" , "none");
 				$(".reviews .dots_wrapper").css("display" , "block");
 			} else {
@@ -441,7 +445,7 @@ function createInnerCarousel(){
 			}
 	    }
 	});
-	if($(window).width() < 769 && dotsLength.length > 5) {
+	if($(window).width() < 415 && reviewsLength.length > 5) {
 		$(".reviews .owl-dots").css("display" , "none");
 		$(".reviews .dots_wrapper").css("display" , "block");
 	} else {

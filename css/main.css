@@ -8827,7 +8827,7 @@ footer .form_section {
   }
   .reviews{
     background: #121618;
-    padding: 0 0 48px 0;
+    padding: 0 ;
     margin:0;
   }
   .reviews .title{
@@ -8836,7 +8836,7 @@ footer .form_section {
     margin-top: 50px;
   }
   .reviews_container{
-    padding: 0;
+    padding: 0 0 55px 0;
     overflow: hidden;
   }
   .reviews_item_inner{
@@ -8891,6 +8891,9 @@ footer .form_section {
   }*/
   .awards .dots_wrapper {
   	bottom: -30px;
+  }
+  .reviews .dots_wrapper {
+  	bottom: 25px;
   }
 
   .copyright{
