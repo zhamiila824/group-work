@@ -162,44 +162,32 @@ function createInnerCarousel(){
 		autoplay: false,
 		mouseDrag: false,
 		nav: false,
-		navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
+		navText: false,
 		dots: true,
-	    autoWidth: true,
-	    stageClass: 'owl-stage owl-stage-imbblock owl-stage-mobile',
-	    margin: 50,
-
 		items: 1,
 		responsive : {
-			768 : {
-            items: 2,
-            nav: true,
-	        autoWidth: true,
-	        margin: 30,
-
+	    576 : {
+	        items: 1,
+			mouseDrag: true,
+			dots: true,
 	    },
-	    	992:{
-	    	items: 2,
-	        margin: 40,
-	        nav: true,
+			768 : {
+	        items: 1.47,
+					dots: false
 	    },
 			1004:{
-	    	items: 2,
-            margin: 40,
-            nav: true,
-	    },
+	    	items: 1.55,
+				margin:0,
+	    	},
 			1280: {
 	        items: 2,
-            margin: 50,
-            nav: true,
+				margin: 30,
 	    },
 			1366:{
-            items: 2,
-            margin: 40,
-            nav: true,
-	    },
+	    	items: 2.1,
+	    	},
 			1500: {
-            items: 3,
-            nav: true,
+	        items: 3
 	    }
 		}
 	});
@@ -422,13 +410,13 @@ function createInnerCarousel(){
 	$(window).resize(function(){
 	    if($(window).width() < 769){
 			if(dotsLength.length > 5 ) {
-				$(".owl-dots").css("display" , "none");
+				$(".dots_mobail .owl-dots").css("display" , "none");
 				$(".dots_wrapper").css("display" , "block");
 			}
 	    }
 	});
 	if($(window).width() < 769 && dotsLength.length > 5) {
-		$(".owl-dots").css("display" , "none");
+		$(".dots_mobail .owl-dots").css("display" , "none");
 		$(".dots_wrapper").css("display" , "block");
 	};
 

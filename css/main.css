@@ -8971,6 +8971,10 @@ footer .form_section {
     .news_header .news_title {
         padding-top: 0;
     }
+    .awards .owl-dots, .reviews .owl-dots {
+        display: flex;
+
+    }
 }
 .video_icon{
   font-size: 30px;
