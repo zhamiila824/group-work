@@ -9016,6 +9016,8 @@ a.video_play {
   display: block;
   height: 360px;
 }
-/*
-
- */
+@media only screen and (max-height: 350px) {
+    .mobile_menu {
+        padding: 20px 36px 0 20px;
+    }
+}
