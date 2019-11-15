@@ -8889,6 +8889,9 @@ footer .form_section {
 /*  .portfolio_page .portfolio_page_section_one .info_block {
     padding: 25px 25px;
   }*/
+  .awards .dots_wrapper {
+  	bottom: -30px;
+  }
 
   .copyright{
     height: 70px;
