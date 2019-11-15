@@ -427,7 +427,9 @@ function createInnerCarousel(){
 				$(".reviews .owl-dots").css("display" , "flex");
 				$(".reviews .dots_wrapper").css("display" , "none");
 			}
-	    }
+	    } else {
+            $(".reviews .dots_wrapper").css("display" , "none");
+        }
 	});
 	if($(window).width() < 415 && reviewsLength.length > 5) {
 		$(".reviews .owl-dots").css("display" , "none");
