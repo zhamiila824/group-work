@@ -371,7 +371,7 @@ function createInnerCarousel(){
                 dots: true,
             },
             414:{
-                dots: false,
+                dots: true,
             },
 			768 : {
 				items: 1,
