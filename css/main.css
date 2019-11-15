@@ -6597,12 +6597,6 @@ footer .form_section {
   transition: .2s all;
   color: white;
 }
-<<<<<<< HEAD
-
-
-
-
-
 
 
 
@@ -6878,12 +6872,12 @@ footer .form_section {
 
 
 
-=======
+
 .news_blocks a.btn:hover{
   background: 0 0;
   color: #F26C4D
 }
->>>>>>> f9353d31ed16d2a00b6d93c033c31e9cb7fc7df5
+
 @media only screen and(max-width: 1600px){
   .awards_info_section .item1 .text_block p {
     line-height: 19px
