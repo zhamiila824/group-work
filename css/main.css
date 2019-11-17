@@ -8816,6 +8816,7 @@ footer .form_section {
     margin-left: 0
   }
   .awards_info_section .item1 .right .text_block, .awards_info_section .item2 .left .text_block{
+    max-width: 100%;
     width: 100%;
     margin: 0;
   }
