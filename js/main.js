@@ -101,13 +101,14 @@ $(document).ready(function() {
             768 : {
                 items: 2,
                 margin: 30,
+                navText: ["<img src='img/arrow_active_prev_planshet.png'>", "<img src='img/arrow_active_next_planshet.png'>"],
             },
                 1200: {
                 items: 2,
                 margin: 36,
             },
                 1500: {
-                items: 4,
+                items: 3,
                 margin: 36,
             }
             }
@@ -161,33 +162,36 @@ function createInnerCarousel(){
 		loop: false,
 		autoplay: false,
 		mouseDrag: false,
-		nav: false,
-		navText: false,
-		dots: true,
+		nav: true,
+		navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
+		dots: false,
 		items: 1,
 		responsive : {
-	    576 : {
-	        items: 1,
-			mouseDrag: true,
-			dots: true,
-	    },
+            0: {
+                nav: false,
+                loop: true,
+            },
 			768 : {
-	        items: 1.47,
-					dots: false
-	    },
-			1004:{
-	    	items: 1.55,
-				margin:0,
+                items: 1.47,
+                mouseDrag: true,
+                nav: false,
+                loop: true,
+                navText: ["<img src='img/arrow_active_prev_planshet.png'>", "<img src='img/arrow_active_next_planshet.png'>"],
+        },
+			992:{
+	    	    items: 2,
+                margin:0,
+                navText: ["<img src='img/arrow_active_prev_planshet.png'>", "<img src='img/arrow_active_next_planshet.png'>"],
 	    	},
 			1280: {
-	        items: 2,
+	            items: 2,
 				margin: 30,
 	    },
 			1366:{
-	    	items: 2.1,
+	    	    items: 2,
 	    	},
 			1500: {
-	        items: 3
+	            items: 3
 	    }
 		}
 	});
@@ -204,18 +208,6 @@ function createInnerCarousel(){
 	})
 
 
-	$(".awards_container .left").click(function() {
-		$(".awards_container .slider.owl-carousel").trigger('prev.owl.carousel');
-		$(this).css({'opacity': 1});
-		$(".awards_container .right").css({'opacity': 0.6});
-	});
-
-	$(".awards_container .right").click(function() {
-		$(".awards_container .slider.owl-carousel").trigger('next.owl.carousel');
-		$(this).css({'opacity': 1});
-		$(".awards_container .left").css({'opacity': 0.6});
-
-	});
 
 	// $('select').styler();
 
@@ -330,12 +322,14 @@ function createInnerCarousel(){
             0:{
                 nav: false,
                 dots: true,
+                loop: true,
             },
 	        768 : {
             items: 1,
             stageClass: 'owl-stage owl-stage-mobile',
             dots: true,
-	        margin: 50,
+            margin: 50,
+            navText: ["<img src='img/arrow_active_prev_planshet.png'>", "<img src='img/arrow_active_next_planshet.png'>"],
 
 	    },
 	        1200 : {
@@ -371,13 +365,15 @@ function createInnerCarousel(){
             0:{
                 nav: false,
                 dots: true,
+                loop: true,
             },
             414:{
                 dots: true,
             },
 			768 : {
 				items: 1,
-				margin: 60,
+                margin: 60,
+                navText: ["<img src='img/arrow_active_prev_planshet.png'>", "<img src='img/arrow_active_next_planshet.png'>"],
 
 			},
 			1200: {
@@ -391,17 +387,7 @@ function createInnerCarousel(){
 		}
 	});
 
-	$(".reviews_container .left").click(function() {
-		$(".reviews_container .slider.owl-carousel").trigger('prev.owl.carousel');
-		$(this).css({'opacity': 1});
-		$(".reviews_container .right").css({'opacity': 0.7});
-	});
 
-	$(".reviews_container .right").click(function() {
-		$(".reviews_container .slider.owl-carousel").trigger('next.owl.carousel');
-		$(this).css({'opacity': 1});
-		$(".reviews_container .left").css({'opacity': 0.7});
-	});
 
 
 	/////////// news dots
@@ -444,7 +430,10 @@ function createInnerCarousel(){
 				$(".portfolio_galery .owl-dots").css("display" , "flex");
 				$(".portfolio_galery .dots_wrapper").css("display" , "none");
 			}
-	    }
+        } else{
+            $(".dots_wrapper").css("display" , "none");
+        }
+        
 	});
 	if($(window).width() < 768 && portfolioLength.length > 5) {
 		$(".portfolio_galery .owl-dots").css("display" , "none");
@@ -503,7 +492,9 @@ function createInnerCarousel(){
 				$(".reviews.dots_mobail .owl-dots").css("display" , "flex");
 				$(".reviews .dots_wrapper").css("display" , "none");
 			}
-	    }
+	    } else {
+            $(".reviews .dots_wrapper").css("display" , "none");
+        }
 	});
 	if($(window).width() < 414 && reviewsLength.length > 5) {
 		$(".reviews.dots_mobail .owl-dots").css("display" , "none");
