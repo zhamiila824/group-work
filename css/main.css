@@ -3878,7 +3878,7 @@ button::-moz-focus-inner {
   width: 100%;
   max-width: 900px
 }
-.mfp-image-holder .mfp-content, img, img.mfp-img {
+.mfp-image-holder .mfp-content, img.mfp-img {
   width: 68%;
 }
 .mfp-iframe-holder .mfp-close {
@@ -6098,7 +6098,7 @@ header {
 .modal-galery .mfp-close {
 	width: fit-content;
 	right: 20px;
-	top: 20px;
+	top: 60px;
 	height: 65px;
 	width: 65px;
 	border-radius: 50%;
@@ -7064,7 +7064,7 @@ footer .form_section {
     }
     .awards__popup .mfp-close,
 .modal-galery .mfp-close{
-        top: 50px;
+        top: 90px;
         right: 50px;
     }
 
