@@ -101,6 +101,7 @@ $(document).ready(function() {
             768 : {
                 items: 2,
                 margin: 30,
+                navText: ["<img src='img/arrow_active_prev_planshet.png'>", "<img src='img/arrow_active_next_planshet.png'>"],
             },
                 1200: {
                 items: 2,
@@ -175,10 +176,12 @@ function createInnerCarousel(){
                 mouseDrag: true,
                 nav: false,
                 loop: true,
+                navText: ["<img src='img/arrow_active_prev_planshet.png'>", "<img src='img/arrow_active_next_planshet.png'>"],
         },
 			992:{
 	    	    items: 2,
-			    margin:0,
+                margin:0,
+                navText: ["<img src='img/arrow_active_prev_planshet.png'>", "<img src='img/arrow_active_next_planshet.png'>"],
 	    	},
 			1280: {
 	            items: 2,
@@ -325,7 +328,8 @@ function createInnerCarousel(){
             items: 1,
             stageClass: 'owl-stage owl-stage-mobile',
             dots: true,
-	        margin: 50,
+            margin: 50,
+            navText: ["<img src='img/arrow_active_prev_planshet.png'>", "<img src='img/arrow_active_next_planshet.png'>"],
 
 	    },
 	        1200 : {
@@ -368,7 +372,8 @@ function createInnerCarousel(){
             },
 			768 : {
 				items: 1,
-				margin: 60,
+                margin: 60,
+                navText: ["<img src='img/arrow_active_prev_planshet.png'>", "<img src='img/arrow_active_next_planshet.png'>"],
 
 			},
 			1200: {
