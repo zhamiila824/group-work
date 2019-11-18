@@ -392,7 +392,7 @@ function createInnerCarousel(){
 
 	/////////// news dots
 
-		var newsLength = $(".news_container").find('.owl-item')
+		var newsLength = $(".item_inner.dots_mobail").find('.owl-item')
 		console.log(newsLength.length)
 
 
@@ -400,18 +400,25 @@ function createInnerCarousel(){
 	    if(newsLength.length > 5) {
 			$(".item_inner.dots_mobail .owl-dots").css("display" , "none");
 			$(".item_inner.dots_mobail .dots_wrapper").css("display" , "block");
+			
 		} else {
 			$(".item_inner.dots_mobail .owl-dots").css("display" , "flex");
 			$(".item_inner.dots_mobail .dots_wrapper").css("display" , "none");
+
+			
 		};
 	});
+
+
 
 		if(newsLength.length > 5) {
 			$(".item_inner.dots_mobail .owl-dots").css("display" , "none");
 			$(".item_inner.dots_mobail .dots_wrapper").css("display" , "block");
+			
 		} else {
 			$(".item_inner.dots_mobail .owl-dots").css("display" , "flex");
 			$(".item_inner.dots_mobail .dots_wrapper").css("display" , "none");
+
 		};
 
 /////////// portdolio dots
@@ -435,6 +442,7 @@ function createInnerCarousel(){
         }
         
 	});
+
 	if($(window).width() < 768 && portfolioLength.length > 5) {
 		$(".portfolio_galery .owl-dots").css("display" , "none");
 		$(".portfolio_galery .dots_wrapper").css("display" , "block");
