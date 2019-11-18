@@ -120,7 +120,7 @@ function createInnerCarousel(){
 	$(".news_container .img_block .owl-carousel").owlCarousel({
 		// autoWidth: true,
 		items: 1,
-		loop: false,
+		loop: true,
 		autoplay: false,
 		mouseDrag: true,
 		nav: false,
@@ -129,6 +129,8 @@ function createInnerCarousel(){
 		stageClass: 'owl-stage owl-stage-imbblock',
 	});
 }
+
+
 
 
 	$(".header_slider .owl-carousel").owlCarousel({
@@ -397,9 +399,10 @@ function createInnerCarousel(){
 
 
 	$(window).resize(function(){
-	    if(newsLength.length > 5) {
+	    if(newsLength.length / 2 > 5) {
 			$(".item_inner.dots_mobail .owl-dots").css("display" , "none");
 			$(".item_inner.dots_mobail .dots_wrapper").css("display" , "block");
+
 			
 		} else {
 			$(".item_inner.dots_mobail .owl-dots").css("display" , "flex");
@@ -411,9 +414,10 @@ function createInnerCarousel(){
 
 
 
-		if(newsLength.length > 5) {
+		if(newsLength.length / 2 > 5) {
 			$(".item_inner.dots_mobail .owl-dots").css("display" , "none");
 			$(".item_inner.dots_mobail .dots_wrapper").css("display" , "block");
+
 			
 		} else {
 			$(".item_inner.dots_mobail .owl-dots").css("display" , "flex");
