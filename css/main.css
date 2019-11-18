@@ -7333,6 +7333,9 @@ footer .form_section {
     .reviews .owl-prev {
         left: -75px;
     }
+    .reviews_text{
+      margin-bottom: 20px;
+    }
   header{
     height: 768px;
     margin-bottom: 100px;
@@ -8060,6 +8063,9 @@ footer .form_section {
 	  right: 20px;
 	  top: 20px;
 	}
+  .reviews_text{
+    margin-bottom: 15px;
+  }
   .main_header_info, .news_container .item .item_inner.active {
     position: relative
   }
@@ -8268,17 +8274,17 @@ footer .form_section {
   .awards_info_section .item1 {
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 20px
+    margin-bottom: 0;
   }
   .awards_info_section .item1 .left {
-    margin-bottom: 20px
+    margin-bottom: 40px
   }
   .awards_info_section .item2 {
     -ms-flex-direction: column;
     flex-direction: column
   }
   .awards_info_section .item2 .right {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1
@@ -8868,7 +8874,9 @@ footer .form_section {
   .second_header-news .second_header_title {
       top: 110px;
   }
-
+  .awards{
+    margin-top: 60px;
+  }
   .awards .owl-dots, .reviews .owl-dots {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8910,11 +8918,17 @@ footer .form_section {
   .reviews .title{
     margin-left: 40px;
   }
+  .reviews_text{
+    margin-bottom: 30px;
+  }
   .awards .owl-carousel{
       padding: 0;
   }
   .awards .owl-carousel .owl-stage-outer{
     overflow:hidden!important
+  }
+  .awards_info_section{
+    margin-bottom: 0;
   }
   .awards_info_section .item1 .right, .awards_info_section .item2 .left, .awards_info_section .item2 .right{
     width: 100%;
@@ -8926,6 +8940,9 @@ footer .form_section {
     width: 100%;
     margin: 0;
   }
+  .awards_info_section .item1 .text_block p:last-child{
+    margin-bottom: 0;
+  }
   .awards_info_section .item1 .left {
     margin-bottom: 15px;
     width: 100%;
@@ -8933,6 +8950,10 @@ footer .form_section {
   .awards_info_section .item2 {
     -ms-flex-direction: column;
     flex-direction: column
+  }
+  .awards_info_section .item2 .right {
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
   .slider .owl-stage-mobile {
     width: 100%!important
