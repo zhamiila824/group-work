@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 
   $('.filter_container div').find('input:checkbox').click(function () {
-			if($('.filter_container div').find('input:checked').length == 1){
+			if($('.filter_container div').find('input:checked').length > 0){
 	      $('.portfolio_container .item').hide();
 	      $('.filter_container div').find('input:checked').each(function () {
 	          $('.portfolio_container .item.' + $(this).attr('rel')).show();
