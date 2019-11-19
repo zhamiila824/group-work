@@ -8351,10 +8351,16 @@ footer .form_section {
     max-width: 100%;
   }
   .main_news .news_container .img_block {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   .main_news_container .img_block a img {
     width: 100%;
+  }
+  .news_container .dots_wrapper {
+      bottom: -37px;
+  }
+  .news_container .item .owl-dots .owl-dot {
+      top: 10px;
   }
   .awards_info_section {
     padding: 0;
