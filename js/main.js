@@ -92,7 +92,7 @@ $(document).ready(function() {
             autoplay: false,
             mouseDrag: false,
             nav: true,
-            navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
+            navText: ["<img src='img/icons/arrow-left-orange.svg'>", "<img src='img/icons/arrow-right-orange.svg'>"],
             dots: false,
             margin: 60,
             autoWidth: true,
@@ -101,7 +101,6 @@ $(document).ready(function() {
             768 : {
                 items: 2,
                 margin: 30,
-                navText: ["<img src='img/arrow_active_prev_planshet.png'>", "<img src='img/arrow_active_next_planshet.png'>"],
             },
                 1200: {
                 items: 2,
@@ -165,7 +164,7 @@ function createInnerCarousel(){
 		autoplay: false,
 		mouseDrag: false,
 		nav: true,
-		navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
+		navText: ["<img src='img/icons/arrow-left-orange.svg'>", "<img src='img/icons/arrow-right-orange.svg'>"],
 		dots: false,
 		items: 1,
 		responsive : {
@@ -178,12 +177,10 @@ function createInnerCarousel(){
                 mouseDrag: true,
                 nav: false,
                 loop: true,
-                navText: ["<img src='img/arrow_active_prev_planshet.png'>", "<img src='img/arrow_active_next_planshet.png'>"],
         },
 			992:{
 	    	    items: 2,
                 margin:0,
-                navText: ["<img src='img/arrow_active_prev_planshet.png'>", "<img src='img/arrow_active_next_planshet.png'>"],
 	    	},
 			1280: {
 	            items: 2,
@@ -316,7 +313,7 @@ function createInnerCarousel(){
 	    autoplay: false,
 	    mouseDrag: false,
 	    nav: true,
-	    navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
+	    navText: ["<img src='img/icons/arrow-left-orange.svg'>", "<img src='img/icons/arrow-right-orange.svg'>"],
 	    dots: false,
 	    autoWidth: true,
 	    stageClass: 'owl-stage owl-stage-imbblock',
@@ -331,7 +328,6 @@ function createInnerCarousel(){
             stageClass: 'owl-stage owl-stage-mobile',
             dots: true,
             margin: 50,
-            navText: ["<img src='img/arrow_active_prev_planshet.png'>", "<img src='img/arrow_active_next_planshet.png'>"],
 
 	    },
 	        1200 : {
@@ -358,7 +354,7 @@ function createInnerCarousel(){
 		autoplay: false,
 		mouseDrag: false,
 		nav: true,
-		navText: ["<img src='img/arrow_active_prev.png'>", "<img src='img/arrow_active_next.png'>"],
+		navText: ["<img src='img/icons/arrow-left-orange.svg'>", "<img src='img/icons/arrow-right-orange.svg'>"],
 		dots: true,
 		autoWidth: true,
 	    stageClass: 'owl-stage owl-stage-imbblock',
@@ -375,7 +371,6 @@ function createInnerCarousel(){
 			768 : {
 				items: 1,
                 margin: 60,
-                navText: ["<img src='img/arrow_active_prev_planshet.png'>", "<img src='img/arrow_active_next_planshet.png'>"],
 
 			},
 			1200: {
