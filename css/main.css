@@ -5481,7 +5481,7 @@ header {
 .reviews_container .item .item_inner.active {
     border: 1px solid #C5C5C5;
     position: absolute;
-    z-index: 9999
+    z-index: 900
 }
 .news_container .item .item_news.active {
 	position: relative;
@@ -8356,10 +8356,16 @@ footer .form_section {
     max-width: 100%;
   }
   .main_news .news_container .img_block {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   .main_news_container .img_block a img {
     width: 100%;
+  }
+  .news_container .dots_wrapper {
+      bottom: -37px;
+  }
+  .news_container .item .owl-dots .owl-dot {
+      top: 10px;
   }
   .awards_info_section {
     padding: 0;
