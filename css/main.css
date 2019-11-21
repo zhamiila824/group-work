@@ -5742,13 +5742,13 @@ header {
   margin-bottom: 143px
 }
 .portfolio .portfolio_container .item .text_block .data .adress::before {
-  background: url(../img/location.png) no-repeat
+  background: url(../img/icons/adress.svg) no-repeat
 }
 .portfolio .portfolio_container .item .text_block .data .time::before {
-  background: url(../img/date.png) no-repeat
+  background: url(../img/icons/time.svg) no-repeat
 }
 .portfolio .portfolio_container .item .text_block .data .type::before {
-  background: url(../img/material.png) no-repeat
+  background: url(../img/icons/type.svg) no-repeat
 }
 .portfolio .portfolio_container .item .text_block .icon {
   margin-left: 50px;
