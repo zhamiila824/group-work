@@ -5952,7 +5952,7 @@ header {
   flex-direction: column
 }
 .contact_page .left form .btn {
-  width: 100px;
+  width: fit-content;
   height: 35px;
   line-height: 32px;
   border: 2px solid #F26C4D;
