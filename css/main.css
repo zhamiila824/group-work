@@ -3701,7 +3701,7 @@ html {
 }
 .mfp-close, .mfp-preloader {
   text-align: center;
-  position: absolute
+  position: absolute;
 }
 .mfp-ajax-holder .mfp-content, .mfp-inline-holder .mfp-content {
   width: 100%;
@@ -4037,8 +4037,9 @@ img.mfp-img {
 .owl-carousel .owl-stage-outer {
   position: relative;
   overflow: hidden;
-  -webkit-transform: translate3d(0, 0, 0)
+  -webkit-transform: translate3d(0, 0, 0);
 }
+
 .owl-carousel .owl-item, .owl-carousel .owl-wrapper {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -4994,6 +4995,7 @@ header {
     opacity: 0.7;
     z-index: 99;
     top: 20%;
+    max-width: 45px;
 }
 .portfolio_galery .owl-prev,
 .portfolio_galery .owl-next{
@@ -5435,6 +5437,9 @@ header {
     -webkit-transition: .2s all;
     transition: .2s all
 }
+.news_blocks .owl-carousel .owl-stage-outer {
+    max-height: 408px;
+}
 .news_container .item .news_autor {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5480,7 +5485,7 @@ header {
 .reviews_container .item .item_inner.active {
     border: 1px solid #C5C5C5;
     position: absolute;
-    z-index: 9999
+    z-index: 900
 }
 .news_container .item .item_news.active {
 	position: relative;
@@ -5737,13 +5742,13 @@ header {
   margin-bottom: 143px
 }
 .portfolio .portfolio_container .item .text_block .data .adress::before {
-  background: url(../img/location.png) no-repeat
+  background: url(../img/icons/adress.svg) no-repeat
 }
 .portfolio .portfolio_container .item .text_block .data .time::before {
-  background: url(../img/date.png) no-repeat
+  background: url(../img/icons/time.svg) no-repeat
 }
 .portfolio .portfolio_container .item .text_block .data .type::before {
-  background: url(../img/material.png) no-repeat
+  background: url(../img/icons/type.svg) no-repeat
 }
 .portfolio .portfolio_container .item .text_block .icon {
   margin-left: 50px;
@@ -6119,9 +6124,12 @@ header {
 	height: 65px;
 	width: 65px;
 	border-radius: 50%;
-	background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background-image: url(../img/icons/close.svg);
+    background-position-x: center;
+    background-position-y: center;
+    color: transparent !important;
 	opacity: 0.5;
-	color: #121618;
 	font-size: 76px;
 	text-align: center;
 	font-weight: 400;
@@ -6939,7 +6947,11 @@ footer .form_section {
   background: 0 0;
   color: #F26C4D
 }
-
+@media only screen and (max-width: 1850px){
+    .news_blocks .owl-carousel .owl-stage-outer {
+        max-height: calc((100vw - 100px)/4 - 20px);
+    }
+}
 @media only screen and(max-width: 1600px){
 
   .awards_info_section .item1 .text_block p {
@@ -7115,6 +7127,9 @@ footer .form_section {
     }
 }
 @media only screen and (max-width:1200px) {
+    .news_blocks .owl-carousel .owl-stage-outer {
+        max-height: calc((100vw - 100px)/3 - 20px);
+    }
     .awards__popup .mfp-arrow-left:before,
     .awards__popup .mfp-arrow-right:before,
     .modal-galery .mfp-arrow-left:before,
@@ -7128,6 +7143,7 @@ footer .form_section {
     }
     .owl-prev, .owl-next{
         top: 23%;
+        max-width: 32px;
     }
   header {
     height: auto;
@@ -7666,6 +7682,9 @@ footer .form_section {
   }
 }
 @media only screen and (max-width:992px) {
+    .news_blocks .owl-carousel .owl-stage-outer {
+        max-height: 408px;
+    }
     
     .mfp-title{
         display: none;
@@ -8143,6 +8162,9 @@ footer .form_section {
   }
 }
 @media only screen and (max-width:768px) {
+    .news_blocks .owl-carousel .owl-stage-outer {
+        max-height: calc(100vw - 80px);
+    }
     .video_modal {
         top: 80px;
     }
@@ -8351,10 +8373,16 @@ footer .form_section {
     max-width: 100%;
   }
   .main_news .news_container .img_block {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   .main_news_container .img_block a img {
     width: 100%;
+  }
+  .news_container .dots_wrapper {
+      bottom: -37px;
+  }
+  .news_container .item .owl-dots .owl-dot {
+      top: 10px;
   }
   .awards_info_section {
     padding: 0;
@@ -9255,7 +9283,7 @@ a.video_play {
   width: 100px;
   height: 100px;
   display: inline-block;
-  background: transparent  url("../fonts/icomoon/media-play (1).png") no-repeat;
+  background: transparent  url("../img/icons/media-play.svg") no-repeat;
   opacity: 0.8;
 }
 
