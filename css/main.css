@@ -5837,9 +5837,23 @@ header {
 }
 .portfolio_page .video_section {
   padding: 0 50px;
-  margin-bottom: 150px;
+  margin-bottom: 0px;
   text-align: center;
-  text-align: right
+  text-align: right;
+}
+.video-res {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%;
+
+}
+.video-res iframe {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 77%;
+  width: 80%;
 }
 .portfolio_page .portfolio_page_section_three {
   padding: 0 50px;
@@ -7208,6 +7222,13 @@ footer .form_section {
 
   .news_container .item {
     margin-bottom: 30px;
+  }
+  .portfolio_page .video_section {
+      margin-bottom: 100px;
+  }
+  .video-res iframe {
+    height: 100%;
+    width: 100%;
   }
 }
 @media only screen and (max-width:1300px) {
