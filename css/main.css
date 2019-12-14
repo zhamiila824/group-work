@@ -5767,8 +5767,9 @@ header {
   -webkit-transition: .2s all;
   transition: .2s all
 }
-.contact_page .left, .portfolio_page .portfolio_page_section_three .info_block {
-  width: 100%;
+.contact_page .left,
+ .portfolio_page .portfolio_page_section_three .info_block {
+  width: 40%;
   max-width: 480px
 }
 .portfolio .btn:hover {
@@ -5782,6 +5783,7 @@ header {
   display: flex;
   margin-bottom: 140px
 }
+/*.sketchfab-embed-wrapper,*/
 .portfolio_page .img_block {
   margin-right: 95px;
   max-width: 59.2%
@@ -5836,24 +5838,40 @@ header {
   color: #F26C4D
 }
 .portfolio_page .video_section {
-  padding: 0 50px;
-  margin-bottom: 0px;
+  padding: 0 50px 0 0;
+  margin: 0 0 0 auto;
   text-align: center;
   text-align: right;
+  max-width: 59.2%;
+  /*margin-right: 0;*/
 }
+.portfolio_page_sketchfab {
+  padding: 0 95px 0 50px;
+/*  margin: 0 0 0 auto;
+  text-align: center;
+  text-align: right;*/
+  max-width: 59.2%;
+  /*margin-right: 0;*/
+  width: 60%;
+
+}
+.sketchfab-embed-wrapper,
 .video-res {
   position: relative;
   overflow: hidden;
   height: 0;
   padding-bottom: 56.25%;
+  margin-bottom: 130px;
+
 
 }
+.sketchfab-embed-wrapper iframe,
 .video-res iframe {
   position: absolute;
   right: 0;
   top: 0;
-  height: 77%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
 }
 .portfolio_page .portfolio_page_section_three {
   padding: 0 50px;
@@ -7888,6 +7906,10 @@ footer .form_section {
     padding: 0;
     text-align: left;
     margin-bottom: 0;
+    max-width: 100%
+  }
+  .video-res {
+    margin-bottom: 0px;
   }
   .portfolio_page .img_block {
     max-width: 100%;
@@ -7940,6 +7962,12 @@ footer .form_section {
     margin-bottom: 65px;
     margin-right: 0;
     max-width: 100%;
+  }
+
+  .portfolio_page_sketchfab {
+      padding: 0;
+      max-width: 100%;
+      width: 100%;
   }
   .portfolio_page .portfolio_page_section_three .info_block p {
     margin-bottom: 49px
