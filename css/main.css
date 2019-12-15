@@ -6511,6 +6511,7 @@ footer .menu_section a:hover {
 footer .language {
   margin-top: 10px
 }
+footer .language .en,
 footer .language .ru {
   background: url(../img/ru.png) no-repeat;
   width: 40px;
@@ -6519,6 +6520,7 @@ footer .language .ru {
   display: block;
   border: none
 }
+footer .language .en:hover,
 footer .language .ru:hover {
   opacity: .7;
   border: none
