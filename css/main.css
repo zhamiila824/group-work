@@ -9372,3 +9372,9 @@ a.video_play {
     }
 }
 
+footer .menu_section a.active_link{
+  color: #F26C4D;
+}
+a.active_link{
+  color: #F26C4D;
+}
