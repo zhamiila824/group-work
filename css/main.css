@@ -6520,6 +6520,11 @@ footer .language .ru {
   display: block;
   border: none
 }
+footer .language .en {
+  background: url(../img/en.png) no-repeat;
+  background-size: contain;
+  
+}
 footer .language .en:hover,
 footer .language .ru:hover {
   opacity: .7;
