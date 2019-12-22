@@ -5350,13 +5350,13 @@ header {
 .main_portfolio .data {
   margin-left: 60px
 }
-.main_portfolio .data .adress::before {
+.main_portfolio .item .info_block .data .adress::before {
   background: url(../img/icons/adress.svg) no-repeat
 }
-.main_portfolio .data .time::before {
+.main_portfolio .item .info_block .data .time::before {
   background: url(../img/icons/time.svg) no-repeat
 }
-.main_portfolio .data .type::before {
+.main_portfolio .item .info_block .data .type::before {
   background: url(../img/icons/type.svg) no-repeat
 }
 .main_portfolio .item_bottom_block {
