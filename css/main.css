@@ -5532,7 +5532,7 @@ a.video_play {
     transition: .2s all
 }
 .news_blocks .owl-carousel .owl-stage-outer {
-    max-height: 408px;
+  max-height: calc((100vw - 100px)/4 - 20px);
 }
 .news_container .item .news_autor {
     display: -webkit-box;
@@ -7071,11 +7071,6 @@ footer .form_section {
 .news_blocks a.btn:hover{
   background: 0 0;
   color: #F26C4D
-}
-@media only screen and (max-width: 1850px){
-    .news_blocks .owl-carousel .owl-stage-outer {
-        max-height: calc((100vw - 100px)/4 - 20px);
-    }
 }
 @media only screen and(max-width: 1600px){
 
