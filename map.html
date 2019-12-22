@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+        img{
+            height: 40px;
+            width: auto;
+        }
+        #bodyContent{
+            display: flex;
+            flex-direction: row;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+
+<section id="map" class="map"></section>
+
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        var pixelCoordinate = window.innerWidth; 
+		var worldCoordinateMax = 20.013447;
+		var zoomLevel = parseInt(Math.log2(pixelCoordinate/worldCoordinateMax)); 
+		var center = {lat: 52.965875, lng: 36.070781};
+		var map = new google.maps.Map(document.getElementById('map'), {zoom: zoomLevel, center: center}); 
+		var uluru280= {lat: 52.965875, lng: 36.070781};
+		var marker = new google.maps.Marker({position: uluru280, map: map, title: 'Ивану Грозному'});
+          var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h3 id="firstHeading" class="firstHeading">Ивану Грозному</h3>'+
+              '<div id="bodyContent">'+
+              '<img src="https://sculptor.syntlex.net/upload/avatar/m1.png">' +
+              '<div class="info">'+
+              '<p><b>Место:</b>Россия, Орел</p>'+
+              '<p><b>Дата:</b>12/13/14</p>'+
+                  '</div>'+
+              '</div>'+
+              '</div>';
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString,
+              maxWidth: 400
+          });
+          marker.addListener('mouseover', function() {
+              infowindow.open(map, marker);
+          });
+          marker.addListener('mouseout', function() {
+              infowindow.close(map, marker);
+          });
+        var uluru283= {lat: 52.965519, lng: 36.069407};
+        var marker2 = new google.maps.Marker({position: uluru283, map: map, title: 'Серафиму Саровскому'});
+          var contentString2 = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h3 id="firstHeading" class="firstHeading">Серафиму Саровскому</h3>'+
+              '<div id="bodyContent">'+
+              '<img src="https://sculptor.syntlex.net/upload/avatar/m12.png">' +
+              '<div class="info">'+
+              '<p><b>Место:</b>Россия, Орел</p>'+
+              '<p><b>Дата:</b>12/13/14</p>'+
+                  '</div>'+
+              '</div>'+
+              '</div>';
+          var infowindow2 = new google.maps.InfoWindow({
+              content: contentString2,
+              maxWidth: 400
+          });
+          marker2.addListener('mouseover', function() {
+              infowindow2.open(map, marker2);
+          });
+          marker2.addListener('mouseout', function() {
+              infowindow2.close(map, marker2);
+          });
+        var uluru292= {lat: 55.875796, lng: 38.109456};
+        var marker3 = new google.maps.Marker({position: uluru292, map: map, title: 'Мемориальная доска летчикам героям Советского Союза, Звёздный городок, Московская обл.'});
+          var contentString3 = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h3 id="firstHeading" class="firstHeading">Мемориальная доска летчикам героям Советского Союза</h3>'+
+              '<div id="bodyContent">'+
+              '<img src="https://sculptor.syntlex.net/upload/avatar/m7.png">' +
+              '<div class="info">'+
+              '<p><b>Место:</b>Московская обл., Звёздный городок</p>'+
+              '<p><b>Дата:</b>12/13/14</p>'+
+                  '</div>'+
+              '</div>'+
+              '</div>';
+          var infowindow3 = new google.maps.InfoWindow({
+              content: contentString3,
+              maxWidth: 400
+          });
+          marker3.addListener('mouseover', function() {
+              infowindow3.open(map, marker3);
+          });
+          marker3.addListener('mouseout', function() {
+              infowindow3.close(map, marker3);
+          });
+        var uluru301= {lat: 42.856027, lng: 27.899010};
+        var marker4 = new google.maps.Marker({position: uluru301, map: map, title: 'Памятник маршалу Жукову, Бяла, Болгария'});
+          var contentString4 = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h3 id="firstHeading" class="firstHeading">Памятник маршалу Жукову</h3>'+
+              '<div id="bodyContent">'+
+              '<img src="https://sculptor.syntlex.net/upload/avatar/m2.png">' +
+              '<div class="info">'+
+              '<p><b>Место:</b>Болгария, Бяла</p>'+
+              '<p><b>Дата:</b>12/13/14</p>'+
+              '</div>'+
+                  '</div>'+
+              '</div>';
+          var infowindow4 = new google.maps.InfoWindow({
+              content: contentString4,
+              maxWidth: 400
+          });
+          marker4.addListener('mouseover', function() {
+              infowindow4.open(map, marker4);
+          });
+          marker4.addListener('mouseout', function() {
+              infowindow4.close(map, marker4);
+          });
+        var uluru307= {lat: 54.721383, lng: 20.525174};
+        var marker5 = new google.maps.Marker({position: uluru307, map: map, title: 'Памятник Святому Благоверному Великому князю Александру Невскому, Калининград'});
+          var contentString5 = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h3 id="firstHeading" class="firstHeading">Памятник Святому Благоверному Великому князю Александру Невскому</h3>'+
+              '<div id="bodyContent">'+
+              '<img src="https://sculptor.syntlex.net/upload/avatar/m10.png">' +
+              '<div class="info">'+
+              '<p><b>Место:</b>Россия, Калининград</p>'+
+              '<p><b>Дата:</b>12/13/14</p>'+
+              '</div>'+
+              '</div>'+
+              '</div>';
+          var infowindow5 = new google.maps.InfoWindow({
+              content: contentString5,
+              maxWidth: 400
+          });
+          marker5.addListener('mouseover', function() {
+              infowindow5.open(map, marker5);
+          });
+          marker5.addListener('mouseout', function() {
+              infowindow5.close(map, marker5);
+          });
+        var uluru310= {lat: 54.70444570000001, lng: 20.507106600000043};
+        var marker6 = new google.maps.Marker({position: uluru310, map: map, title: 'Скульптурная композиция с фонтаном «Россия», Ставрополь'});
+          var contentString6 = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h3 id="firstHeading" class="firstHeading">Скульптурная композиция с фонтаном «Россия»</h3>'+
+              '<div id="bodyContent">'+
+              '<img src="https://sculptor.syntlex.net/upload/avatar/m15.png">' +
+              '<div class="info">'+
+              '<p><b>Место:</b>Россия, Ставрополь</p>'+
+              '<p><b>Дата:</b>12/13/14</p>'+
+              '</div>'+
+              '</div>'+
+              '</div>';
+          var infowindow6 = new google.maps.InfoWindow({
+              content: contentString6,
+              maxWidth: 400
+          });
+          marker6.addListener('mouseover', function() {
+              infowindow6.open(map, marker6);
+          });
+          marker6.addListener('mouseout', function() {
+              infowindow6.close(map, marker6);
+          });
+            console.log(window.screen.width);
+          if (window.screen.width < 1024){
+                marker.addListener('click', function () {
+                    infowindow.open(map, marker);
+                });
+              marker2.addListener('click', function () {
+                  infowindow2.open(map, marker2);
+              });
+              marker3.addListener('click', function () {
+                  infowindow3.open(map, marker3);
+              });
+              marker4.addListener('click', function () {
+                  infowindow4.open(map, marker4);
+              });
+              marker5.addListener('click', function () {
+                  infowindow5.open(map, marker5);
+              });
+              marker6.addListener('click', function () {
+                  infowindow6.open(map, marker6);
+              });
+          }
+      }
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg6mZ8wpz6r6vKIii3vsO1IgjV2afBmoU&callback=initMap">
+    </script>
+  </body>
+</html>
+
