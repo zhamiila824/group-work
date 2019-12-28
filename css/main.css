@@ -3904,7 +3904,6 @@ button::-moz-focus-inner {
     top: -75px;
 }
 .mfp-figure:after, img.mfp-img {
-  width: 100%;
   height: auto;
   display: block
 }
